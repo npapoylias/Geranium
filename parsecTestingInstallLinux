@@ -1,6 +1,6 @@
 apt-get -qq update
-apt-get install wget
-apt-get install unzip
+apt-get -y install wget
+apt-get -y install unzip
 wget https://ci.inria.fr/moose/job/moose-6.1/lastSuccessfulBuild/artifact/moose-6.1.zip
 unzip moose-6.1.zip
 wget http://files.pharo.org/get-files/60/sources.zip
