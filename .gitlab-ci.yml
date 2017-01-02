@@ -1,4 +1,4 @@
-ubuntu:latest
+image: ubuntu:latest
 
 ubuntu:
  script:
