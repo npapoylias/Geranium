@@ -1,0 +1,20 @@
+{
+	"instance" : {
+		"development:" : "NickPapoulias 1/2/2017 18:43",
+		"baseline01:" : "NickPapoulias 1/2/2017 18:47",
+		"project" : "NickPapoulias 1/2/2017 18:23",
+		"customProjectAttributes" : "NickPapoulias 1/2/2017 18:23"
+	},
+	"class" : {
+		"load" : "NickPapoulias 1/2/2017 18:23",
+		"baseConfigurationClassIfAbsent:" : "NickPapoulias 1/2/2017 18:23",
+		"DevelopmentSupport" : "NickPapoulias 1/2/2017 18:23",
+		"ensureMetacello" : "NickPapoulias 1/2/2017 18:23",
+		"loadDevelopment" : "NickPapoulias 1/2/2017 18:23",
+		"isMetacelloConfig" : "NickPapoulias 1/2/2017 18:23",
+		"ensureMetacelloBaseConfiguration" : "NickPapoulias 1/2/2017 18:23",
+		"loadBleedingEdge" : "NickPapoulias 1/2/2017 18:23",
+		"validate" : "NickPapoulias 1/2/2017 18:23",
+		"project" : "NickPapoulias 1/2/2017 18:23"
+	}
+}
