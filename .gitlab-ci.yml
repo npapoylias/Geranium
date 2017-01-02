@@ -1,3 +1,5 @@
-mac:
+ubuntu:latest
+
+ubuntu:
  script:
- - ./parsecTestingInstallMac
+ - ./parsecTestingInstallUbuntu
