@@ -1,13 +1,17 @@
+
 SmalltalkCISpec {
   #loading : [
-    // List Of Load Specifications...
-    SCIGoferLoadSpec {
-  	#url : 'http://ss3.gemtalksystems.com/ss/Tot',            // Define URL for repository
-  	#packages : ['TotParser'],  // Load packages and/or
-  	#platforms : [ #pharo ]    // Define compatible platforms
-	}
+   SCIMetacelloLoadSpec {
+      #configuration : 'TotParser',
+      #repository : 'http://ss3.gemtalksystems.com/ss/Tot',
+      #load : [ 'default' ],
+      #platforms : [ #pharo ],
+      #version : #development
+    }
   ],
-	#testing : {
-		#packages : [ 'TotParser.*' ]
-	}
+  #testing : {
+  #coverage : {
+    #categories : ['TotParser-*']
+  }
+  }
 }
