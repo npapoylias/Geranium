@@ -6,7 +6,7 @@ SmalltalkCISpec {
   	#directory : './',                            // Path to packages if FileTree is used
   	#onWarningLog : true,                               // Log Warning messages to Transcript
   	#load : [ 'development' ],                              // Define MC load attributes
-  	#platforms : [ #pharo ],        // Define compatible platforms                                                      // Configurations only)
+  	#platforms : [ #pharo ]        // Define compatible platforms                                                      // Configurations only)
   }
   ],
   #testing : {
