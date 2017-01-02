@@ -7,7 +7,7 @@ SmalltalkCISpec {
   	#onWarningLog : true,
   	#load : [ 'development' ],
   	#platforms : [ #pharo ],
-	#version: '0.1-baseline',
+	#version: '0.1-baseline'
   }
   ],
   #testing : {
