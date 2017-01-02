@@ -6,7 +6,8 @@ SmalltalkCISpec {
   	#directory : './',
   	#onWarningLog : true,
   	#load : [ 'development' ],
-  	#platforms : [ #pharo ]
+  	#platforms : [ #pharo ],
+	#version: '0.1-baseline',
   }
   ],
   #testing : {
