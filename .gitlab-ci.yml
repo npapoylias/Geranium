@@ -1,6 +1,3 @@
-before_script:
- - git clone git@gitlab.com:npapoylias/parsec.git
-
 mac:
  script:
  - ./parsecTestingInstallMac
