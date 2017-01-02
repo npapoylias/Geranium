@@ -3,10 +3,10 @@ apt-get -y install wget
 apt-get -y install unzip
 dpkg --add-architecture i386 
 apt-get update 
-apt-get install libx11-6:i386 
-apt-get install libgl1-mesa-glx:i386 
-apt-get install libfontconfig1:i386 
-apt-get install libssl1.0.0:i386 
+apt-get -y install libx11-6:i386 
+apt-get -y install libgl1-mesa-glx:i386 
+apt-get -y install libfontconfig1:i386 
+apt-get -y install libssl1.0.0:i386 
 wget https://ci.inria.fr/moose/job/moose-6.1/lastSuccessfulBuild/artifact/moose-6.1.zip
 unzip moose-6.1.zip
 wget http://files.pharo.org/get-files/60/sources.zip
