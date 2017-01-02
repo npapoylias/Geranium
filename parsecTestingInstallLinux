@@ -7,7 +7,7 @@ wget http://files.pharo.org/get-files/60/sources.zip
 unzip sources.zip
 wget http://files.pharo.org/get-files/50/pharo-linux-stable.zip
 unzip pharo-linux-stable.zip
-chmod a+x pharo
-ls
+chmod a+x ./pharo
+ls ./pharo
 ./pharo --headless moose-6.1.image eval --save "Gofer it repository: (MCFileTreeRepository new directory: (FileLocator imageDirectory / 'parsec')); package: 'TotParser'; load."
 ./pharo --headless moose-6.1.image test "TotParser"
