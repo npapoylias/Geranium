@@ -2,4 +2,4 @@ image: ubuntu:latest
 
 ubuntu:
  script:
- - ./parsecTestingInstallUbuntu
+ - ./parsecTestingInstallLinux
