@@ -2,9 +2,9 @@ SmalltalkCISpec {
   #loading : [
     // List Of Load Specifications...
     SCIGoferLoadSpec {
-  	#directory : 'TotParser.package',            // Define URL for repository
+  	#url : 'http://ss3.gemtalksystems.com/ss/Tot',            // Define URL for repository
   	#packages : ['TotParser'],  // Load packages and/or
-  	#platforms : [ #pharo ]         // Define compatible platforms
+  	#platforms : [ #pharo ]    // Define compatible platforms
 	}
   ],
 	#testing : {
