@@ -1,8 +1,0 @@
-wget https://ci.inria.fr/moose/job/moose-6.1/lastSuccessfulBuild/artifact/moose-6.1.zip
-unzip moose-6.1.zip
-wget http://files.pharo.org/get-files/60/sources.zip
-unzip sources.zip
-wget http://files.pharo.org/get-files/50/pharo-mac-stable.zip
-unzip pharo-mac-stable.zip
-./Pharo.app/Contents/MacOS/Pharo --headless moose-6.1.image eval --save "Gofer it repository: (MCFileTreeRepository new directory: (FileLocator imageDirectory / 'parsec')); package: 'TotParser'; load."
-./Pharo.app/Contents/MacOS/Pharo --headless moose-6.1.image test "TotParser"

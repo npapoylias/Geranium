@@ -15,4 +15,4 @@ wget http://files.pharo.org/get-files/50/pharo-linux-stable.zip
 unzip pharo-linux-stable.zip
 chmod a+x ./pharo
 ./pharo -vm-display-null moose-6.1.image eval --save "Gofer it repository: (MCFileTreeRepository new directory: FileLocator imageDirectory); package: 'TotParser'; load."
-./pharo -vm-display-null moose-6.1.image test "TotParser"
+./pharo -vm-display-null moose-6.1.image test --fail-on-failure  "TotParser"
