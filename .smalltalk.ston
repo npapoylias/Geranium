@@ -1,13 +1,13 @@
 
 SmalltalkCISpec {
   #loading : [
-   SCIMetacelloLoadSpec {
-      #configuration : 'TotParser',
-      #repository : 'http://ss3.gemtalksystems.com/ss/Tot',
-      #load : [ 'default' ],
-      #platforms : [ #pharo ],
-      #version : #development
-    }
+  	SCIMetacelloLoadSpec {
+  	#configuration : 'TotParser',                       // Alternatively, define MC Configuration
+  	#directory : './',                            // Path to packages if FileTree is used
+  	#onWarningLog : true,                               // Log Warning messages to Transcript
+  	#load : [ 'development' ],                              // Define MC load attributes
+  	#platforms : [ #pharo ],        // Define compatible platforms                                                      // Configurations only)
+  }
   ],
   #testing : {
   #coverage : {
