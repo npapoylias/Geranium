@@ -5,7 +5,7 @@ SmalltalkCISpec {
   	#configuration : 'TotParser',
   	#directory : './',
   	#onWarningLog : true,
-  	#load : [ 'development' ],
+  	#load : [ 'default' ],
   	#platforms : [ #pharo ],
 	#version: '0.1-baseline'
   }
