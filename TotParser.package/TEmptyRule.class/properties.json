@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TTerminalRule",
+	"category" : "TotParser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TEmptyRule",
+	"type" : "normal"
+}

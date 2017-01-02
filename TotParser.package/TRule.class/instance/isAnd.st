@@ -1,0 +1,4 @@
+ops
+isAnd
+
+	^ isAnd

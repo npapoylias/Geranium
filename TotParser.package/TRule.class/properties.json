@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TotParser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"rightHandSide",
+		"grammar",
+		"childRules",
+		"ordered",
+		"isAnd",
+		"isNot",
+		"iregExpr",
+		"directRefs"
+	],
+	"name" : "TRule",
+	"type" : "normal"
+}

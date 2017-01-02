@@ -1,0 +1,24 @@
+{
+	"commentStamp" : "",
+	"super" : "TotParser",
+	"category" : "TotParser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"members",
+		"pair",
+		"string",
+		"value",
+		"elements",
+		"number",
+		"object",
+		"array",
+		"ttrue",
+		"tfalse",
+		"null",
+		"start"
+	],
+	"name" : "TotJsonParser",
+	"type" : "normal"
+}

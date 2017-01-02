@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TotLexerOperand",
+	"category" : "TotParser-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"between"
+	],
+	"name" : "TotLexerRepetition",
+	"type" : "normal"
+}

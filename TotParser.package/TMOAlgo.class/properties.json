@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "NickPapoulias 11/30/2016 14:49",
+	"super" : "TOAlgo",
+	"category" : "TotParser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TMOAlgo",
+	"type" : "normal"
+}

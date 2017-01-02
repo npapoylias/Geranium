@@ -1,0 +1,4 @@
+*TotParser
+lstar
+
+ ^ '(' , self , ')*'

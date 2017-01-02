@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TotParser-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"EscapeChars"
+	],
+	"instvars" : [
+		"stream"
+	],
+	"name" : "TotLexer",
+	"type" : "normal"
+}

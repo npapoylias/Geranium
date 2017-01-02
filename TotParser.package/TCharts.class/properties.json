@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TCollection",
+	"category" : "TotParser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"chartIndex",
+		"stateIndex",
+		"logging"
+	],
+	"name" : "TCharts",
+	"type" : "normal"
+}

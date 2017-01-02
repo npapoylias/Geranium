@@ -1,0 +1,25 @@
+{
+	"instance" : {
+		"connectTo:" : "NickPapoulias 12/1/2016 18:08",
+		"allNodesUntil:given:" : "NickPapoulias 12/24/2016 13:17",
+		"initialize" : "NickPapoulias 12/24/2016 13:10",
+		"startNode" : "NickPapoulias 12/2/2016 15:19",
+		"char" : "NickPapoulias 12/1/2016 18:07",
+		"isAuto" : "NickPapoulias 12/24/2016 12:41",
+		"asDFA" : "NickPapoulias 12/26/2016 13:48",
+		"isEnd" : "NickPapoulias 12/23/2016 15:19",
+		"matchesStreamPrefix:" : "NickPapoulias 12/26/2016 14:17",
+		"beNot" : "NickPapoulias 12/24/2016 11:27",
+		"asGraph:" : "NickPapoulias 12/25/2016 21:08",
+		"match:" : "NickPapoulias 12/22/2016 12:13",
+		"followEpsilons" : "NickPapoulias 12/24/2016 13:06",
+		"char:" : "NickPapoulias 12/1/2016 18:07",
+		"asGraph" : "NickPapoulias 12/25/2016 20:39",
+		"out" : "NickPapoulias 12/24/2016 11:31",
+		"check:" : "NickPapoulias 12/24/2016 10:55",
+		"lexMatch:" : "NickPapoulias 12/24/2016 11:15",
+		"endNode" : "NickPapoulias 12/2/2016 15:19",
+		"allNodesUntil:" : "NickPapoulias 12/24/2016 13:15"
+	},
+	"class" : { }
+}

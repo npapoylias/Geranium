@@ -1,0 +1,4 @@
+*TotParser
+lopt
+
+ ^ '(' , self , ')?'

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TRule",
+	"category" : "TotParser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TSubRule",
+	"type" : "normal"
+}

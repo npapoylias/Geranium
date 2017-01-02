@@ -1,0 +1,4 @@
+accessing
+operand
+
+	^ operand

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TotLexerGroup",
+	"category" : "TotParser-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TotLexerNotGroup",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "NickPapoulias 11/5/2016 22:04",
+	"super" : "TestCase",
+	"category" : "TotParser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"charts"
+	],
+	"name" : "TAlgosTest",
+	"type" : "normal"
+}

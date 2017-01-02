@@ -1,0 +1,23 @@
+{
+	"instance" : {
+		"addLast:" : "NickPapoulias 12/27/2016 11:39",
+		"do:" : "NickPapoulias 12/27/2016 15:22",
+		"detect:" : "NickPapoulias 12/27/2016 19:39",
+		"add:" : "NickPapoulias 12/27/2016 15:20",
+		"at:put:" : "NickPapoulias 12/27/2016 15:22",
+		"first" : "NickPapoulias 12/27/2016 13:50",
+		"at:" : "NickPapoulias 12/27/2016 15:21",
+		"isEmpty" : "NickPapoulias 1/1/2017 21:10",
+		"anySatisfy:" : "NickPapoulias 12/27/2016 15:20",
+		"initialize" : "NickPapoulias 12/27/2016 16:01",
+		"grow" : "NickPapoulias 12/27/2016 20:33",
+		"isNotEmpty" : "NickPapoulias 1/1/2017 21:10",
+		"at:ifAbsent:" : "NickPapoulias 1/1/2017 21:09",
+		"last" : "NickPapoulias 12/27/2016 15:25",
+		"copyEmpty" : "NickPapoulias 12/27/2016 11:39",
+		"size" : "NickPapoulias 12/27/2016 15:25",
+		"collect:" : "NickPapoulias 1/1/2017 22:12",
+		"removeIndex:" : "NickPapoulias 12/27/2016 16:37"
+	},
+	"class" : { }
+}

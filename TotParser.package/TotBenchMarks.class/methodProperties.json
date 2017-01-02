@@ -1,0 +1,20 @@
+{
+	"instance" : {
+		"jsonExampleSmall" : "NickPapoulias 11/14/2016 11:43",
+		"times" : "NickPapoulias 11/14/2016 11:40",
+		"runWithPPCMemo" : "NickPapoulias 11/15/2016 16:07",
+		"with:" : "NickPapoulias 11/14/2016 11:43",
+		"jsonExample" : "NickPapoulias 11/14/2016 11:48",
+		"jsonExampleBig" : "NickPapoulias 11/14/2016 11:41",
+		"ppcJsonMemo" : "NickPapoulias 1/1/2017 20:07",
+		"initialize" : "NickPapoulias 1/1/2017 20:09",
+		"runWithMemo" : "NickPapoulias 11/15/2016 16:07",
+		"totJson" : "NickPapoulias 1/1/2017 20:10",
+		"ppcJson" : "NickPapoulias 1/1/2017 20:07",
+		"ppJsonMemo" : "NickPapoulias 1/1/2017 20:06",
+		"run" : "NickPapoulias 11/11/2016 19:19",
+		"runWithPPC" : "NickPapoulias 11/14/2016 11:30",
+		"ppJson" : "NickPapoulias 1/1/2017 20:05"
+	},
+	"class" : { }
+}

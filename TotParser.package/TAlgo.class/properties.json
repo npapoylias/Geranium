@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "NickPapoulias 11/30/2016 14:48",
+	"super" : "Object",
+	"category" : "TotParser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"readingPosition",
+		"dummyRule",
+		"grammar",
+		"input",
+		"charts",
+		"logging"
+	],
+	"name" : "TAlgo",
+	"type" : "normal"
+}

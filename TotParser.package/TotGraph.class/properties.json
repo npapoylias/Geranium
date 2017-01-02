@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TotParser-Visual",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"gEdges",
+		"gElements"
+	],
+	"name" : "TotGraph",
+	"type" : "normal"
+}

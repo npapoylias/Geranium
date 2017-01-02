@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TotParser-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"char",
+		"out",
+		"outWithoutEpsilons"
+	],
+	"name" : "NFANode",
+	"type" : "normal"
+}

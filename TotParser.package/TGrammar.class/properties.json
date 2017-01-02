@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "IdentityDictionary",
+	"category" : "TotParser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"forked"
+	],
+	"name" : "TGrammar",
+	"type" : "normal"
+}

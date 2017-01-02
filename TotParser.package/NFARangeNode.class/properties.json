@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "NFANode",
+	"category" : "TotParser-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rangePair"
+	],
+	"name" : "NFARangeNode",
+	"type" : "normal"
+}

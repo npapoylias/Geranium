@@ -1,0 +1,17 @@
+{
+	"instance" : {
+		"parseUnaryOp:" : "NickPapoulias 12/12/2016 12:21",
+		"parseOptionOp" : "NickPapoulias 11/21/2016 19:13",
+		"parseEscape" : "NickPapoulias 11/27/2016 13:02",
+		"parseConcatOp" : "NickPapoulias 12/12/2016 11:38",
+		"parseGroupExpression" : "NickPapoulias 11/27/2016 16:01",
+		"parseAny" : "NickPapoulias 11/24/2016 11:44",
+		"parseCountedRepetition" : "NickPapoulias 11/27/2016 15:40",
+		"parseRe" : "NickPapoulias 11/21/2016 19:14",
+		"parse:" : "NickPapoulias 11/21/2016 17:50",
+		"parseGroup" : "NickPapoulias 11/29/2016 13:00",
+		"escapeChars" : "NickPapoulias 11/24/2016 11:50",
+		"parseAtom" : "NickPapoulias 11/27/2016 15:33"
+	},
+	"class" : { }
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TotLexerNode",
+	"category" : "TotParser-Lexing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"operand"
+	],
+	"name" : "TotLexerOperand",
+	"type" : "normal"
+}

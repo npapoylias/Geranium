@@ -1,0 +1,25 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TotParser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rule",
+		"dotPosition",
+		"from",
+		"to",
+		"fromTerminal",
+		"toTerminal",
+		"previousStates",
+		"rightHandIndex",
+		"ruleAtDot",
+		"rightHand",
+		"rightHandSize",
+		"hash",
+		"dRefRightHand"
+	],
+	"name" : "TState",
+	"type" : "normal"
+}

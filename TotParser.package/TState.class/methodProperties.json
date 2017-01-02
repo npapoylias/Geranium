@@ -1,0 +1,36 @@
+{
+	"instance" : {
+		"expectingNot" : "NickPapoulias 11/3/2016 18:35",
+		"to" : "NickPapoulias 10/21/2016 12:06",
+		"rightHandIndex" : "NickPapoulias 10/21/2016 18:09",
+		"expectingEof" : "NickPapoulias 11/2/2016 20:08",
+		"initialize" : "NickPapoulias 11/7/2016 17:13",
+		"rightHandSideAsNewStatesOn:" : "NickPapoulias 12/1/2016 11:56",
+		"start:" : "NickPapoulias 11/4/2016 11:10",
+		"isIncomplete" : "NickPapoulias 12/1/2016 11:43",
+		"on:alternative:from:to:dot:" : "NickPapoulias 12/28/2016 13:27",
+		"rule" : "NickPapoulias 10/22/2016 11:34",
+		"equalTo:" : "NickPapoulias 12/27/2016 15:37",
+		"asScannerStateFrom:to:withIndex:" : "NickPapoulias 12/1/2016 13:57",
+		"expectingTerminal" : "NickPapoulias 12/30/2016 15:52",
+		"expectingEmpty" : "NickPapoulias 10/27/2016 12:58",
+		"advanceDot" : "NickPapoulias 11/7/2016 18:15",
+		"fromTerminal:" : "NickPapoulias 11/7/2016 11:39",
+		"from" : "NickPapoulias 10/21/2016 12:06",
+		"toTerminal:" : "NickPapoulias 11/7/2016 11:42",
+		"expectingAnd" : "NickPapoulias 11/3/2016 19:32",
+		"fromTerminal" : "NickPapoulias 11/7/2016 11:39",
+		"end:" : "NickPapoulias 10/22/2016 17:09",
+		"dotPosition" : "NickPapoulias 10/21/2016 18:09",
+		"ruleAtDot" : "NickPapoulias 12/28/2016 13:23",
+		"toTerminal" : "NickPapoulias 11/7/2016 11:42",
+		"nameAtDot" : "NickPapoulias 12/1/2016 11:42",
+		"isFinal" : "NickPapoulias 12/1/2016 12:42",
+		"previousStates" : "NickPapoulias 10/21/2016 18:32",
+		"printOn:" : "NickPapoulias 12/1/2016 11:41",
+		"expecting:at:" : "NickPapoulias 12/1/2016 11:44"
+	},
+	"class" : {
+		"on:alternative:from:to:dot:" : "NickPapoulias 10/21/2016 12:21"
+	}
+}
