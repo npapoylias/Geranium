@@ -10,5 +10,5 @@
 	"name" : "BaselineOfParsec",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "BaselineOf",
 	"type" : "normal" }
