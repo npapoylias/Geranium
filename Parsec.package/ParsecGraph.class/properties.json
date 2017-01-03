@@ -1,0 +1,15 @@
+{
+	"category" : "Parsec-Visual",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"gEdges",
+		"gElements" ],
+	"name" : "ParsecGraph",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+accessing
+third
+
+	^ sequence third

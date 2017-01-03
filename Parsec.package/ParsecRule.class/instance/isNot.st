@@ -1,0 +1,4 @@
+ops
+isNot
+
+	^ isNot

@@ -1,0 +1,14 @@
+{
+	"category" : "Parsec",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ParsecStack",
+	"pools" : [
+		 ],
+	"super" : "ParsecCollection",
+	"type" : "normal" }

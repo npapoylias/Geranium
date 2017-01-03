@@ -1,0 +1,4 @@
+ops
+not
+
+	isNot := true

@@ -1,0 +1,14 @@
+{
+	"category" : "Parsec-Lexing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"array" ],
+	"name" : "ParsecDFAArray",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

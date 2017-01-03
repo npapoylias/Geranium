@@ -1,0 +1,22 @@
+{
+	"category" : "Parsec",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"rightHandSide",
+		"grammar",
+		"childRules",
+		"ordered",
+		"isAnd",
+		"isNot",
+		"iregExpr",
+		"directRefs" ],
+	"name" : "ParsecRule",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

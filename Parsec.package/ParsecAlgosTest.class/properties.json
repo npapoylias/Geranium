@@ -1,0 +1,14 @@
+{
+	"category" : "Parsec",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NickPapoulias 11/5/2016 22:04",
+	"instvars" : [
+		"charts" ],
+	"name" : "ParsecAlgosTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

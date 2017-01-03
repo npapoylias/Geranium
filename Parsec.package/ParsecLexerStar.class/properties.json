@@ -1,0 +1,14 @@
+{
+	"category" : "Parsec-Lexing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ParsecLexerStar",
+	"pools" : [
+		 ],
+	"super" : "ParsecLexerOperand",
+	"type" : "normal" }

@@ -1,0 +1,17 @@
+{
+	"category" : "Parsec",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NickPapoulias 11/1/2016 18:21",
+	"instvars" : [
+		"chartIndex",
+		"stateIndex",
+		"readingPosition",
+		"state" ],
+	"name" : "ParsecBackTrackState",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

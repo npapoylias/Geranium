@@ -1,0 +1,14 @@
+{
+	"category" : "Parsec-Lexing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"rangePair" ],
+	"name" : "ParsecNFARangeNode",
+	"pools" : [
+		 ],
+	"super" : "ParsecNFANode",
+	"type" : "normal" }

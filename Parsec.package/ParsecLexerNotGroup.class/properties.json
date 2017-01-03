@@ -1,0 +1,14 @@
+{
+	"category" : "Parsec-Lexing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ParsecLexerNotGroup",
+	"pools" : [
+		 ],
+	"super" : "ParsecLexerGroup",
+	"type" : "normal" }

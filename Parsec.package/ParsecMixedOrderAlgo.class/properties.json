@@ -1,0 +1,14 @@
+{
+	"category" : "Parsec",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NickPapoulias 11/30/2016 14:49",
+	"instvars" : [
+		 ],
+	"name" : "ParsecMixedOrderAlgo",
+	"pools" : [
+		 ],
+	"super" : "ParsecOrderedAlgo",
+	"type" : "normal" }

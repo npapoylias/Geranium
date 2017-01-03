@@ -1,0 +1,1 @@
+MixedForm algo parses as a mix of EBNF and Peg (supporting in equal footing ordered and unordered choice, and, not etc) we can say that this is a form of EPEG (in analogy with EBNF)

@@ -1,0 +1,15 @@
+{
+	"category" : "Parsec",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"forked" ],
+	"name" : "ParsecGrammar",
+	"pools" : [
+		 ],
+	"super" : "IdentityDictionary",
+	"type" : "normal" }

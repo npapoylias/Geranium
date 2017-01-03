@@ -1,0 +1,4 @@
+accessing
+isOrdered
+
+	^ ordered

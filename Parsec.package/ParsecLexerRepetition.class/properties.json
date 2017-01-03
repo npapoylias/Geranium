@@ -1,0 +1,14 @@
+{
+	"category" : "Parsec-Lexing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"between" ],
+	"name" : "ParsecLexerRepetition",
+	"pools" : [
+		 ],
+	"super" : "ParsecLexerOperand",
+	"type" : "normal" }

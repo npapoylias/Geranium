@@ -1,0 +1,14 @@
+{
+	"category" : "Parsec-Lexing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sequence" ],
+	"name" : "ParsecLexerConcat",
+	"pools" : [
+		 ],
+	"super" : "ParsecLexerNode",
+	"type" : "normal" }

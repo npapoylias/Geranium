@@ -1,0 +1,14 @@
+{
+	"category" : "Parsec",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ParsecJsonLoggingParser",
+	"pools" : [
+		 ],
+	"super" : "ParsecJsonParser",
+	"type" : "normal" }

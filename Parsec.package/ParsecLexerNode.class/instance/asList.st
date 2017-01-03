@@ -1,0 +1,4 @@
+converting
+asList
+
+	^ self subclassResponsibility

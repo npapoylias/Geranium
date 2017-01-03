@@ -1,0 +1,20 @@
+{
+	"category" : "Parsec",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"example",
+		"ppJsonParser",
+		"ppJsonMemoParser",
+		"ppcJsonParser",
+		"ppcJsonMemoParser",
+		"totJsonParser" ],
+	"name" : "ParsecBenchMarks",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"category" : "Parsec",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"array",
+		"currentSize",
+		"totalSize" ],
+	"name" : "ParsecCollection",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

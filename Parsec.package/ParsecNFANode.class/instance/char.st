@@ -1,0 +1,6 @@
+initialization
+char
+
+	^ char
+
+	

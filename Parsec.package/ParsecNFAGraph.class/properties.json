@@ -1,0 +1,15 @@
+{
+	"category" : "Parsec-Lexing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"startNode",
+		"endNode" ],
+	"name" : "ParsecNFAGraph",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"category" : "Parsec",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"chartIndex",
+		"stateIndex",
+		"logging" ],
+	"name" : "ParsecCharts",
+	"pools" : [
+		 ],
+	"super" : "ParsecCollection",
+	"type" : "normal" }
