@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfParsec",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfParsec",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
