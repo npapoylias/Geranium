@@ -1,18 +1,16 @@
-
 SmalltalkCISpec {
   #loading : [
   	SCIMetacelloLoadSpec {
-  	#configuration : 'TotParser',
+  	#baseline : 'Parsec',
   	#directory : './',
   	#onWarningLog : true,
   	#load : [ 'default' ],
   	#platforms : [ #pharo ],
-	#version: '0.1-baseline'
   }
   ],
   #testing : {
   #coverage : {
-    #categories : ['TotParser-*']
+    #categories : ['Parsec-*']
   }
   }
 }
