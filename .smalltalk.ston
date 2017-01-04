@@ -1,11 +1,9 @@
 SmalltalkCISpec {
   #loading : [
   	SCIMetacelloLoadSpec {
-  	#baseline : 'Parsec',
-  	#directory : './',
-  	#onWarningLog : true,
-  	#load : [ 'default' ],
-  	#platforms : [ #pharo ]
+        #baseline : 'Parsec',
+        #directory : './',
+        #platforms : [ #pharo ]
   }
   ],
   #testing : {
