@@ -1,4 +1,0 @@
-accessing
-toNFA
-
-	self subclassResponsibility

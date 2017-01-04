@@ -1,4 +1,0 @@
-ops
-and
-
-	isAnd := true

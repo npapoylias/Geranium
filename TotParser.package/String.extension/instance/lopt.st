@@ -1,4 +1,0 @@
-*TotParser
-lopt
-
- ^ '(' , self , ')?'

@@ -1,4 +1,0 @@
-*TotParser
-lplus
-
- ^ '(' , self , ')+'

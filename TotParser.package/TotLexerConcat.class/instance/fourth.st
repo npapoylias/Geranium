@@ -1,4 +1,0 @@
-accessing
-fourth
-
-	^ sequence fourth

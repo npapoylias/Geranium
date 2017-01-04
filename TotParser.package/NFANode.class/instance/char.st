@@ -1,6 +1,0 @@
-initialization
-char
-
-	^ char
-
-	

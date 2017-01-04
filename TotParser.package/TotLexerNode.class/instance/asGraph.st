@@ -1,4 +1,0 @@
-converting
-asGraph
-
-	^ self subclassResponsibility

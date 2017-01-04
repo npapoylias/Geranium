@@ -1,5 +1,0 @@
-initialization
-isEnd
-
-	^ out isEmpty
-	

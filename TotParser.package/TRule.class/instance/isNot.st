@@ -1,4 +1,0 @@
-ops
-isNot
-
-	^ isNot

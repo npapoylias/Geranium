@@ -1,4 +1,0 @@
-initialization
-check: aChar
-
-	^ true		

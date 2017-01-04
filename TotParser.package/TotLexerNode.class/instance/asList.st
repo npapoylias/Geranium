@@ -1,4 +1,0 @@
-converting
-asList
-
-	^ self subclassResponsibility

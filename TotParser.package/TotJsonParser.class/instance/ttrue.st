@@ -1,4 +1,0 @@
-accessing
-ttrue
-
-	^ ttrue --> 'true' 

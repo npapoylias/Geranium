@@ -1,4 +1,0 @@
-accessing
-isTerminal
-
-	^ false

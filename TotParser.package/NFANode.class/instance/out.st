@@ -1,5 +1,0 @@
-initialization
-out
-
-	^ out
-	

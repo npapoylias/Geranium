@@ -1,4 +1,0 @@
-ops
-not
-
-	isNot := true
