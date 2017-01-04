@@ -17,4 +17,4 @@ deploy:
   on:
     repo: npapoylias/parsec
     tags: true
-    branches: release
+    #branches: release
