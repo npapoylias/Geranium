@@ -16,5 +16,5 @@ deploy:
   skip_cleanup: true
   on:
     repo: npapoylias/parsec
-    #tags: true
-    branches: release
+    tags: true 
+    #branches: release
