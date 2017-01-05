@@ -1,0 +1,4 @@
+accessing
+firsts
+
+	^ { self name }

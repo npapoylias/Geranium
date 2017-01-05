@@ -14,7 +14,8 @@
 		"isAnd",
 		"isNot",
 		"iregExpr",
-		"directRefs" ],
+		"directRefs",
+		"firsts" ],
 	"name" : "ParsecRule",
 	"pools" : [
 		 ],
