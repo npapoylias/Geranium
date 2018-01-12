@@ -14,5 +14,5 @@ unzip sources.zip
 wget http://files.pharo.org/get-files/60/pharo-linux-stable.zip
 unzip pharo-linux-stable.zip
 chmod a+x ./pharo
-./pharo -vm-display-null moose-6.1.image eval --save "Gofer it repository: (MCFileTreeRepository new directory: FileLocator imageDirectory); package: 'Geranium'; load."
+./pharo -vm-display-null moose-6.1.image eval --save "Gofer it repository: (MCFileTreeRepository new directory: FileLocator imageDirectory); package: 'Geranium'; load. Gofer it repository: (MCFileTreeRepository new directory: FileLocator imageDirectory); package: 'Geranium-UI'; load. Gofer it repository: (MCFileTreeRepository new directory: FileLocator imageDirectory); package: 'Geranium-Simulator'; load. Gofer it repository: (MCFileTreeRepository new directory: FileLocator imageDirectory); package: 'Geranium-Tests'; load."
 ./pharo -vm-display-null moose-6.1.image test --fail-on-failure  "Geranium"
