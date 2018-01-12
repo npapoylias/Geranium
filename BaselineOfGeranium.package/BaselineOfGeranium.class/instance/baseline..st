@@ -5,5 +5,6 @@ baseline: spec
 
 	spec for: #common do: [ spec
 		package: 'Geranium';
-		package: 'Geranium-UI'
+		package: 'Geranium-UI';
+		package: 'Geranium-Tests'
 	]
