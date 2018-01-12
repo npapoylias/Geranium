@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "BaselineOf",
 	"category" : "BaselineOfGeranium",
 	"classinstvars" : [ ],
 	"pools" : [ ],
