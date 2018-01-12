@@ -1,0 +1,18 @@
+apt-get -qq update
+apt-get -y install wget
+apt-get -y install unzip
+dpkg --add-architecture i386 
+apt-get update 
+apt-get -y install libx11-6:i386 
+apt-get -y install libgl1-mesa-glx:i386 
+apt-get -y install libfontconfig1:i386 
+apt-get -y install libssl1.0.0:i386 
+wget https://ci.inria.fr/moose/job/moose-6.1/lastSuccessfulBuild/artifact/moose-6.1.zip
+unzip moose-6.1.zip
+wget http://files.pharo.org/get-files/60/sources.zip
+unzip sources.zip
+wget http://files.pharo.org/get-files/60/pharo-linux-stable.zip
+unzip pharo-linux-stable.zip
+chmod a+x ./pharo
+./pharo -vm-display-null moose-6.1.image eval --save "Gofer it repository: (MCFileTreeRepository new directory: FileLocator imageDirectory); package: 'Geranium'; load."
+./pharo -vm-display-null moose-6.1.image test --fail-on-failure  "Geranium"
