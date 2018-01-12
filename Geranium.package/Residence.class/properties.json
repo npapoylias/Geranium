@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Geranium",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"location",
+		"consumptionProfile",
+		"exposure",
+		"occupants",
+		"surface"
+	],
+	"name" : "Residence",
+	"type" : "normal"
+}

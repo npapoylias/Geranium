@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Geranium",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"minimum",
+		"maximum"
+	],
+	"name" : "DPEConsumptionCategory",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GeoRegion",
+	"category" : "Geranium",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Prefecture",
+	"type" : "normal"
+}

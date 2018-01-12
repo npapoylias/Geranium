@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GeoRegion",
+	"category" : "Geranium",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"buildings"
+	],
+	"name" : "AreaOfInterest",
+	"type" : "normal"
+}

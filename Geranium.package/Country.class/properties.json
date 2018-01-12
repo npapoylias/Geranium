@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "GeoRegion",
+	"category" : "Geranium",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"seasonalConsumptionProfile",
+		"dailyConsumptionProfile"
+	],
+	"name" : "Country",
+	"type" : "normal"
+}

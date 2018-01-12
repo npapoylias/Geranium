@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Geranium",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"belongsTo",
+		"coordinates",
+		"population",
+		"climateProfile"
+	],
+	"name" : "GeoRegion",
+	"type" : "normal"
+}

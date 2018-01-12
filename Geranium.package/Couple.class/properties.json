@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Occupants",
+	"category" : "Geranium",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Couple",
+	"type" : "normal"
+}

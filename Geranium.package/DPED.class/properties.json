@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DPEConsumptionCategory",
+	"category" : "Geranium",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DPED",
+	"type" : "normal"
+}

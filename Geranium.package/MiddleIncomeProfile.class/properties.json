@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "IncomeProfile",
+	"category" : "Geranium",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MiddleIncomeProfile",
+	"type" : "normal"
+}

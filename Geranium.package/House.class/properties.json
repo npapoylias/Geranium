@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Residence",
+	"category" : "Geranium",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "House",
+	"type" : "normal"
+}
