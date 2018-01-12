@@ -1,0 +1,14 @@
+SmalltalkCISpec {
+  #loading : [
+  	SCIMetacelloLoadSpec {
+        #baseline : 'Geranium',
+        #directory : './',
+        #platforms : [ #pharo ]
+  }
+  ],
+  #testing : {
+  #coverage : {
+    #categories : ['Geranium-*']
+  }
+  }
+}
