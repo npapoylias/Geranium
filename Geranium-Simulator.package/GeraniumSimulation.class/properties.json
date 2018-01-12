@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Geranium-Simulator",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"inputScenario",
+		"weightProfile",
+		"outputData"
+	],
+	"name" : "GeraniumSimulation",
+	"type" : "normal"
+}
