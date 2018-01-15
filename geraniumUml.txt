@@ -1,0 +1,84 @@
+@startuml
+class GeoRegion {
+	#coordinates
+	#populationSize
+}
+
+GeoRegion --> "1" GeoRegion: "belongsTo" 
+GeoRegion --> "1" ClimateProfile: "climateProfile"
+AreaOfInterest --|> GeoRegion
+AreaOfInterest "1\nbelongsTo" *-- "1..*\nbuildings" Building
+Country --|> GeoRegion
+Country --> "1" SeasonalConsumptionProfile: seasonalProfile
+Country --> "1" DailyConsumptionProfile: dailyProfile
+Prefecture --|> GeoRegion
+
+ClimateProfile --> "1" Temperature: tempereature
+ClimateProfile --> "1" Humidity: humidity
+Temperature --|> ClimateMetric
+Humidity --|> ClimateMetric
+SeasonalConsumptionProfile --|> ConsumptionProfile
+DailyConsumptionProfile --|> ConsumptionProfile
+MicroClimateProfile --|> ClimateProfile
+
+abstract class Building{
+	#coordinates
+	+step()
+	..
+	Step as subclass responsibility
+}
+
+abstract class Residence {
+	#surface
+	#exposure
+	+step() 
+	..
+	Step taking into account
+	daily 
+	and seasonal profiles, 
+	exposure, 
+	surface, 
+	number of occupants, 
+	income profile, 
+	temperature 
+	and humidity
+}
+
+class Appartment{
+	#locationWithinBlock
+}
+
+class AppartmentBlock{
+	#dimensions
+	+step() 
+	..
+	Step as sum of the 
+	contained appartments
+}
+
+AppartmentBlock --|> Building
+Residence --|> Building
+Residence --> "1" DPEConsumptionProfile: consumptionProfile
+Residence o-- "1..*" Occupants: occupants
+Appartment --|> Residence
+House --|> Residence
+AppartmentBlock o-- "2..*" Appartment: appartments
+
+class DPEConsumptionProfile{
+	#minimum
+	#maximum
+}
+
+DPEConsumptionProfile --|> ConsumptionProfile
+class "DPEA..G" as DPECat
+DPECat --|> DPEConsumptionProfile
+
+Occupants --> "1" IncomeProfile: income
+Couple --|> Occupants
+Family --|> Occupants
+SingleAdult --|> Occupants
+
+HighIncomeProfile --|> IncomeProfile
+MiddleIncomeProfile --|> IncomeProfile
+LowIncomeProfile --|> IncomeProfile
+@enduml

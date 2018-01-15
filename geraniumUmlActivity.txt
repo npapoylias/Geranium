@@ -1,0 +1,36 @@
+@startuml
+start
+note right
+In a less algorithmic representation:
+<latex>C_{hour}=(\overline{D_{pe}}+\sum_{i=1}^n w_i*r_{D_{pe}}/2)*S_{total}</latex>
+end note
+:Retrieve the __avg(consumption)=(max(dpe)+min(dpe))/2__
+per day, per square meter of your DPE Category (i.e. the midpoint of
+the DPE interval)<
+:Retrieve the __allowed(flunctuation)=(max(dpe)-min(dpe))/2__
+of your DPE Category (i.e. a half radius of the DPE
+interval)<
+:Retrieve the __set of weight__ functions describing the 
+effect on consumption of the season, hour, 
+exposure, number of occupants, income profile, 
+temperature and humidity (whose sum ranges from 
+-100% to 100% (i.e -1.0 to 1.0))<
+:Adjust  your consumption by 
+weight(__season__)*allowed(flunctuation)>
+:Adjust your consumption by 
+weight(__hour__)*allowed(flunctuation)>
+:Adjust your consumption by
+weight(__exposure__)*allowed(flunctuation)>
+:Adjust your consumption by
+weight(__occupants__)*allowed(flunctuation)>
+:Adjust your consumption by
+weight(__incomeProfile__)*allowed(flunctuation)>
+:Adjust your consumption by
+weight(__temperature__)*allowed(flunctuation)>
+:Adjust your consumption by
+weight(__humidity__)*allowed(flunctuation)>
+:Multiply the result
+by the __total__ surface
+of the residence}
+stop
+@enduml
