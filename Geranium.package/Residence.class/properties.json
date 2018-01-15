@@ -1,12 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "Building",
 	"category" : "Geranium",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"location",
 		"consumptionProfile",
 		"exposure",
 		"occupants",

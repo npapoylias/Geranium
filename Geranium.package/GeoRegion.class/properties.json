@@ -8,7 +8,7 @@
 	"instvars" : [
 		"belongsTo",
 		"coordinates",
-		"population",
+		"populationSize",
 		"climateProfile"
 	],
 	"name" : "GeoRegion",

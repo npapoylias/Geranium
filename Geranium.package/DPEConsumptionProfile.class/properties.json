@@ -1,11 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "DPEConsumptionProfile",
+	"super" : "ConsumptionProfile",
 	"category" : "Geranium",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "DPEE",
+	"instvars" : [
+		"minimum",
+		"maximum"
+	],
+	"name" : "DPEConsumptionProfile",
 	"type" : "normal"
 }

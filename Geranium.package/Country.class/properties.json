@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"seasonalConsumptionProfile",
-		"dailyConsumptionProfile"
+		"seasonalProfile",
+		"dailyProfile"
 	],
 	"name" : "Country",
 	"type" : "normal"

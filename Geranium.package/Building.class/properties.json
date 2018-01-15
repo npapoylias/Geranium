@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"minimum",
-		"maximum"
+		"coordinates",
+		"belongsTo"
 	],
-	"name" : "DPEConsumptionCategory",
+	"name" : "Building",
 	"type" : "normal"
 }

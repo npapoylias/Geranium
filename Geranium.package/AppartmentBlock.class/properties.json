@@ -1,12 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "Building",
 	"category" : "Geranium",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"appartments"
+		"appartments",
+		"dimensions"
 	],
 	"name" : "AppartmentBlock",
 	"type" : "normal"
