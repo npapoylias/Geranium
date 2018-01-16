@@ -1,25 +1,20 @@
 @startuml
-class GeoRegion {
-	#coordinates
-	#populationSize
-}
-
 GeoRegion --> "1" GeoRegion: "belongsTo" 
-GeoRegion --> "1" ClimateProfile: "climateProfile"
+GeoRegion --> "1" ClimateData: "climateData"
 AreaOfInterest --|> GeoRegion
 AreaOfInterest "1\nbelongsTo" *-- "1..*\nbuildings" Building
 Country --|> GeoRegion
-Country --> "1" SeasonalConsumptionProfile: seasonalProfile
-Country --> "1" DailyConsumptionProfile: dailyProfile
+Country --> "1" SeasonalConsumptionTrends: seasonalData
+Country --> "1" DailyConsumptionTrends: dailyData
 Prefecture --|> GeoRegion
 
-ClimateProfile --> "1" Temperature: tempereature
-ClimateProfile --> "1" Humidity: humidity
+ClimateData --> "1" Temperature: tempereature
+ClimateData --> "1" Humidity: humidity
 Temperature --|> ClimateMetric
 Humidity --|> ClimateMetric
-SeasonalConsumptionProfile --|> ConsumptionProfile
-DailyConsumptionProfile --|> ConsumptionProfile
-MicroClimateProfile --|> ClimateProfile
+SeasonalConsumptionTrends --|> ConsumptionCharacteristic
+DailyConsumptionTrends --|> ConsumptionCharacteristic
+MicroClimateData --|> ClimateData
 
 abstract class Building{
 	#coordinates
@@ -35,7 +30,7 @@ abstract class Residence {
 	..
 	Step taking into account
 	daily 
-	and seasonal profiles, 
+	and seasonal trends, 
 	exposure, 
 	surface, 
 	number of occupants, 
@@ -58,27 +53,27 @@ class AppartmentBlock{
 
 AppartmentBlock --|> Building
 Residence --|> Building
-Residence --> "1" DPEConsumptionProfile: consumptionProfile
+Residence --> "1" DPEConsumptionCategory: consumptionCategory
 Residence o-- "1..*" Occupants: occupants
 Appartment --|> Residence
 House --|> Residence
 AppartmentBlock o-- "2..*" Appartment: appartments
 
-class DPEConsumptionProfile{
+class DPEConsumptionCategory{
 	#minimum
 	#maximum
 }
 
-DPEConsumptionProfile --|> ConsumptionProfile
+DPEConsumptionCategory --|> ConsumptionCharacteristic
 class "DPEA..G" as DPECat
-DPECat --|> DPEConsumptionProfile
+DPECat --|> DPEConsumptionCategory
 
-Occupants --> "1" IncomeProfile: income
+Occupants --> "1" Income: income
 Couple --|> Occupants
 Family --|> Occupants
 SingleAdult --|> Occupants
 
-HighIncomeProfile --|> IncomeProfile
-MiddleIncomeProfile --|> IncomeProfile
-LowIncomeProfile --|> IncomeProfile
+HighIncome --|> Income
+MiddleIncome --|> Income
+LowIncome --|> Income
 @enduml
