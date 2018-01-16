@@ -1,0 +1,75 @@
+@startuml
+class AreaOfInterest{
+	#coordinates
+	#populationSize
+	#consumptionTrendsOfCountry
+}
+
+AreaOfInterest --> "1" MicroClimateData: "climateData"
+AreaOfInterest "1\nbelongsTo" *-- "1..*\nbuildings" Building
+
+class MicroClimateData{
+	#temperature
+	#humidity
+}
+
+abstract class Building{
+	#coordinates
+	+step()
+	..
+	Step as subclass responsibility
+}
+
+abstract class Residence {
+	#surface
+	#exposure
+	+step() 
+	..
+	Step taking into account
+	daily 
+	and seasonal trends, 
+	exposure, 
+	surface, 
+	number of occupants, 
+	income profile, 
+	temperature 
+	and humidity
+}
+
+class Appartment{
+	#locationWithinBlock
+}
+
+class AppartmentBlock{
+	#dimensions
+	+step() 
+	..
+	Step as sum of the 
+	contained appartments
+}
+
+AppartmentBlock --|> Building
+Residence --|> Building
+Residence --> "1" DPEConsumptionCategory: consumptionCategory
+Residence o-- "1..*" Occupants: occupants
+Appartment --|> Residence
+House --|> Residence
+AppartmentBlock o-- "2..*" Appartment: appartments
+
+class DPEConsumptionCategory{
+	#minimum
+	#maximum
+}
+
+class "DPEA..G" as DPECat
+DPECat --|> DPEConsumptionCategory
+
+Occupants --> "1" Income: income
+Couple --|> Occupants
+Family --|> Occupants
+SingleAdult --|> Occupants
+
+HighIncome --|> Income
+MiddleIncome --|> Income
+LowIncome --|> Income
+@enduml
