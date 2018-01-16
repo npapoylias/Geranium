@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "GeraniumScenario",
+	"super" : "Object",
 	"category" : "Geranium-Simulator",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"generalProfiles"
+		"percentage"
 	],
-	"name" : "GeraniumStatisticalScenario",
+	"name" : "GeneralProfile",
 	"type" : "normal"
 }

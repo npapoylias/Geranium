@@ -1,11 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "ConsumptionProfile",
+	"super" : "Object",
 	"category" : "Geranium",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "SeasonalConsumptionProfile",
+	"instvars" : [
+		"temperature",
+		"humidity"
+	],
+	"name" : "ClimateData",
 	"type" : "normal"
 }

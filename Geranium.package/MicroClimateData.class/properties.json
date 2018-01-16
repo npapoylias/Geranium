@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "IncomeProfile",
+	"super" : "ClimateData",
 	"category" : "Geranium",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "HighIncomeProfile",
+	"name" : "MicroClimateData",
 	"type" : "normal"
 }

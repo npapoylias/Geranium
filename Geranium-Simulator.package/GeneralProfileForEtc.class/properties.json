@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "ClimateProfile",
-	"category" : "Geranium",
+	"super" : "GeneralProfile",
+	"category" : "Geranium-Simulator",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "MicroClimateProfile",
+	"name" : "GeneralProfileForEtc",
 	"type" : "normal"
 }

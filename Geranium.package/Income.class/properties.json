@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "ConsumptionProfile",
+	"super" : "Object",
 	"category" : "Geranium",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DailyConsumptionProfile",
+	"name" : "Income",
 	"type" : "normal"
 }

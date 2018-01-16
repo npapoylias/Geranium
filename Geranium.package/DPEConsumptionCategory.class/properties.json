@@ -1,11 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "DPEConsumptionCategory",
+	"super" : "ConsumptionCharacteristic",
 	"category" : "Geranium",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "DPEC",
+	"instvars" : [
+		"minimum",
+		"maximum"
+	],
+	"name" : "DPEConsumptionCategory",
 	"type" : "normal"
 }

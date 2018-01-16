@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "IncomeProfile",
+	"super" : "Income",
 	"category" : "Geranium",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "MiddleIncomeProfile",
+	"name" : "HighIncome",
 	"type" : "normal"
 }

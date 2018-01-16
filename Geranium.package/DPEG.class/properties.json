@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "DPEConsumptionProfile",
+	"super" : "DPEConsumptionCategory",
 	"category" : "Geranium",
 	"classinstvars" : [ ],
 	"pools" : [ ],

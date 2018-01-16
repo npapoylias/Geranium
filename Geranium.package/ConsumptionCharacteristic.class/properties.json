@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "IncomeProfile",
+	"name" : "ConsumptionCharacteristic",
 	"type" : "normal"
 }
