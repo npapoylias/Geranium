@@ -8,7 +8,7 @@ baseline: spec
 			configuration: 'NeoJson' with: [ 
 				spec
 					versionString: #stable;
-					repository: 'https://github.com/svenvc/NeoJSON' ];
+					repository: 'http://mc.stfx.eu/Neo' ];
 				yourself.
 		spec
 			package: 'Geranium';
