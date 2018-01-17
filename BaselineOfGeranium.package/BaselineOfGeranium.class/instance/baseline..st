@@ -5,7 +5,7 @@ baseline: spec
 
 	spec for: #common do: [ 
 		spec
-			configuration: 'NeoJson' with: [ 
+			configuration: 'NeoJSON' with: [ 
 				spec
 					versionString: #stable;
 					repository: 'http://mc.stfx.eu/Neo/' ];
