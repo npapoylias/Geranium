@@ -2,7 +2,7 @@
 start
 note right
 In a less algorithmic representation:
-<latex>C_{hour}=(\overline{D_{pe}}+\sum_{i=1}^n w_i*r_{D_{pe}}/2)*S_{total}</latex>
+<latex>C_{hour}(p_i)=(\overline{D_{pe}}+\frac{r_{D_{pe}}}{2}*\sum_{i=1}^n w_i(p_i))*S_{total}</latex>
 end note
 :Retrieve the __avg(consumption)=(max(dpe)+min(dpe))/2__
 per day, per square meter of your DPE Category (i.e. the midpoint of
