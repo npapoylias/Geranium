@@ -1,4 +1,4 @@
 asserting
 test
 
-	self assert: true
+	self assert: true 
