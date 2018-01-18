@@ -1,14 +1,16 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Geranium-Simulator",
+	"category" : "Geranium-Scenarios",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"inputScenario",
-		"outputData"
+		"buildings",
+		"climateProfile",
+		"trendsProfile",
+		"weightsProfile"
 	],
-	"name" : "GeraniumSimulation",
+	"name" : "Scenario",
 	"type" : "normal"
 }

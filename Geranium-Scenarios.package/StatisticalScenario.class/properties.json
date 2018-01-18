@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Scenario",
+	"category" : "Geranium-Scenarios",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"urbanProfiles",
+		"profileIdToPercentages"
+	],
+	"name" : "StatisticalScenario",
+	"type" : "normal"
+}

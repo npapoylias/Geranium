@@ -12,6 +12,7 @@ baseline: spec
 				yourself.
 		spec
 			package: 'Geranium';
+			package: 'Geranium-Scenarios';
 			package: 'Geranium-UI';
 			package: 'Geranium-Tests';
 			package: 'Geranium-Simulator'
