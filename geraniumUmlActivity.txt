@@ -14,7 +14,9 @@ interval)<
 effect on consumption of the season, hour, 
 exposure, number of occupants, income profile, 
 temperature and humidity (whose sum ranges from 
--100% to 100% (i.e -1.0 to 1.0))<
+-100% to 100% (i.e -1.0 to 1.0), in ranges greater
+than that we model ~~"jumps"~~ between categories which
+may prove to be more reallistic)<
 :Adjust  your consumption by 
 weight(__season__)*allowed(flunctuation)>
 :Adjust your consumption by 
