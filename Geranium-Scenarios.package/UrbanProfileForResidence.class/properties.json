@@ -1,13 +1,17 @@
 {
 	"commentStamp" : "",
-	"super" : "Scenario",
+	"super" : "UrbanProfile",
 	"category" : "Geranium-Scenarios",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"urbanProfilesToPercentages"
+		"surface",
+		"exposure",
+		"occupantClass",
+		"income",
+		"numberOfChildren"
 	],
-	"name" : "StatisticalScenario",
+	"name" : "UrbanProfileForResidence",
 	"type" : "normal"
 }

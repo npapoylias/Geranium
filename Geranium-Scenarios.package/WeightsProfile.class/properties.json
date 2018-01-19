@@ -5,7 +5,15 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"season",
+		"hour",
+		"exposure",
+		"occupants",
+		"income",
+		"temperature",
+		"humidity"
+	],
 	"name" : "WeightsProfile",
 	"type" : "normal"
 }

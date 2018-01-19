@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"temperatureSeries",
+		"humiditySeries"
+	],
 	"name" : "ClimateProfile",
 	"type" : "normal"
 }

@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "Scenario",
+	"super" : "UrbanProfile",
 	"category" : "Geranium-Scenarios",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"urbanProfilesToPercentages"
+		"dimensions",
+		"appartmentProfilesToPercentages"
 	],
-	"name" : "StatisticalScenario",
+	"name" : "UrbanProfileForAppartmentBlocks",
 	"type" : "normal"
 }
