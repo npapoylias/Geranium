@@ -11,14 +11,16 @@ the DPE interval)<
 of your DPE Category (i.e. a half radius of the DPE
 interval)<
 :Retrieve the __set of weight__ functions describing the 
-effect on consumption of the season, hour, 
-exposure, number of occupants, income profile, 
-temperature and humidity (whose sum ranges from 
--100% to 100% (i.e -1.0 to 1.0), in ranges greater
+effect on consumption of the season, day, hour, 
+exposure, number of occupants, income profile,
+ownership, awareness, temperature and humidity (whose 
+sum ranges from -100% to 100% (i.e -1.0 to 1.0), in ranges greater
 than that we model ~~"jumps"~~ between categories which
 may prove to be more reallistic)<
 :Adjust  your consumption by 
 weight(__season__)*allowed(flunctuation)>
+:Adjust your consumption by 
+weight(__day__)*allowed(flunctuation)>
 :Adjust your consumption by 
 weight(__hour__)*allowed(flunctuation)>
 :Adjust your consumption by
@@ -27,6 +29,10 @@ weight(__exposure__)*allowed(flunctuation)>
 weight(__occupants__)*allowed(flunctuation)>
 :Adjust your consumption by
 weight(__incomeProfile__)*allowed(flunctuation)>
+:Adjust your consumption by
+weight(__awareness__)*allowed(flunctuation)>
+:Adjust your consumption by
+weight(__ownership__)*allowed(flunctuation)>
 :Adjust your consumption by
 weight(__temperature__)*allowed(flunctuation)>
 :Adjust your consumption by

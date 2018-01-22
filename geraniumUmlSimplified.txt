@@ -26,12 +26,14 @@ abstract class Residence {
 	+step() 
 	..
 	Step taking into account
-	daily 
+	daily, hourly 
 	and seasonal trends, 
 	exposure, 
 	surface, 
 	number of occupants, 
-	income profile, 
+	income profile,
+	consumption awareness,
+	ownership, 
 	temperature 
 	and humidity
 }
@@ -64,7 +66,14 @@ class DPEConsumptionCategory{
 class "DPEA..G" as DPECat
 DPECat --|> DPEConsumptionCategory
 
+class Occupants{
+	#owningResidence
+}
+
 Occupants --> "1" Income: income
+Occupants --> "1" ConsumptionAwareness: awareness
+ConsumptionAware --|> ConsumptionAwareness
+ConsumptionUnaware --|> ConsumptionAwareness
 Couple --|> Occupants
 Family --|> Occupants
 SingleAdult --|> Occupants

@@ -6,6 +6,7 @@ AreaOfInterest "1\nbelongsTo" *-- "1..*\nbuildings" Building
 Country --|> GeoRegion
 Country --> "1" SeasonalConsumptionTrends: seasonalData
 Country --> "1" DailyConsumptionTrends: dailyData
+Country --> "1" HourlyConsumptionTrends: hourlyData
 Prefecture --|> GeoRegion
 
 ClimateData --> "1" Temperature: tempereature
@@ -14,6 +15,7 @@ Temperature --|> ClimateMetric
 Humidity --|> ClimateMetric
 SeasonalConsumptionTrends --|> ConsumptionCharacteristic
 DailyConsumptionTrends --|> ConsumptionCharacteristic
+HourlyConsumptionTrends --|> ConsumptionCharacteristic
 MicroClimateData --|> ClimateData
 
 abstract class Building{
@@ -29,12 +31,14 @@ abstract class Residence {
 	+step() 
 	..
 	Step taking into account
-	daily 
+	daily, hourly 
 	and seasonal trends, 
 	exposure, 
 	surface, 
 	number of occupants, 
-	income profile, 
+	income profile,
+	consumption awareness,
+	ownership, 
 	temperature 
 	and humidity
 }
@@ -68,7 +72,14 @@ DPEConsumptionCategory --|> ConsumptionCharacteristic
 class "DPEA..G" as DPECat
 DPECat --|> DPEConsumptionCategory
 
+class Occupants{
+	#owningResidence
+}
+
 Occupants --> "1" Income: income
+Occupants --> "1" ConsumptionAwareness: awareness
+ConsumptionAware --|> ConsumptionAwareness
+ConsumptionUnaware --|> ConsumptionAwareness
 Couple --|> Occupants
 Family --|> Occupants
 SingleAdult --|> Occupants
