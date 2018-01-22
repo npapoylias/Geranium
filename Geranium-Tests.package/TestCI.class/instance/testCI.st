@@ -1,4 +1,4 @@
 asserting
 testCI 
 
-	self assert: true
+	self assert: true 
