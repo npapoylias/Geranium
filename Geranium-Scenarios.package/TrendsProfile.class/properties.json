@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"seasonalCountryTrends",
-		"dailyCountryTrends"
+		"dailyCountryTrends",
+		"hourlyCountryTrends"
 	],
 	"name" : "TrendsProfile",
 	"type" : "normal"

@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"income"
+		"income",
+		"owningResidence",
+		"consumptionAwareness"
 	],
 	"name" : "Occupants",
 	"type" : "normal"

@@ -1,15 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "GeoRegion",
+	"super" : "ConsumptionAwareness",
 	"category" : "Geranium",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"seasonalProfile",
-		"dailyProfile",
-		"hourlyProfile"
-	],
-	"name" : "Country",
+	"instvars" : [ ],
+	"name" : "ConsumptionAware",
 	"type" : "normal"
 }

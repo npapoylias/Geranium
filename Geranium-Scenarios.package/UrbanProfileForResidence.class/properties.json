@@ -10,6 +10,8 @@
 		"exposure",
 		"occupantClass",
 		"income",
+		"awareness",
+		"ownership",
 		"numberOfChildren"
 	],
 	"name" : "UrbanProfileForResidence",
