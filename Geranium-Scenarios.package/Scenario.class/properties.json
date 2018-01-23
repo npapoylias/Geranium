@@ -1,17 +1,21 @@
 {
-	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "Geranium-Scenarios",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "TNamedRegistryInstances classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"coordinates",
-		"buildings",
+		"totalNumberOfBuildings",
 		"climateProfile",
 		"trendsProfile",
 		"weightsProfile"
 	],
 	"name" : "Scenario",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "TNamedRegistryInstances",
+	"type" : "normal",
+	"classinstvars" : [
+		"registry"
+	],
+	"pools" : [ ],
+	"category" : "Geranium-Scenarios"
 }

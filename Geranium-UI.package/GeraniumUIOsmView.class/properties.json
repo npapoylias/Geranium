@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "GeraniumOsmService",
 	"category" : "Geranium-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],

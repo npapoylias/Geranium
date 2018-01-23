@@ -1,13 +1,13 @@
 {
+	"classtraitcomposition" : "TNamedRegistryInstances classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Profile",
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Geranium-Scenarios",
+	"traitcomposition" : "TNamedRegistryInstances",
+	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [
-		"profileId"
-	],
-	"name" : "Profile",
-	"type" : "normal"
+	"category" : "Geranium-Scenarios"
 }
