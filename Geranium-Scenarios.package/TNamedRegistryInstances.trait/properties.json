@@ -1,5 +1,7 @@
 {
-	"name" : "TNamedRegistryInstances",
 	"commentStamp" : "",
-	"category" : "Geranium-Scenarios"
+	"traitcomposition" : "TInstanceProperties",
+	"classtraitcomposition" : "TInstanceProperties classTrait",
+	"category" : "Geranium-Scenarios",
+	"name" : "TNamedRegistryInstances"
 }

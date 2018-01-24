@@ -1,7 +1,8 @@
 tests
 ScenarioB
 
-	StatisticalScenario new: #ScenarioB extending: #ScenarioA;
+	StatisticalScenario new 
+		named: #ScenarioB extending: #ScenarioA;
 		totalNumberOfBuildings: 1000;
 		residencePercentages:{  
 			0.2 -> #AppartmentBlockTypeA.
