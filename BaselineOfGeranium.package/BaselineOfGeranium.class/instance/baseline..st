@@ -14,6 +14,7 @@ baseline: spec
 				spec version: #stable; 
 				repository: 'http://smalltalkhub.com/mc/PolyMath/PolyMath/main']; 
 			package: 'Geranium';
+			package: 'Geranium-Distributions';
 			package: 'Geranium-Scenarios';
 			package: 'Geranium-UI';
 			package: 'Geranium-Tests';
