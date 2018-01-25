@@ -1,3 +1,4 @@
 accessing
 temperatureSeries
-	^ temperatureSeries
+
+	^ temperatureSeries ifNil: [ self computeYearlyTemperatureSeries ]

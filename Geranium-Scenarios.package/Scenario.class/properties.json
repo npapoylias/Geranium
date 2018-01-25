@@ -6,7 +6,8 @@
 		"totalNumberOfBuildings",
 		"climateProfile",
 		"trendsProfile",
-		"weightsProfile"
+		"weightsProfile",
+		"years"
 	],
 	"name" : "Scenario",
 	"commentStamp" : "",

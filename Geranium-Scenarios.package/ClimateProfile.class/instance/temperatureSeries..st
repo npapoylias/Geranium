@@ -1,3 +1,6 @@
 accessing
-temperatureSeries: anObject
-	temperatureSeries := anObject
+temperatureSeries: aCollection
+
+	^ temperatureSeries 
+			ifNil: [ temperatureSeries := aCollection ]
+			ifNotNil: [ temperatureSeries addAll: aCollection; yourself ]

@@ -1,3 +1,6 @@
 accessing
-humiditySeries: anObject
-	humiditySeries := anObject
+humiditySeries: aCollection
+	
+	humiditySeries 
+		ifNil: [ humiditySeries := aCollection ]
+		ifNotNil: [ humiditySeries addAll: aCollection ]

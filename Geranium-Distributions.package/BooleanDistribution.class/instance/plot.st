@@ -1,5 +1,5 @@
-accessing
-temperaturePlot
+instance creation
+plot
 
 	| b ds |
 	
@@ -7,7 +7,7 @@ temperaturePlot
 	b extent: 300 @ 200.
 	ds := RTData new.
 		ds noDot.
-		ds points: self temperatureSeries.
+		ds points: ((1 to: 1000) collect: [:i | self numericalNext]).
 		ds connectColor: Color red.
 		b add: ds.
 	b

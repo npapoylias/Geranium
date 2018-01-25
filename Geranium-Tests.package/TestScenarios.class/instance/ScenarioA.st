@@ -12,4 +12,5 @@ ScenarioA
 			#HouseTypeA -> 0.8};
 		climateProfile: #AverageMetricsDistribution;
 		trendsProfile: #FrenchConsumptionTrends;
-		weightsProfile: #UrbanClimateHypothesisA.
+		weightsProfile: #UrbanClimateHypothesisA;
+		years: 1.
