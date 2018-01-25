@@ -10,3 +10,9 @@ testStats
 	[ 0.0 -> 10 ] asRangedDistribution plot.
 	5 asRangedDistribution plot.
 	5.0 asRangedDistribution plot.
+	(true % 90) plot.
+	(false % 90) plot.
+	ClimateProfile new 
+		medianTemperature: (20.0 ~ 3) | [0 -> 32]; 
+		seasonalTemperatureVariation: 3;
+		temperaturePlot.
