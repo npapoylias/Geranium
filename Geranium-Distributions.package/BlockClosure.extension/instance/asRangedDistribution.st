@@ -1,4 +1,4 @@
 *Geranium-Distributions
 asRangedDistribution
 
-	^ NormalRangedDistribution with: self
+	^ PMNumberGenerator with: self

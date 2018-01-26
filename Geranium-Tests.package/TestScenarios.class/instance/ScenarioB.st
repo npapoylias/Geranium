@@ -3,8 +3,10 @@ ScenarioB
 
 	StatisticalScenario new 
 		named: #ScenarioB extending: #ScenarioA;
-		totalNumberOfBuildings: 1000;
-		residencePercentages:{  
-			0.2 -> #AppartmentBlockTypeA.
-			0.2 -> #AppartmentBlockTypeB.
-			0.6 -> #HouseTypeA}.
+		totalNumberOfBuildings: [10 -> 100]; 
+		residencePercentages: {
+			#AppartmentBlockTypeA. 
+			#AppartmentBlockTypeB. 
+			#HouseTypeA
+		} % { 0.2 . 0.2 . 0.6 };
+		year: [ 1 -> 3 ].

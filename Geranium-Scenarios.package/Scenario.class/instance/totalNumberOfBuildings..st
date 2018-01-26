@@ -1,3 +1,4 @@
 accessing
 totalNumberOfBuildings: anObject
-	totalNumberOfBuildings := anObject
+
+	totalNumberOfBuildings := PMNumberGenerator with: anObject

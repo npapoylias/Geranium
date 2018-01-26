@@ -7,9 +7,10 @@ ScenarioA
 		-> (46.166851083597415 @ -1.1267745494842527);
 		totalNumberOfBuildings: #determinedByMap;
 		residencePercentages:{  
-			#AppartmentBlockTypeA -> 0.1.
-			#AppartmentBlockTypeB -> 0.1.
-			#HouseTypeA -> 0.8};
+			#AppartmentBlockTypeA.
+			#AppartmentBlockTypeB.
+			#HouseTypeA
+		} % { 0.1 . 0.1 . 0.8 }; 
 		climateProfile: #AverageMetricsDistribution;
 		trendsProfile: #FrenchConsumptionTrends;
 		weightsProfile: #UrbanClimateHypothesisA;

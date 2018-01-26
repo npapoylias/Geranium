@@ -2,7 +2,7 @@
 ~ aNumber
 	
 	^ ((self isInteger and: [ aNumber isInteger ])
-			ifTrue: [ IntegerRangedDistribution new ]
+			ifTrue: [ NormalIntegerRangedDistribution new ]
 			ifFalse: [ NormalRangedDistribution new ])
 				mean: self;
 				standardDeviation: aNumber;
