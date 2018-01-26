@@ -1,7 +1,12 @@
 {
 	"classtraitcomposition" : "TDistributionPlot classTrait",
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"categories",
+		"probabilities",
+		"booleanDistributionOfProbabilities",
+		"randomSamplingGenerator"
+	],
 	"name" : "CategoricalDistribution",
 	"commentStamp" : "",
 	"super" : "Object",
