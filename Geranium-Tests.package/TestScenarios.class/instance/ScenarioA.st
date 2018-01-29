@@ -11,7 +11,7 @@ ScenarioA
 			#AppartmentBlockTypeB.
 			#HouseTypeA
 		} % { 0.1 . 0.1 . 0.8 }; 
-		climateProfile: #AverageMetricsDistribution;
+		climateProfile: #UrbanClimateA;
 		trendsProfile: #FrenchConsumptionTrends;
-		weightsProfile: #UrbanClimateHypothesisA;
+		weightsProfile: #UrbanHypothesisA;
 		years: 1.

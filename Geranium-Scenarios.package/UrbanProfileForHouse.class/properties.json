@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "UrbanProfileForHouses",
+	"name" : "UrbanProfileForHouse",
 	"type" : "normal"
 }

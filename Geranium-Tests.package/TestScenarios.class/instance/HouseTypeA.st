@@ -1,14 +1,14 @@
 tests
 HouseTypeA
 
-	UrbanProfileForHouses new 
+	UrbanProfileForHouse new 
 		named: #HouseTypeA;
 		surface: [50.0 -> 80];
 		exposure: (5 ~ 1) | [0 -> 5]; 
-		occupantClass: Family; 
-		numberOfChildren: [1 -> 3];
+		occupantClass: Family; "{Family . Couple . SingleAdult} % {0.10 . 0.50 . 0.40};"
+		numberOfChildren: [1 -> 3]; "valid only for family"
 		income: (72000.0 ~ 10000) | [36000.0 -> 80000];
-		awareness: ConsumptionAware;
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.10 . 0.90};
 		ownership: true % 60 
 		
 		

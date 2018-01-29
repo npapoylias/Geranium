@@ -16,7 +16,7 @@ testScenarioExtention
 	self assert: s resolveClimateProfile class = ClimateProfile. 
 	self assert: s trendsProfile = #FrenchConsumptionTrends.
 	self assert: s resolveTrendsProfile class = TrendsProfile.
-	self assert: s weightsProfile = #UrbanClimateHypothesisA.
+	self assert: s weightsProfile = #UrbanClimateA.
 	self assert: s resolveWeightsProfile class = WeightsProfile.
 	self assert: s totalNumberOfBuildings = #determinedByMap. 
 	self assert: s resolveTotalNumberOfBuildings = 1000. "overriden"

@@ -1,7 +1,7 @@
 tests
-UrbanClimateHypothesisA
+UrbanClimateA
 
 	ClimateProfile new 
-		named: #UrbanClimateHypothesis; 
+		named: #UrbanClimateA; 
 		medianTemperature: (20.0 ~ 3) | [0 -> 32]; 
 		seasonalTemperatureVariation: 3
