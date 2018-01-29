@@ -7,7 +7,7 @@
 	],
 	"name" : "UniformRangedDistribution",
 	"commentStamp" : "",
-	"super" : "PMLinearCongruentialRandomGenerator",
+	"super" : "PMMarsagliaKissRandom",
 	"traitcomposition" : "TDistributionPlot",
 	"type" : "normal",
 	"classinstvars" : [ ],
