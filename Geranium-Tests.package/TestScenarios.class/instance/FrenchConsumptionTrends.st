@@ -17,12 +17,12 @@ FrenchConsumptionTrends
 			#Friday -> 0.9.
 			#Saturday -> 1.
 			#Sunday -> 1.
-		};
+		}; 
 		hourly: {  
-			#midnight -> { -1 . -1 . -1 . -1 . -1 . -1 . -0.5 }.
-			#morning -> { 1 . 1 . 1 . 0.5 . 0.5 . 1 }.
-			#afternoon -> { 0.5 . 0.5 . 0.5 . 0.5 . 0.5 }.
-			#night -> { 1 . 1 . 1 . 1 . 1 . 1 }
+			#Midnight -> { -1 . -1 . -1 . -1 . -1 . -1 . -0.5 }.
+			#Morning -> { 1 . 1 . 1 . 0.5 . 0.5 . 1 }.
+			#Afternoon -> { 0.5 . 0.5 . 0.5 . 0.5 . 0.5 }.
+			#Night -> { 1 . 1 . 1 . 1 . 1 . 1 }
 		}.
 		
 		
