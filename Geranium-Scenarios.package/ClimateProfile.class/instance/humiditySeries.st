@@ -1,3 +1,4 @@
 accessing
 humiditySeries
-	^ humiditySeries
+
+	^ humiditySeries ifNil: [ self computeYearlyHumiditySeries ]

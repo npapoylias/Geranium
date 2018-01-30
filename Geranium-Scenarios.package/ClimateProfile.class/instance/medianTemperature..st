@@ -1,4 +1,4 @@
 accessing
 medianTemperature: aNumberOrDistribution
 
-	medianTemperature := NormalRangedDistribution with: aNumberOrDistribution
+	medianTemperature := PMNumberGenerator with: aNumberOrDistribution

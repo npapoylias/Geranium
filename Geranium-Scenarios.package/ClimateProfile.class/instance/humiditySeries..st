@@ -1,6 +1,6 @@
 accessing
 humiditySeries: aCollection
 	
-	humiditySeries 
+	^ humiditySeries 
 		ifNil: [ humiditySeries := aCollection ]
 		ifNotNil: [ humiditySeries addAll: aCollection ]

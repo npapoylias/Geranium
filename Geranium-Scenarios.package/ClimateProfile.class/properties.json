@@ -9,7 +9,9 @@
 		"temperatureSeries",
 		"humiditySeries",
 		"medianTemperature",
-		"seasonalTemperatureVariation"
+		"seasonalTemperatureVariation",
+		"medianHumidity",
+		"seasonalHumidityVariation"
 	],
 	"name" : "ClimateProfile",
 	"type" : "normal"
