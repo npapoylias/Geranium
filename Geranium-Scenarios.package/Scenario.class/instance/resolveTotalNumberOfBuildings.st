@@ -7,10 +7,12 @@ resolveTotalNumberOfBuildings
 	
 	totalNumberOfBuildings ~= #determinedByMap ifTrue: [ ^ totalNumberOfBuildings ].
 	
+	numberOfBuildingsDeterminedByMap ifNotNil: [ ^ numberOfBuildingsDeterminedByMap ].
+	
 	mapData := (GeraniumOsmService new 
 		retrieveMapDataDefinedAs: {'way["building"="yes"]'}
 		positionedWithInBoundingBox: self coordinatesAsOsmString).
 		
-	^ (((mapData at: 'elements') select: [ :el | (el at: 'type') = 'way' ])
+	^ numberOfBuildingsDeterminedByMap := (((mapData at: 'elements') select: [ :el | (el at: 'type') = 'way' ])
 		 select: [ :item | ((item at: 'tags') at: 'building' ifAbsent: [  ]) = 'yes']) size
 		

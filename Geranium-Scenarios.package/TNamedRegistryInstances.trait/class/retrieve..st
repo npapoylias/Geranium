@@ -3,4 +3,4 @@ retrieve: aName
 
 	^ self registry 
 		at: aName 
-		ifAbsent: [ self error: 'No Scenario named:' , aName asString , ' exists' ]
+		ifAbsent: [ self error: 'No entity named:' , aName asString , ' exists' ]

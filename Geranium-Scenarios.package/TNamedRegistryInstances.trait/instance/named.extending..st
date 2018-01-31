@@ -1,4 +1,7 @@
 instance creation
 named: aName extending: anotherScenarioName
 
-	(self class registry at: anotherScenarioName) deepCopy named: aName
+	| copy |
+	copy := (self class registry at: anotherScenarioName) deepCopy. 
+	self become: copy.
+	self named: aName.

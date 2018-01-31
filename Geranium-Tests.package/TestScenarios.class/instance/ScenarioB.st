@@ -9,4 +9,4 @@ ScenarioB
 			#AppartmentBlockTypeB. 
 			#HouseTypeA
 		} % { 0.2 . 0.2 . 0.6 };
-		year: [ 1 -> 3 ].
+		years: [ 1 -> 3 ].
