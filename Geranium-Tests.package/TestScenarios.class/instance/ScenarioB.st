@@ -9,4 +9,5 @@ ScenarioB
 			#AppartmentBlockTypeB. 
 			#HouseTypeA
 		} % { 0.2 . 0.2 . 0.6 };
+		weightsProfile: #UrbanHypothesisB;
 		years: [ 1 -> 3 ].
