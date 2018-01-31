@@ -3,7 +3,7 @@ resolveUrbanProfiles
 	
 	|resolvedDict|
 	resolvedDict := Dictionary new.
-	urbanProfilesToPercentages keysAndValuesDo: [ :key :value | 
-		 resolvedDict at: key put: (Profile retrieve: key).
+	urbanProfilesToPercentages categories do: [ :c | 
+		 resolvedDict at: c put: (Profile retrieve: c).
 	].
 	^ resolvedDict
