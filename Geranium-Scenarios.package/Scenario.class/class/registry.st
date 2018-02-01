@@ -1,6 +1,5 @@
 instance creation
 registry
-
 	
 	^ Scenario 
 		propertyAt: #registry 

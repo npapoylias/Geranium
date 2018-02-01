@@ -1,3 +1,3 @@
 accessing
 season: anObject
-	season := anObject
+	season := anObject value

@@ -1,3 +1,3 @@
 accessing
 day: anObject
-	day := anObject
+	day := anObject value

@@ -1,4 +1,4 @@
 instance creation
 clearRegistry
 
-	^ self propertyAt: #registry put: Dictionary new
+	^ self removeProperty: #registry

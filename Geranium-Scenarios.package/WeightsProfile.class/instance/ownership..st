@@ -1,3 +1,4 @@
 accessing
 ownership: anObject
-	ownership := anObject
+
+	ownership := anObject value

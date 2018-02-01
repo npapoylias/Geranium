@@ -1,3 +1,3 @@
 accessing
 exposure: anObject
-	exposure := anObject
+	exposure := anObject value

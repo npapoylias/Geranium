@@ -1,3 +1,3 @@
 accessing
 humidity: anObject
-	humidity := anObject
+	humidity := anObject value
