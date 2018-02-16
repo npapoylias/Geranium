@@ -2,12 +2,14 @@
 	"classtraitcomposition" : "TDistributionPlot classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"min",
-		"max"
+		"categories",
+		"probabilities",
+		"booleanDistributionOfProbabilities",
+		"randomSamplingGenerator"
 	],
-	"name" : "NormalRangedDistribution",
+	"name" : "GRCategoricalDistribution",
 	"commentStamp" : "",
-	"super" : "PMGaussianGenerator",
+	"super" : "Object",
 	"traitcomposition" : "TDistributionPlot",
 	"type" : "normal",
 	"classinstvars" : [ ],

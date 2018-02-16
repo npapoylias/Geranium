@@ -8,7 +8,7 @@ testStatisticalScenario
 	self assert: s coordinates = ((46.16352961038194 @ -1.1302614212036133) 
 		-> (46.166851083597415 @ -1.1267745494842527)).
 	self assert: s coordinatesAsOsmString = '46.16352961038194,-1.1302614212036133,46.166851083597415,-1.1267745494842527'.
-	self assert: s urbanProfilesToPercentages class = CategoricalDistribution.
+	self assert: s urbanProfilesToPercentages class = GRCategoricalDistribution.
 	self assert: s resolveUrbanProfiles class = Dictionary.
 	self assert: (s resolveUrbanProfiles values first isKindOf: UrbanProfile).
 	self assert: s climateProfile = #UrbanClimateA.

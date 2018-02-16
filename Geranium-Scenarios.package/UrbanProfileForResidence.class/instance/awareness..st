@@ -1,4 +1,4 @@
 accessing
 awareness: anObject
 
-	awareness := NormalRangedDistribution with: anObject
+	awareness := GRNormalRangedDistribution with: anObject

@@ -2,7 +2,7 @@
 	"classtraitcomposition" : "TDistributionPlot classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "BooleanDistribution",
+	"name" : "GRBooleanDistribution",
 	"commentStamp" : "",
 	"super" : "PMBernoulliGenerator",
 	"traitcomposition" : "TDistributionPlot",

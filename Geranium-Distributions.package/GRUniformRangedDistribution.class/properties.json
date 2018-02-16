@@ -1,10 +1,13 @@
 {
 	"classtraitcomposition" : "TDistributionPlot classTrait",
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "ConstantDistribution",
+	"instvars" : [
+		"min",
+		"max"
+	],
+	"name" : "GRUniformRangedDistribution",
 	"commentStamp" : "",
-	"super" : "PMConstantGenerator",
+	"super" : "PMMarsagliaKissRandom",
 	"traitcomposition" : "TDistributionPlot",
 	"type" : "normal",
 	"classinstvars" : [ ],

@@ -1,4 +1,4 @@
 accessing
 income: anObject
 
-	income := NormalRangedDistribution with: anObject
+	income := GRNormalRangedDistribution with: anObject

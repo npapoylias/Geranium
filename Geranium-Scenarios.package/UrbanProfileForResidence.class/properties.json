@@ -12,7 +12,8 @@
 		"income",
 		"awareness",
 		"ownership",
-		"numberOfChildren"
+		"numberOfChildren",
+		"category"
 	],
 	"name" : "UrbanProfileForResidence",
 	"type" : "normal"

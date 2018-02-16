@@ -2,5 +2,5 @@
 ~> aNumber
 	
 	^ (self isInteger and: [ aNumber isInteger ])
-				ifTrue: [ NormalIntegerRangedDistribution new with: self -> aNumber ]
-				ifFalse: [ NormalRangedDistribution new with: self -> aNumber ]
+				ifTrue: [ GRNormalIntegerRangedDistribution new with: self -> aNumber ]
+				ifFalse: [ GRNormalRangedDistribution new with: self -> aNumber ]

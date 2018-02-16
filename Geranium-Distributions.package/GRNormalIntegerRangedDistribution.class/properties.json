@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "NormalRangedDistribution",
+	"super" : "GRNormalRangedDistribution",
 	"category" : "Geranium-Distributions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "NormalIntegerRangedDistribution",
+	"name" : "GRNormalIntegerRangedDistribution",
 	"type" : "normal"
 }

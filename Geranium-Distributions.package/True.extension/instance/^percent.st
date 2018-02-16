@@ -1,4 +1,4 @@
 *Geranium-Distributions
 % aNumber
 
-	^ BooleanDistribution new true: aNumber / 100.0
+	^ GRBooleanDistribution new true: aNumber / 100.0

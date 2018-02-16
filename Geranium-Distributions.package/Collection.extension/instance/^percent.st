@@ -1,6 +1,6 @@
 *Geranium-Distributions
 % anotherCollection
 
-	^ CategoricalDistribution new 
+	^ GRCategoricalDistribution new 
 		categories: self;
 		probabilities: anotherCollection
