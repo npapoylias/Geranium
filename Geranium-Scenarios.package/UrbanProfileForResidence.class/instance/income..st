@@ -1,4 +1,4 @@
 accessing
 income: anObject
 
-	income := GRNormalRangedDistribution with: anObject
+	income := PMNumberGenerator with: anObject

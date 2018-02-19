@@ -1,3 +1,4 @@
 accessing
 income: anObject
-	income := anObject value
+
+	income := PMNumberGenerator with: anObject

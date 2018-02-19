@@ -1,4 +1,4 @@
 accessing
 ownership: anObject
 
-	ownership := anObject value
+	ownership := PMNumberGenerator with: anObject
