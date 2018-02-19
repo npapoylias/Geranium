@@ -10,7 +10,7 @@
 		"weightsProfile",
 		"buildings"
 	],
-	"name" : "ModelGeneratingVisitor",
+	"name" : "ScenarioToModelVisitor",
 	"commentStamp" : "",
 	"super" : "Object",
 	"traitcomposition" : "TProfileHierarchyVisitor + TScenarioHierarchyVisitor",
