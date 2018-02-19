@@ -3,4 +3,4 @@ registry
 
 	^ Profile
 			propertyAt: #registry 
-			ifAbsent: [ self propertyAt: #registry put: Dictionary new ]
+			ifAbsent: [ Profile propertyAt: #registry put: Dictionary new ]
