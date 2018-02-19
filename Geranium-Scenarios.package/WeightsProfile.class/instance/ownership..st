@@ -1,4 +1,4 @@
 accessing
 ownership: anObject
 
-	ownership := PMNumberGenerator with: anObject
+	ownership := self distributionOf: anObject

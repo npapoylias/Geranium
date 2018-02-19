@@ -1,3 +1,4 @@
 accessing
 season: anObject
-	season := anObject value
+
+	season := self distributionOf: anObject

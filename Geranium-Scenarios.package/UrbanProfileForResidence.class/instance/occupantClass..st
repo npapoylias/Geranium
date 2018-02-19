@@ -1,4 +1,4 @@
 accessing
 occupantClass: anObject
 
-	occupantClass := anObject
+	occupantClass := self distributionOf: anObject

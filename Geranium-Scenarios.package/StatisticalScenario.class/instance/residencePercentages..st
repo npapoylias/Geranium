@@ -1,4 +1,4 @@
 as yet unclassified
 residencePercentages: aCategoricalDistribution
 
-	urbanProfilesToPercentages := aCategoricalDistribution 
+	urbanProfilesToPercentages := self distributionOf: aCategoricalDistribution 

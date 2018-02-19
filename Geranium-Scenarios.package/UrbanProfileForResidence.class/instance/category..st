@@ -1,3 +1,4 @@
 accessing
 category: anObject
-	category := anObject
+
+	category := self distributionOf: anObject

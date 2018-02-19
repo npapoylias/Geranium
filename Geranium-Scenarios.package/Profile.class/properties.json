@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "TNamedRegistryInstances classTrait",
+	"classtraitcomposition" : "TNamedRegistryInstances classTrait + TDistributionVars classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "Profile",
 	"commentStamp" : "",
 	"super" : "Object",
-	"traitcomposition" : "TNamedRegistryInstances",
+	"traitcomposition" : "TNamedRegistryInstances + TDistributionVars",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],

@@ -1,4 +1,4 @@
 accessing
 exposure: anObject
 
-	exposure := GRNormalRangedDistribution with: anObject
+	exposure := self distributionOf: anObject

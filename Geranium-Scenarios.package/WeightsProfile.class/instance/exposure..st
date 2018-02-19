@@ -1,3 +1,3 @@
 accessing
 exposure: anObject
-	exposure := anObject value
+	exposure := self distributionOf: anObject

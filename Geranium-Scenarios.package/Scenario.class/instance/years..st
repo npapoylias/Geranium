@@ -1,4 +1,4 @@
 accessing
 years: anObject
 
-	years := PMNumberGenerator with: anObject
+	years := self distributionOf: anObject

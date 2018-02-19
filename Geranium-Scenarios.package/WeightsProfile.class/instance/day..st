@@ -1,3 +1,3 @@
 accessing
 day: anObject
-	day := anObject value
+	day := self distributionOf: anObject

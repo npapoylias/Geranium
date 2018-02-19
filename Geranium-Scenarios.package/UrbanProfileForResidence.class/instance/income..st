@@ -1,4 +1,4 @@
 accessing
 income: anObject
 
-	income := PMNumberGenerator with: anObject
+	income := self distributionOf: anObject

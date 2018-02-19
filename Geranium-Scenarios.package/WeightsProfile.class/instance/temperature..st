@@ -1,3 +1,4 @@
 accessing
 temperature: anObject
-	temperature := anObject value
+
+	temperature := self distributionOf: anObject

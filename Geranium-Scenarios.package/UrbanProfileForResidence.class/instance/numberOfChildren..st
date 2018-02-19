@@ -1,3 +1,3 @@
 accessing
 numberOfChildren: anObject
-	numberOfChildren := anObject
+	numberOfChildren := self distributionOf: anObject

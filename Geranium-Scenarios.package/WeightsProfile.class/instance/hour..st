@@ -1,3 +1,3 @@
 accessing
 hour: anObject
-	hour := anObject value
+	hour := self distributionOf: anObject

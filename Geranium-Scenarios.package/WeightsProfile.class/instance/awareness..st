@@ -1,3 +1,3 @@
 accessing
 awareness: anObject
-	awareness := anObject value
+	awareness := self distributionOf: anObject

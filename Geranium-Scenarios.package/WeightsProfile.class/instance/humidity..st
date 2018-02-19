@@ -1,3 +1,3 @@
 accessing
 humidity: anObject
-	humidity := anObject value
+	humidity := self distributionOf: anObject

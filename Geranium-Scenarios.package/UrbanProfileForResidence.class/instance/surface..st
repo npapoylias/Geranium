@@ -1,4 +1,4 @@
 accessing
 surface: anObject
 
-	surface := GRNormalRangedDistribution with: anObject
+	surface := self distributionOf: anObject
