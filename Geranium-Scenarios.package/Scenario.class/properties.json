@@ -1,5 +1,5 @@
 {
-	"classtraitcomposition" : "TNamedRegistryInstances classTrait + TDistributionVars classTrait",
+	"classtraitcomposition" : "TNamedRegistryInstances classTrait + TDistributionVars classTrait + TAcceptsVisitor classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"coordinates",
@@ -13,7 +13,7 @@
 	"name" : "Scenario",
 	"commentStamp" : "",
 	"super" : "Object",
-	"traitcomposition" : "TNamedRegistryInstances + TDistributionVars",
+	"traitcomposition" : "TNamedRegistryInstances + TDistributionVars + TAcceptsVisitor",
 	"type" : "normal",
 	"classinstvars" : [
 		"registry"

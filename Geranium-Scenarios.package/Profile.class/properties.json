@@ -1,11 +1,11 @@
 {
-	"classtraitcomposition" : "TNamedRegistryInstances classTrait + TDistributionVars classTrait",
+	"classtraitcomposition" : "TNamedRegistryInstances classTrait + TDistributionVars classTrait + TAcceptsVisitor classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "Profile",
 	"commentStamp" : "",
 	"super" : "Object",
-	"traitcomposition" : "TNamedRegistryInstances + TDistributionVars",
+	"traitcomposition" : "TNamedRegistryInstances + TDistributionVars + TAcceptsVisitor",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
