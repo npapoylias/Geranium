@@ -16,7 +16,7 @@ visitUrbanProfileForAppartmentBlock: aUrbanProfileForAppartmentBlock
 		1 to: corridors do: [ :c | 
 			1 to: appartmentsPerCorridor do: [ :a | |appartment|
 				building 
-					add: (appartment := self visitNode: (resolvedAppartmentProfiles at: appartmentDistribution next));
+					add: (appartment := self visitNode: (resolvedAppartmentProfiles at: appartmentDistribution next))
 					at: (f x: c x: a)
 				"updates with exposure, block etc..."
 			]	

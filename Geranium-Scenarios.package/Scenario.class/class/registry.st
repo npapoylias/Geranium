@@ -3,5 +3,5 @@ registry
 	
 	^ Scenario 
 		propertyAt: #registry 
-		ifAbsent: [ self propertyAt: #registry put: Dictionary new ]
+		ifAbsent: [ Scenario propertyAt: #registry put: Dictionary new ]
 		

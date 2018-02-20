@@ -1,3 +1,0 @@
-accessing
-numberOfChilren: aNumber
-

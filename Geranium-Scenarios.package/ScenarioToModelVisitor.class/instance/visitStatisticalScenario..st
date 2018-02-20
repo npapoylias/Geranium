@@ -11,6 +11,8 @@ visitStatisticalScenario: aStatisticalScenario
 	weightsProfile := aStatisticalScenario resolveWeightsProfile.
 	years := aStatisticalScenario years.
 	
+	buildings := OrderedCollection new.
+	
 	1 to: numberOfBuildings do: [ :i | |building|
 		buildings "double dispatch and traversal logic in the visitor makes sense here"
 			add: (building := (self visitNode: (resolvedResidenceProfiles at: (residenceDistribution next)))).

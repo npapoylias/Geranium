@@ -1,0 +1,4 @@
+accessing
+numberOfChildren
+
+	^ 0
