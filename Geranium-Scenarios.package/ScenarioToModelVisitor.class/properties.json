@@ -8,7 +8,9 @@
 		"climateProfile",
 		"trendsProfile",
 		"weightsProfile",
-		"buildings"
+		"buildings",
+		"scenarioToModelDict",
+		"modelToScenarioDict"
 	],
 	"name" : "ScenarioToModelVisitor",
 	"commentStamp" : "",

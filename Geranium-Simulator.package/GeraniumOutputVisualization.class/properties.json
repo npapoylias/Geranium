@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GeraniumOutput",
+	"category" : "Geranium-Simulator",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GeraniumOutputVisualization",
+	"type" : "normal"
+}

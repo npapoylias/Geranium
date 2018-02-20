@@ -7,7 +7,10 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"appartments",
-		"dimensions"
+		"dimensions",
+		"floors",
+		"corridors",
+		"appartmentsPerCorridor"
 	],
 	"name" : "AppartmentBlock",
 	"type" : "normal"

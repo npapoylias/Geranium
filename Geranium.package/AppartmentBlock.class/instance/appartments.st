@@ -1,3 +1,3 @@
 accessing
 appartments
-	^ appartments
+	^ appartments ifNil: [ appartments := Dictionary new ]
