@@ -5,10 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"minimum",
-		"maximum"
-	],
+	"instvars" : [ ],
 	"name" : "DPEConsumptionCategory",
 	"type" : "normal"
 }
