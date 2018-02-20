@@ -1,3 +1,3 @@
 accessing
 country: anObject
-	country := anObject
+	belongsTo := anObject

@@ -11,7 +11,10 @@
 		"buildings",
 		"scenarioToModelDict",
 		"modelToScenarioDict",
-		"years"
+		"years",
+		"areaOfInterest",
+		"perfecture",
+		"country"
 	],
 	"name" : "ScenarioToModelVisitor",
 	"commentStamp" : "",

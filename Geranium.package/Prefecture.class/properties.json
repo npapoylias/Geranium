@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"country"
-	],
+	"instvars" : [ ],
 	"name" : "Prefecture",
 	"type" : "normal"
 }

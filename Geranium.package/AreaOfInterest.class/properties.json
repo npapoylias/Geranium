@@ -1,14 +1,16 @@
 {
-	"commentStamp" : "",
-	"super" : "GeoRegion",
-	"category" : "Geranium",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "TAgent classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"buildings",
 		"prefecture"
 	],
 	"name" : "AreaOfInterest",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "GeoRegion",
+	"traitcomposition" : "TAgent",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Geranium"
 }

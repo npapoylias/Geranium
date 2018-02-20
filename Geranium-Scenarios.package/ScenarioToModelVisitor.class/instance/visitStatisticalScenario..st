@@ -1,6 +1,8 @@
 visiting
 visitStatisticalScenario: aStatisticalScenario
 
+	areaOfInterest := AreaOfInterest new.
+	areaOfInterest coordinates: aStatisticalScenario coordinates.
 	numberOfBuildings := aStatisticalScenario resolveTotalNumberOfBuildings.
 	residenceDistribution := aStatisticalScenario urbanProfilesToPercentages.
 	resolvedResidenceProfiles := aStatisticalScenario resolveUrbanProfiles.
@@ -9,14 +11,21 @@ visitStatisticalScenario: aStatisticalScenario
 	weightsProfile := aStatisticalScenario resolveWeightsProfile.
 	years := aStatisticalScenario years.
 	
-	1 to: numberOfBuildings do: [ :i | 
+	1 to: numberOfBuildings do: [ :i | |building|
 		buildings "double dispatch and traversal logic in the visitor makes sense here"
-			add: (self visitNode: (resolvedResidenceProfiles at: (residenceDistribution next))) 
+			add: (building := (self visitNode: (resolvedResidenceProfiles at: (residenceDistribution next)))).
+		building area: areaOfInterest. 
 	].
 	
-	buildings do: [:b | self associate: aStatisticalScenario with: b ].
+	areaOfInterest buildings: buildings.
 	self associate: climateProfile with: (self visitNode: climateProfile).
-	self associate: trendsProfile with: (self visitNode: trendsProfile).
+	self 
+		associate: trendsProfile 
+		with: (perfecture := (self visitNode: trendsProfile)). "country also will be created
+	here with the profiles"
+	areaOfInterest prefecture: perfecture. 
+	areaOfInterest prefecture country weightsProfile: weightsProfile.
 	self associate: weightsProfile with: (self visitNode: weightsProfile).
+	self associate: aStatisticalScenario with: areaOfInterest.
 	
-	^ buildings
+	^ areaOfInterest
