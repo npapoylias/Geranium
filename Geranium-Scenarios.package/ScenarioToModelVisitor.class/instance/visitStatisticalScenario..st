@@ -1,6 +1,7 @@
 visiting
 visitStatisticalScenario: aStatisticalScenario
 
+	| climate |
 	areaOfInterest := AreaOfInterest new.
 	areaOfInterest coordinates: aStatisticalScenario coordinates.
 	numberOfBuildings := aStatisticalScenario resolveTotalNumberOfBuildings.
@@ -20,7 +21,8 @@ visitStatisticalScenario: aStatisticalScenario
 	].
 	
 	areaOfInterest buildings: buildings.
-	self associate: climateProfile with: (self visitNode: climateProfile).
+	self associate: climateProfile with: (climate := (self visitNode: climateProfile)).
+	areaOfInterest climateData: climate.
 	self 
 		associate: trendsProfile 
 		with: (perfecture := (self visitNode: trendsProfile)). "country also will be created
