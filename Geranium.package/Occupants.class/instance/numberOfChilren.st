@@ -1,0 +1,4 @@
+accessing
+numberOfChilren
+
+	^ 0

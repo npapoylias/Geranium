@@ -7,8 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"income",
-		"owningResidence",
-		"consumptionAwareness"
+		"ownership",
+		"awareness"
 	],
 	"name" : "Occupants",
 	"type" : "normal"
