@@ -17,3 +17,5 @@ visitStatisticalScenario: aStatisticalScenario
 	self associate: climateProfile with: (self visitNode: climateProfile).
 	self associate: trendsProfile with: (self visitNode: trendsProfile).
 	self associate: weightsProfile with: (self visitNode: weightsProfile).
+	
+	^ buildings

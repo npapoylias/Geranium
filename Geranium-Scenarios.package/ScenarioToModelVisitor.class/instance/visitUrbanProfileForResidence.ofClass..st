@@ -31,3 +31,6 @@ visitUrbanProfileForResidence: aUrbanProfileForResidence ofClass: aResidenceClas
 		
 	numberOfChildren ifNotNil: [ occupants numberOfChildren: numberOfChildren next ].
 	
+	self associate: aUrbanProfileForResidence with: residence.
+	
+	^ residence
