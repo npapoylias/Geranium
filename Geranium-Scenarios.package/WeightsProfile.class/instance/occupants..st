@@ -1,4 +1,4 @@
 accessing
 occupants: anObject
 
-	occupants := self distributionOf: anObject
+	occupants := anObject value

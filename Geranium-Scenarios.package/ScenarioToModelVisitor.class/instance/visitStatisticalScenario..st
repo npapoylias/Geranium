@@ -7,6 +7,7 @@ visitStatisticalScenario: aStatisticalScenario
 	climateProfile := aStatisticalScenario resolveClimateProfile.
 	trendsProfile := aStatisticalScenario resolveTrendsProfile.
 	weightsProfile := aStatisticalScenario resolveWeightsProfile.
+	years := aStatisticalScenario years.
 	
 	1 to: numberOfBuildings do: [ :i | 
 		buildings "double dispatch and traversal logic in the visitor makes sense here"

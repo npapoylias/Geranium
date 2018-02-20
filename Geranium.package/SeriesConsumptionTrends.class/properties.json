@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "GeoRegion",
+	"super" : "ConsumptionCharacteristic",
 	"category" : "Geranium",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"buildings",
-		"prefecture"
+		"series"
 	],
-	"name" : "AreaOfInterest",
+	"name" : "SeriesConsumptionTrends",
 	"type" : "normal"
 }

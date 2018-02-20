@@ -1,0 +1,4 @@
+accessing
+availableViews
+
+	self shouldBeImplemented

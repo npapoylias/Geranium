@@ -1,4 +1,4 @@
 accessing
 income: anObject
 
-	income := self distributionOf: anObject
+	income := anObject value

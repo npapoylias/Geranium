@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "ConsumptionCharacteristic",
+	"super" : "SeriesConsumptionTrends",
 	"category" : "Geranium",
 	"classinstvars" : [ ],
 	"pools" : [ ],

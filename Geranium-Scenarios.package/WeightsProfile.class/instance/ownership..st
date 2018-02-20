@@ -1,4 +1,4 @@
 accessing
 ownership: anObject
 
-	ownership := self distributionOf: anObject
+	ownership := anObject value

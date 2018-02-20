@@ -1,4 +1,3 @@
 accessing
 temperature: anObject
-
-	temperature := anObject value
+	temperature := anObject

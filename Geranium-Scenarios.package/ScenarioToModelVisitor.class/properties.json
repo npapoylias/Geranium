@@ -10,7 +10,8 @@
 		"weightsProfile",
 		"buildings",
 		"scenarioToModelDict",
-		"modelToScenarioDict"
+		"modelToScenarioDict",
+		"years"
 	],
 	"name" : "ScenarioToModelVisitor",
 	"commentStamp" : "",
