@@ -1,0 +1,4 @@
+accessing
+numberOfResidences
+
+	^ 1

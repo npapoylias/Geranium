@@ -1,0 +1,4 @@
+accessing
+numberOfResidences
+
+	self subclassResponsibility

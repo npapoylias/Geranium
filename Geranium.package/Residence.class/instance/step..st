@@ -56,8 +56,8 @@ step: time
 			forValue: self occupants awareness
 			inBooleanOptimumOf: true).
 			
-	^ self 
+	^ consumption "self 
 			historyOf: #consumption
-			add: consumption 			
+			add: consumption" 			
 	 	
 	
