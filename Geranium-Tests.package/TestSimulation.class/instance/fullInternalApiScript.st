@@ -10,16 +10,16 @@ fullInternalApiScript
 			#AppartmentBlockTypeA.
 			#AppartmentBlockTypeB.
 			#HouseTypeA
-		} % { 0.1 . 0.1 . 0.8 }; 
+		} % { 0.3 . 0.2 . 0.5 }; 
 		climateProfile: #UrbanClimateA;
 		trendsProfile: #FrenchConsumptionTrends;
 		weightsProfile: #UrbanHypothesisA;
-		years: 1/24.
+		years: 1.
 		
 		
 	UrbanProfileForAppartmentBlock new
 		named: #AppartmentBlockTypeA;
-		dimensions: (3 x: 4 x: 5);
+		dimensions: (2 x: 1 x: 2);
 		appartmentPercentages: {  
 			#AppartmentTypeA.
 			#AppartmentTypeB.
@@ -27,7 +27,7 @@ fullInternalApiScript
 		
 	UrbanProfileForAppartmentBlock new
 		named: #AppartmentBlockTypeB;
-		dimensions: (5 x: 2 x: 10);
+		dimensions: (2 x: 1 x: 3);
 		appartmentPercentages: {  
 			#AppartmentTypeA.
 			#AppartmentTypeB.
