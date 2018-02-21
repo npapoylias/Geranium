@@ -10,7 +10,7 @@ visitStatisticalScenario: aStatisticalScenario
 	climateProfile := aStatisticalScenario resolveClimateProfile.
 	trendsProfile := aStatisticalScenario resolveTrendsProfile.
 	weightsProfile := aStatisticalScenario resolveWeightsProfile.
-	years := aStatisticalScenario years.
+	years := aStatisticalScenario years next.
 	
 	buildings := OrderedCollection new.
 	

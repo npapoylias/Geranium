@@ -5,7 +5,7 @@ visitClimateProfile: aClimateProfile
 	
 	climate := MicroClimateData new.
 	climate 
-		temperature: (aClimateProfile temperatureSeriesForYears: years next);
-		humidity: (aClimateProfile humiditySeriesForYears: years next).
+		temperature: (aClimateProfile temperatureSeriesForYears: years);
+		humidity: (aClimateProfile humiditySeriesForYears: years).
 	^ climate
 	
