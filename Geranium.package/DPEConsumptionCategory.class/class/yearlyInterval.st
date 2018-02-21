@@ -1,0 +1,4 @@
+accessing
+yearlyInterval
+
+	^ self interval
