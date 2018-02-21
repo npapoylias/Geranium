@@ -9,52 +9,52 @@ step: time
 	
 	seasonalTrend := self area prefecture country seasonalProfile series at: time. 
 	consumption := consumption + 
-		self consumptionForWeightInterval: weightsProfile season andTrend: seasonalTrend. 
+		(self consumptionForWeightInterval: weightsProfile season andTrend: seasonalTrend). 
 	
 	dailyTrend := self area prefecture country dailyProfile series at: time.
 	consumption := consumption + 
-		self consumptionForWeightInterval: weightsProfile day andTrend: dailyTrend. 
+		(self consumptionForWeightInterval: weightsProfile day andTrend: dailyTrend). 
 	
 	hourlyTrend := self area prefecture country hourlyProfile series at: time.
 	consumption := consumption + 
-		self consumptionForWeightInterval: weightsProfile hour andTrend: hourlyTrend.
+		(self consumptionForWeightInterval: weightsProfile hour andTrend: hourlyTrend).
 	 
 	temperature := self area climateData temperature at: time.
 	consumption := consumption + 
-		self consumptionForWeightInterval: weightsProfile temperature 
+		(self consumptionForWeightInterval: weightsProfile temperature 
 			forValue: temperature
-			inMedianOptimumOf: -10 -> 50. "comfort in 20"
+			inMedianOptimumOf: -10 -> 50). "comfort in 20"
 	
 	humidity := self area climateData humidity at: time.
 	consumption := consumption + 
-		self consumptionForWeightInterval: weightsProfile humidity 
+		(self consumptionForWeightInterval: weightsProfile humidity 
 			forValue: humidity
-			inMedianOptimumOf: 0 -> 100. "comfort in 50"
+			inMedianOptimumOf: 0 -> 100). "comfort in 50"
 			
 	consumption := consumption + 
-		self consumptionForWeightInterval: weightsProfile exposure 
+		(self consumptionForWeightInterval: weightsProfile exposure 
 			forValue: self exposure
-			inMinimumOptimumOf: 0 -> 6. 
+			inMinimumOptimumOf: 0 -> 6). 
 	
 	consumption := consumption + 
-		self consumptionForWeightInterval: weightsProfile occupants 
+		(self consumptionForWeightInterval: weightsProfile occupants 
 			forValue: self occupants size
-			inMinimumOptimumOf: 1 -> 8. 		
+			inMinimumOptimumOf: 1 -> 8). 		
 					
 	consumption := consumption + 
-		self consumptionForWeightInterval: weightsProfile income 
+		(self consumptionForWeightInterval: weightsProfile income 
 			forValue: self occupants income
-			inMaximumOptimumOf: 12000 -> 200000.
+			inMaximumOptimumOf: 12000 -> 200000).
 	
 	consumption := consumption + 
-		self consumptionForWeightInterval: weightsProfile ownership 
+		(self consumptionForWeightInterval: weightsProfile ownership 
 			forValue: self occupants ownership
-			inBooleanOptimumOf: true.
+			inBooleanOptimumOf: true).
 	
 	consumption := consumption + 
-		self consumptionForWeightInterval: weightsProfile awareness 
+		(self consumptionForWeightInterval: weightsProfile awareness 
 			forValue: self occupants awareness
-			inBooleanOptimumOf: true.
+			inBooleanOptimumOf: true).
 			
 	^ self 
 			historyOf: #consumption
