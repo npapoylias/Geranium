@@ -19,4 +19,6 @@ exposureFor: aLocationWithinTheBlock
 		ifTrue: [ exposure := exposure - 2 ]
 		ifFalse: [ exposure := exposure - 1 ]. "First and Last appartements"
 		
+	^ exposure
+		
 	

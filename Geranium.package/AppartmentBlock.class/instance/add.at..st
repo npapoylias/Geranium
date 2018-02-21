@@ -5,4 +5,3 @@ add: anAppartment at: floorCorridorAppNumber
 	anAppartment exposure: (self exposureFor: floorCorridorAppNumber).
 	anAppartment locationWithInBlock: floorCorridorAppNumber. 
 	anAppartment block: self.
-	anAppartment area: self area
