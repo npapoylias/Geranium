@@ -2,6 +2,6 @@
 	"commentStamp" : "",
 	"traitcomposition" : "TInstanceProperties",
 	"classtraitcomposition" : "TInstanceProperties classTrait",
-	"category" : "Geranium-Simulator",
+	"category" : "Geranium",
 	"name" : "TAgent"
 }

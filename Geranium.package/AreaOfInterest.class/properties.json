@@ -1,16 +1,14 @@
 {
-	"classtraitcomposition" : "TAgent classTrait",
+	"commentStamp" : "",
+	"super" : "GeoRegion",
+	"category" : "Geranium",
+	"classinstvars" : [ ],
+	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"buildings",
 		"climateData"
 	],
 	"name" : "AreaOfInterest",
-	"commentStamp" : "",
-	"super" : "GeoRegion",
-	"traitcomposition" : "TAgent",
-	"type" : "normal",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"category" : "Geranium"
+	"type" : "normal"
 }
