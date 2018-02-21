@@ -4,7 +4,7 @@ visitStatisticalScenario: aStatisticalScenario
 	| climate |
 	areaOfInterest := AreaOfInterest new.
 	areaOfInterest coordinates: aStatisticalScenario coordinates.
-	numberOfBuildings := aStatisticalScenario resolveTotalNumberOfBuildings.
+	numberOfBuildings := aStatisticalScenario resolveTotalNumberOfBuildings next.
 	residenceDistribution := aStatisticalScenario urbanProfilesToPercentages.
 	resolvedResidenceProfiles := aStatisticalScenario resolveUrbanProfiles.
 	climateProfile := aStatisticalScenario resolveClimateProfile.

@@ -13,6 +13,7 @@ resolveTotalNumberOfBuildings
 		retrieveMapDataDefinedAs: {'way["building"="yes"]'}
 		positionedWithInBoundingBox: self coordinatesAsOsmString).
 		
-	^ numberOfBuildingsDeterminedByMap := (((mapData at: 'elements') select: [ :el | (el at: 'type') = 'way' ])
-		 select: [ :item | ((item at: 'tags') at: 'building' ifAbsent: [  ]) = 'yes']) size
+	^ numberOfBuildingsDeterminedByMap := PMNumberGenerator with: 
+		((((mapData at: 'elements') select: [ :el | (el at: 'type') = 'way' ])
+		 select: [ :item | ((item at: 'tags') at: 'building' ifAbsent: [  ]) = 'yes']) size)
 		
