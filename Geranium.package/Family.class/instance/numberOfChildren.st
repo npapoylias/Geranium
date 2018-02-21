@@ -1,4 +1,4 @@
 accessing
 numberOfChildren
 
-	^ numberOfChildren
+	^ numberOfChildren ifNil: [ numberOfChildren := 0 ]
