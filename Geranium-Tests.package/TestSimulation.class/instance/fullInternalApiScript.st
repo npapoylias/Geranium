@@ -5,7 +5,7 @@ fullInternalApiScript
 		named: #ScenarioA;
 		coordinates: (46.16352961038194 @ -1.1302614212036133) 
 		-> (46.166851083597415 @ -1.1267745494842527);
-		totalNumberOfBuildings: 5; "#determinedByMap;"
+		totalNumberOfBuildings: 10; "#determinedByMap;"
 		residencePercentages:{  
 			#AppartmentBlockTypeA.
 			#AppartmentBlockTypeB.
@@ -14,7 +14,7 @@ fullInternalApiScript
 		climateProfile: #UrbanClimateA;
 		trendsProfile: #FrenchConsumptionTrends;
 		weightsProfile: #UrbanHypothesisA;
-		years: 1/36.
+		years: 1/24.
 		
 		
 	UrbanProfileForAppartmentBlock new

@@ -9,3 +9,5 @@ testExample
 			
 	areaOfInterest := s areaOfInterest.
 	report := s report.
+	
+	(areaOfInterest -> report) inspect
