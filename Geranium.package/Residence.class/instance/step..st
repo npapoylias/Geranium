@@ -54,6 +54,10 @@ step: time
 	consumption := consumption + 
 		self consumptionForWeightInterval: weightsProfile awareness 
 			forValue: self occupants awareness
-			inBooleanOptimumOf: true. 			
+			inBooleanOptimumOf: true.
+			
+	^ self 
+			historyOf: #consumption
+			add: consumption 			
 	 	
 	

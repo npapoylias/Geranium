@@ -1,4 +1,4 @@
 accessing
 maximum
 
-	^ self interval value
+	^ self hourlyInterval value

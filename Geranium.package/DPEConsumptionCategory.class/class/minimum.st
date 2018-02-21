@@ -1,4 +1,4 @@
 accessing
 minimum
 
-	^ self interval key
+	^ self hourlyInterval key
