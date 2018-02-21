@@ -1,0 +1,16 @@
+*Geranium-Distributions
+pieWithCaption: aString
+
+	"{ #a -> 20 . #b -> 70 . #c -> 10 } pieWithCaption: 'meh'"
+
+	| b |
+	b := RTPieBuilder new.
+	b interaction popup.
+	b objects: self.
+	b slice: [:assoc | assoc value].
+	b normalizer distinctColor.
+	b build.
+	b labeled: [ :assoc | assoc key ].
+	b emphasize: self first by: 20. "could be min and max"
+	b emphasize: self second by: 20.
+	^ b view
