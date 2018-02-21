@@ -1,4 +1,4 @@
 accessing
 numberOfResidences
 
-	^ (buildings collect: [ :b | b numberOfResidences ]) sum
+	^ self residences size

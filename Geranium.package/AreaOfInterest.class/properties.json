@@ -3,7 +3,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"buildings",
-		"climateData"
+		"climateData",
+		"residences"
 	],
 	"name" : "AreaOfInterest",
 	"commentStamp" : "",
