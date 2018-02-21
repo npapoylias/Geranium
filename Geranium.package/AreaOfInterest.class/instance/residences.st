@@ -1,3 +1,3 @@
 accessing
 residences
-	^ residences ifNil: [ residences := (buildings collect: [ :b | b residences ]) flatten]
+	^ residences ifNil: [ residences := (buildings collect: [ :b | b residences ]) deepFlatten]
