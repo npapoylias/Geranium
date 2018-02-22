@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "GeraniumOsmService",
+	"super" : "Object",
 	"category" : "Geranium-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "GeraniumUIOsmView",
+	"name" : "CompositeViz",
 	"type" : "normal"
 }

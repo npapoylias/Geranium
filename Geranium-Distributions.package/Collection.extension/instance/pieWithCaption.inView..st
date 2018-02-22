@@ -1,17 +1,17 @@
 *Geranium-Distributions
-ringPieWithCaption: aString
+pieWithCaption: aString inView: aView
 
-	"{ #a -> 20 . #b -> 70 . #c -> 10 } ringPieWithCaption: 'meh'"
+	"{ #a -> 20 . #b -> 70 . #c -> 10 } pieWithCaption: 'meh'"
 
 	| b |
 	b := RTPieBuilder new.
-	b shape current
-		innerRadius: 70;
-		externalRadius: 100.
+	aView ifNotNil: [ b view: aView ].
 	b interaction popup.
 	b objects: self.
 	b slice: [:assoc | assoc value].
 	b normalizer distinctColor.
 	b labeled: [ :assoc | assoc key ].
+	b emphasize: self first by: 20. 
+	b emphasize: self second by: 20.
 	self addLabel: aString onGraph: b.
 	^ b 

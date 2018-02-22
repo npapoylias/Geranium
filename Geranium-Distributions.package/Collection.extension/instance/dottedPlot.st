@@ -15,7 +15,5 @@ dottedPlot
 	ds points: self.
 	ds dotShape rectangle color: Color blue.
 	b add: ds.
-	
-	b build.
-	^ b view
+	^ b
 	

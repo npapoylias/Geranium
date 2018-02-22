@@ -1,10 +1,11 @@
 *Geranium-Distributions
-ringPieWithCaption: aString
+ringPieWithCaption: aString inView: aView
 
 	"{ #a -> 20 . #b -> 70 . #c -> 10 } ringPieWithCaption: 'meh'"
 
 	| b |
 	b := RTPieBuilder new.
+	aView ifNotNil: [ b view: aView ].
 	b shape current
 		innerRadius: 70;
 		externalRadius: 100.

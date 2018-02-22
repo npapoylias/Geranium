@@ -15,7 +15,4 @@ dottedPlot: aColor
 	ds points: self.
 	ds dotShape rectangle color: aColor.
 	b add: ds.
-	
-	b build.
-	^ b view
-	
+	^ b 	

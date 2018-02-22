@@ -1,5 +1,5 @@
 *Geranium-Distributions
-dottedPlot: aColor withCaption: aString
+dottedPlot: aColor withCaption: aString inView: aView
 	
 	"[|x| x:= PMGaussianGenerator new. 
 	((1 to: 100) collect: [:i | x next]) 
@@ -7,7 +7,7 @@ dottedPlot: aColor withCaption: aString
 	
 	| b ds |
 	b := RTGrapher new.
-	
+	aView ifNotNil: [ b view: aView ].
 	"We defien the size of the charting area"
 	b extent: 500 @ 100.
 	

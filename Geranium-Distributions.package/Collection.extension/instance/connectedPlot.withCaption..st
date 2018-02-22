@@ -3,6 +3,10 @@ connectedPlot: aColor withCaption: aString
 
 	| b ds |
 	
+	"[|x| x:= PMGaussianGenerator new. 
+	((1 to: 100) collect: [:i | x next]) 
+		connectedPlot: Color red withCaption: 'hallo'] value"
+	
 	b := RTGrapher new.
 	b extent: 300 @ 200.
 	ds := RTData new.
@@ -13,6 +17,5 @@ connectedPlot: aColor withCaption: aString
 	b
 		axisX;
 		axisY.
-	b build.
 	self addLabel: aString onGraph: b.
-	^ b view.
+	^ b

@@ -1,13 +1,14 @@
 *Geranium-Distributions
-connectedPlot: aColor
+connectedPlot: aColor withCaption: aString inView: aView
 
 	| b ds |
 	
 	"[|x| x:= PMGaussianGenerator new. 
 	((1 to: 100) collect: [:i | x next]) 
-		connectedPlot: Color red] value"
+		connectedPlot: Color red withCaption: 'hallo'] value"
 	
 	b := RTGrapher new.
+	aView ifNotNil: [ b view: aView ].
 	b extent: 300 @ 200.
 	ds := RTData new.
 		ds noDot.
@@ -17,4 +18,5 @@ connectedPlot: aColor
 	b
 		axisX;
 		axisY.
-	^ b.
+	self addLabel: aString onGraph: b.
+	^ b

@@ -1,5 +1,5 @@
 *Geranium-Distributions
-kiviatForParameters: parameterList withCaption: aString
+kiviatForParameters: parameterList withCaption: aString inView: aView
 
 	| b deco lb|
 	
@@ -8,6 +8,7 @@ kiviatForParameters: parameterList withCaption: aString
 		withCaption: 'x y z kiviat'"
 
 	b := RTKiviatBuilder new.
+	aView ifNotNil: [ b view: aView ].
 	b objects: self.
 	b shape circle
 		color: [ :f | self colorFor: f kiviatNode named];
@@ -15,10 +16,12 @@ kiviatForParameters: parameterList withCaption: aString
 1 to: parameterList size do: [: i | b addMetric: [ :o | o value at: i ] title: (parameterList at: i) asString ].
 b activateAxisTitle.
 b activatePolygons.
-lb := RTLegendBuilder new.
-lb view: b view.
-lb right.
-lb addText: aString.
-self do: [ :f | lb addColor: (self colorFor: f key) text: f key].
-lb build.
+aString ifNotNil: [  
+	lb := RTLegendBuilder new.
+	lb view: b view.
+	lb right.
+	lb addText: aString.
+	self do: [ :f | lb addColor: (self colorFor: f key) text: f key].
+	lb build.
+].
 ^ b 

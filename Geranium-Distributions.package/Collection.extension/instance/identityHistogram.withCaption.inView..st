@@ -1,10 +1,11 @@
 *Geranium-Distributions
-identityHistogram: aColor withCaption: aString
+identityHistogram: aColor withCaption: aString inView: aView
 	| b ds histDict samples |
 	
 	"(1 to: 10) identityHistogram: Color yellow withCaption: 'hallo'"
 	
 	b := RTGrapher new.
+	aView ifNotNil: [ b view: aView ].
 	ds := RTData new.
 	ds interaction popup.
 	histDict := self frequencies.
