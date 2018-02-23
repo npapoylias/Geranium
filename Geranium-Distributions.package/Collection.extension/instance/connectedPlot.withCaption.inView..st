@@ -9,7 +9,7 @@ connectedPlot: aColor withCaption: aString inView: aView
 	
 	b := RTGrapher new.
 	aView ifNotNil: [ b view: aView ].
-	b extent: 300 @ 200.
+	b extent: self vizSize.
 	ds := RTData new.
 		ds noDot.
 		ds points: self.

@@ -5,6 +5,7 @@ pieWithCaption: aString inView: aView
 
 	| b |
 	b := RTPieBuilder new.
+	"b extent: self vizSize."
 	aView ifNotNil: [ b view: aView ].
 	b interaction popup.
 	b objects: self.

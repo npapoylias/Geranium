@@ -1,16 +1,18 @@
 instance creation
 with: aBlock "accepting composer view and returning rows of assoc name->viz"
 
-	|c vizs currentRowNames lastRowNames|
+	|c vizs currentRowNames lastRowNames names|
 		
 	c := RTComposer new.
 	c gap: 155.
+	names := OrderedCollection new.
 	vizs := aBlock value: c view.
 	vizs doWithIndex: [ :row :rowIndex |
 		lastRowNames := currentRowNames.
 		currentRowNames := OrderedCollection new.
 		row doWithIndex: [ :assoc :index | 
 			assoc value build. 
+			names add: assoc key.
 			c group: (currentRowNames add: assoc key).
 			(rowIndex = 1 and: [index > 1]) 
 				ifTrue: [ 
@@ -24,5 +26,6 @@ with: aBlock "accepting composer view and returning rows of assoc name->viz"
 					].
 		]
 	].
+	names do: [:n | c nameGroup: n as: n asString].
 	c propagateHighlightToAll.
 	^ c view

@@ -8,7 +8,7 @@ connectedPlot: aColor
 		connectedPlot: Color red] value"
 	
 	b := RTGrapher new.
-	b extent: 300 @ 200.
+	b extent: self vizSize.
 	ds := RTData new.
 		ds noDot.
 		ds points: self.

@@ -8,6 +8,7 @@ kiviatForParameters: parameterList withCaption: aString inView: aView
 		withCaption: 'x y z kiviat'"
 
 	b := RTKiviatBuilder new.
+	"b extent: self vizSize."
 	aView ifNotNil: [ b view: aView ].
 	b objects: self.
 	b shape circle

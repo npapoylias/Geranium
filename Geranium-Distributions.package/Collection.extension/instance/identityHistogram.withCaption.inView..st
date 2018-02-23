@@ -5,6 +5,7 @@ identityHistogram: aColor withCaption: aString inView: aView
 	"(1 to: 10) identityHistogram: Color yellow withCaption: 'hallo'"
 	
 	b := RTGrapher new.
+	b extent: self vizSize.
 	aView ifNotNil: [ b view: aView ].
 	ds := RTData new.
 	ds interaction popup.

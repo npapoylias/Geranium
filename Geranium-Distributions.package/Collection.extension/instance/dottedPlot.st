@@ -7,7 +7,7 @@ dottedPlot
 	b := RTGrapher new.
 	
 	"We defien the size of the charting area"
-	b extent: 500 @ 100.
+	b extent: self vizSize.
 	
 	ds := RTData new.
 	"When the mouse is above a bar, say which class we are point at"

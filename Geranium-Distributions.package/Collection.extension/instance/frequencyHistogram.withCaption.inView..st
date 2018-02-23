@@ -8,6 +8,7 @@ frequencyHistogram: aColor withCaption: aString inView: aView
 		frequencyHistogram: Color orange withCaption: 'hallo'] value"
 	
 b := RTGrapher new.
+b extent: self vizSize.
 aView ifNotNil: [ b view: aView ].
 "We defien the size of the charting area"
 ds := RTData new.

@@ -5,6 +5,7 @@ ringPieWithCaption: aString
 
 	| b |
 	b := RTPieBuilder new.
+	b extent: self vizSize.
 	b shape current
 		innerRadius: 70;
 		externalRadius: 100.

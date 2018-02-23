@@ -8,7 +8,7 @@ frequencyHistogram: aColor withCaption: aString
 		frequencyHistogram: Color orange withCaption: 'hallo'] value"
 	
 b := RTGrapher new.
-
+b extent: self vizSize.
 "We defien the size of the charting area"
 ds := RTData new.
 "When the mouse is above a bar, say which class we are point at"

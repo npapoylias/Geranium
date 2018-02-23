@@ -5,6 +5,7 @@ pieWithCaption: aString
 
 	| b |
 	b := RTPieBuilder new.
+	b extent: self vizSize.
 	b interaction popup.
 	b objects: self.
 	b slice: [:assoc | assoc value].

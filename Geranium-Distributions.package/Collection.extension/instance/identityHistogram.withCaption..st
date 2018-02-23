@@ -5,6 +5,7 @@ identityHistogram: aColor withCaption: aString
 	"(1 to: 10) identityHistogram: Color yellow withCaption: 'hallo'"
 	
 	b := RTGrapher new.
+	b extent: self vizSize.
 	ds := RTData new.
 	ds interaction popup.
 	histDict := self frequencies.

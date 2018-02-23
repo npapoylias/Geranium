@@ -8,6 +8,7 @@ kiviatForParameters: parameterList withCaption: aString
 		withCaption: 'x y z kiviat'"
 
 	b := RTKiviatBuilder new.
+	b extent: self vizSize.
 	b objects: self.
 	b shape circle
 		color: [ :f | self colorFor: f kiviatNode named];
