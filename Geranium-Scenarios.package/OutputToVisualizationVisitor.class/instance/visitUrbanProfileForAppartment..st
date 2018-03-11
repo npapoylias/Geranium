@@ -1,0 +1,4 @@
+visiting
+visitUrbanProfileForAppartment: aUrbanProfileForAppartment
+
+	^ self visitUrbanProfileForResidence: aUrbanProfileForAppartment ofClass: Appartement
