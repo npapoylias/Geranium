@@ -1,0 +1,3 @@
+accessing
+maxAvgExpectedConsumptionPerYear: anObject
+	maxAvgExpectedConsumptionPerYear := anObject

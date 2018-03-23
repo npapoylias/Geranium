@@ -1,4 +1,0 @@
-visiting
-visitWeightsProfile: aWeightsProfile
-
-	^ aWeightsProfile

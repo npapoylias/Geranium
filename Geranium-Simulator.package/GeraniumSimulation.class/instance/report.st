@@ -1,4 +1,7 @@
 instance creation
 report
 
-	^ self generateInputReport -> self generateOutputReport
+	^ GeraniumReport new
+		areaOfInterest: areaOfInterest;
+		inputVisitor: visitor;
+		outputReport: self generateOutputReport

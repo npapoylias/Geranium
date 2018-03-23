@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Geranium-Simulator",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"categories",
+		"minAvgExpectedConsumptionPerYear",
+		"maxAvgExpectedConsumptionPerYear",
+		"avgConsumptionPerYear",
+		"areaOfInterest"
+	],
+	"name" : "GeraniumOutputReport",
+	"type" : "normal"
+}

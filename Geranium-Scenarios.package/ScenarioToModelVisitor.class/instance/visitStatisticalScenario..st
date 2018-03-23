@@ -1,7 +1,6 @@
 visiting
 visitStatisticalScenario: aStatisticalScenario
 
-	| climate |
 	areaOfInterest := AreaOfInterest new.
 	areaOfInterest coordinates: aStatisticalScenario coordinates.
 	numberOfBuildings := aStatisticalScenario resolveTotalNumberOfBuildings next.

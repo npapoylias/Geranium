@@ -1,7 +1,7 @@
 instance creation
 with: aBlock "accepting composer view and returning rows of assoc name->viz"
 
-	|c vizs currentRowNames lastRowNames names|
+	|c vizs currentRowNames lastRowNames names v |
 		
 	c := RTComposer new.
 	c gap: 155.
@@ -28,4 +28,10 @@ with: aBlock "accepting composer view and returning rows of assoc name->viz"
 	].
 	names do: [:n | c nameGroup: n as: n asString].
 	c propagateHighlightToAll.
-	^ c view
+	v := c view.
+	v @ RTDraggableView.
+	v @ (RTGridView new gridSize: 10).
+	v @ RTZoomableView.
+	v @ RTDoubleScrollBar.
+	"v @ RTSelectionBox."
+	^ v

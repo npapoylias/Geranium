@@ -5,7 +5,11 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "GeraniumOutput",
+	"instvars" : [
+		"areaOfInterest",
+		"inputVisitor",
+		"outputReport"
+	],
+	"name" : "GeraniumReport",
 	"type" : "normal"
 }

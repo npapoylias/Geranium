@@ -14,7 +14,8 @@
 		"years",
 		"areaOfInterest",
 		"perfecture",
-		"country"
+		"country",
+		"climate"
 	],
 	"name" : "ScenarioToModelVisitor",
 	"commentStamp" : "",
