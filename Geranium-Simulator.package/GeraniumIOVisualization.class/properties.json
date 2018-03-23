@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "GeraniumOutputReport",
+	"super" : "Object",
 	"category" : "Geranium-Simulator",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"report"
+	],
 	"name" : "GeraniumIOVisualization",
 	"type" : "normal"
 }
