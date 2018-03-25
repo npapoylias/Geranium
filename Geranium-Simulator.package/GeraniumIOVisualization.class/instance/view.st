@@ -10,7 +10,7 @@ view
 					"#PIE -> ({ #a -> 20 . #b -> 70 . #c -> 10 } 
 						pieWithCaption: nil
 						inView: view)."
-					#ResidencePercentages -> report input residenceDistribution asPieWithCaption: nil inView: view.
+					#ResidencePercentages -> (report input residenceDistribution asPieWithCaption: nil inView: view).
 					#HIST -> ([ |x| x := PMGaussianGenerator new. ((1 to: 100) collect: [:i | x next]) 
 						frequencyHistogram: Color orange withCaption: nil inView: view] value).
 					#CPLOT -> ([|x| x:= PMGaussianGenerator new. ((1 to: 100) collect: [:i | x next]) 
