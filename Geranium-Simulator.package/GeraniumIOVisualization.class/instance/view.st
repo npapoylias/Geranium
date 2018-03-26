@@ -16,6 +16,7 @@ view
 							kiviatForParameters: { #Floors . #Corridors . #Appartments .}
 							withCaption: 'Appartment Block Dimensions'
 							inView: view).
+					
 					"#KIVIAT -> ({ #a -> (1 to: 3 ). #b -> (3 to: 6) . #c -> (6 to: 9 ). #d -> (9 to: 12) }
 							kiviatForParameters: { #x . #y . #z .}
 							withCaption: nil
