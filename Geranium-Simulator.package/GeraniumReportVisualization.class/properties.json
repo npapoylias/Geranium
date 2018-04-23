@@ -8,6 +8,6 @@
 	"instvars" : [
 		"report"
 	],
-	"name" : "GeraniumIOVisualization",
+	"name" : "GeraniumReportVisualization",
 	"type" : "normal"
 }

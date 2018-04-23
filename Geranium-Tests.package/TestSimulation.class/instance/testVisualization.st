@@ -1,4 +1,4 @@
 initialization
 testVisualization
 			
-	^ (GeraniumIOVisualization new with: report) view inspect
+	^ (GeraniumReportVisualization new with: report) view inspect
