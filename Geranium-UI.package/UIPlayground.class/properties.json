@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposableModel",
+	"category" : "Geranium-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"buttonHappy",
+		"buttonNeutral",
+		"buttonBad",
+		"screen",
+		"registeredColorsList",
+		"iconList"
+	],
+	"name" : "UIPlayground",
+	"type" : "normal"
+}

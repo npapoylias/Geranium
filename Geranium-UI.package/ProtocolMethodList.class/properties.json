@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposableModel",
+	"category" : "Geranium-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"label",
+		"methods"
+	],
+	"name" : "ProtocolMethodList",
+	"type" : "normal"
+}

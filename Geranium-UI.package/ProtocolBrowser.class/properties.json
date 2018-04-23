@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposableModel",
+	"category" : "Geranium-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"text",
+		"viewer"
+	],
+	"name" : "ProtocolBrowser",
+	"type" : "normal"
+}

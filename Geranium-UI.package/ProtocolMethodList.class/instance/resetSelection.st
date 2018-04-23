@@ -1,0 +1,4 @@
+api
+resetSelection
+
+	methods resetSelection
