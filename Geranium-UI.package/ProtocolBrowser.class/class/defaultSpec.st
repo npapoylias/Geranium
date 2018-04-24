@@ -2,6 +2,7 @@ specs
 defaultSpec
 
 	"self new openWithSpec"
+	"self new openExternalWindowWithSpec"
 
 	^ SpecColumnLayout composed
 			newColumn: [ :col | 
