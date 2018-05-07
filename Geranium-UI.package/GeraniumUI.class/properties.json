@@ -1,12 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "ComposableModel",
 	"category" : "Geranium-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"simulation"
+		"menu",
+		"roassal",
+		"input",
+		"slider"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"
