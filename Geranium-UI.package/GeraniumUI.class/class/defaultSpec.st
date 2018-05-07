@@ -5,7 +5,7 @@ defaultSpec
 	^ SpecLayout composed
 		newColumn: [ :c | 
 			c 
-				add: #menu height: 64; newRow: [ :r | r add: #slider ];
+				newRow: [ :r | r add: #menu; add: #slider] height: 64;
 				add: #roassal;
 				addSplitter;
 				add: #input ];
