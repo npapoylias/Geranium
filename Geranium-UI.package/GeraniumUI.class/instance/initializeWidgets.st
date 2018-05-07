@@ -40,6 +40,7 @@ initializeWidgets
 	menu applyTo: self.
 	slider := self instantiate: SliderModel.
 	slider
+		color: Color green;
 		min: 0;
 		max: 100;
 		whenValueChangedDo: [ :value | slider label: value asString ].
