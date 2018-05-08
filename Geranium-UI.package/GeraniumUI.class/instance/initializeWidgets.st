@@ -3,11 +3,11 @@ initializeWidgets
 	rwnd := self newButton
 						aboutText: 'Rewind';
 						icon: (self appIcon: #rewind);
-						action: [ slider widget update].		
+						action: [self stepChanged: step - 1. slider widget updateValue].		
 	ff := self newButton
 						aboutText: 'Fast-Fwd';
 						icon: (self appIcon: #'fast-forward');
-						action: [ slider widget update ].
+						action: [self stepChanged: step + 1. slider widget updateValue].
 	menu := MenuModel new
 		addGroup: [ :group | 
 			"group
@@ -56,6 +56,7 @@ initializeWidgets
 		max: (max := 100);
 		label: min asString , '/' , max asString;
 		setValueSelector: #stepChanged:;
+		getValueSelector: #step;
 		extent: 24@24) asSpecAdapter. "self instantiate: SliderModel.
 	slider
 		color: Color green;
