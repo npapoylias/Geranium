@@ -1,21 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "ComposableModel",
+	"super" : "BracketSliderMorph",
 	"category" : "Geranium-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"menu",
-		"roassal",
-		"input",
-		"slider",
-		"min",
-		"max",
-		"step",
-		"rwnd",
-		"ff"
+		"fontColor"
 	],
-	"name" : "GeraniumUI",
+	"name" : "GeraniumSlider",
 	"type" : "normal"
 }

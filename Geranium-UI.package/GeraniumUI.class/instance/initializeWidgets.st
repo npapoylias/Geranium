@@ -1,14 +1,22 @@
 initialization
 initializeWidgets
+	rwnd := self newButton
+						aboutText: 'Rewind';
+						icon: (self appIcon: #rewind);
+						action: [ slider widget update].		
+	ff := self newButton
+						aboutText: 'Fast-Fwd';
+						icon: (self appIcon: #'fast-forward');
+						action: [ slider widget update ].
 	menu := MenuModel new
 		addGroup: [ :group | 
-			group
+			"group
 				addItem: [ :item | 
 					item
 						name: nil;
 						description: 'Rewind';
 						icon: (self appIcon: #rewind);
-						action: [ ] ].
+						action: [ ] ]."
 			group
 				addItem: [ :item | 
 					item
@@ -29,21 +37,31 @@ initializeWidgets
 						name: nil;
 						description: 'Stop';
 						icon: (self appIcon: #stop);
-						action: [ ] ].
-			group
+						action: [ ] ]].
+			"group
 				addItem: [ :item | 
 					item
 						name: nil;
 						description: 'Fast-Fwd';
 						icon: (self appIcon: #'fast-forward');
-						action: [ ] ]].
+						action: [ ] ]]".
 	menu applyTo: self.
-	slider := self instantiate: SliderModel.
+	slider := (GeraniumSlider new
+		model: self;
+		quantum: 1;
+		fontColor: Color white;
+		hResizing: #spaceFill;
+		vResizing: #spaceFill;
+		min: (step := min := 0);
+		max: (max := 100);
+		label: min asString , '/' , max asString;
+		setValueSelector: #stepChanged:;
+		extent: 24@24) asSpecAdapter. "self instantiate: SliderModel.
 	slider
 		color: Color green;
 		min: 0;
 		max: 100;
-		whenValueChangedDo: [ :value | slider label: value asString ].
+		whenValueChangedDo: [ :value | slider label: value asString ]."
 	roassal := self instantiate: RoassalModel.	
 	"This is the code for the Roassal view.
 	The block takes both a view and a canvas."
