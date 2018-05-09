@@ -1,4 +1,4 @@
 specs
 open
 	
-	(self new openWithSpec; window) maximize
+	^ (self new openWithSpec; window) maximize

@@ -18,6 +18,7 @@ mapWithBuildingsCenteredAroundBoundingBox: aBoundingBox
 	view canvas addMenu: 'In' callback: [ RTZoomInMove on: view ].
 	view canvas addMenu: 'Out' callback: [ RTZoomOutMove on: view ].
 	view @ RTDraggableView @ RTZoomableView.
+	view @ RTDoubleScrollBar.
 	RTEmptyViewContext setOnView: view.
 	view canvas camera focusOnCenterScaled.
 	^ view

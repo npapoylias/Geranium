@@ -4,7 +4,7 @@ with: aBlock inView: aView"accepting composer view and returning rows of assoc n
 	|c vizs currentRowNames lastRowNames names v |
 		
 	c := RTComposer new.
-	c view: aView.
+	aView ifNotNil: [c view: aView].
 	c gap: 155.
 	names := OrderedCollection new.
 	vizs := aBlock value: c view.
@@ -30,6 +30,7 @@ with: aBlock inView: aView"accepting composer view and returning rows of assoc n
 	names do: [:n | c nameGroup: n as: n asString].
 	c propagateHighlightToAll.
 	v := c view.
+	v canvas camera focusOnCenterScaled.
 	v @ RTDraggableView.
 	v @ (RTGridView new gridSize: 10).
 	v @ RTZoomableView.
