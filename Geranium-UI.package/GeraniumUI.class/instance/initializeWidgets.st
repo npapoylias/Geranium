@@ -37,4 +37,6 @@ initializeWidgets
 	mapDiagram := self instantiate: RoassalModel.	
 	mapDiagram script: [ :view :canvas | GeraniumUIOsmView new renderInView: view; geraniumAreaMapExample ].
 	inputDiagrams := self instantiate: RoassalModel.
-	inputDiagrams script: [:v :c | (GeraniumReportVisualization new with: self report; inView: v) setCanvas: c].
+	inputDiagrams script: [:v :c | (GeraniumReportVisualization new with: self report; inHorizontalExampleView: v) setCanvas: c].
+	outputDiagrams := self instantiate: RoassalModel.
+	outputDiagrams script: [:v :c | (GeraniumReportVisualization new with: self report; inVerticalExampleView: v) setCanvas: c].

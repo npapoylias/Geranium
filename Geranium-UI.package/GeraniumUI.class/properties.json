@@ -16,7 +16,8 @@
 		"pause",
 		"stop",
 		"inputDiagrams",
-		"mapDiagram"
+		"mapDiagram",
+		"outputDiagrams"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"
