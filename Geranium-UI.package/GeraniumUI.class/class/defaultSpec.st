@@ -5,8 +5,14 @@ defaultSpec
 	^ SpecLayout composed
 		newColumn: [ :c | 
 			c 
-				newRow: [ :r | r add: #menu  left: 0 right: 0.7; add: #rwnd left: 0.3 right: 0.65; add: #slider left: 0.35 right: 0.05; add: #ff left: 0.95 right: 0.0] height: 64;
-				add: #roassal;
+				newRow: [ :r | r 
+						add: #play left: 0 right: 0.95; 
+						add: #pause left: 0.05 right: 0.90; 
+						add: #stop  left: 0.10 right: 0.85; 
+						add: #rwnd left: 0.15 right: 0.80; 
+						add: #slider left: 0.20 right: 0.05; 
+						add: #ff left: 0.95 right: 0.0] top: 0 bottom: 0.94;
+				add: #mapDiagram top: 0.06 bottom: 0.3;
 				addSplitter;
-				add: #input ];
+				add: #inputDiagrams top: 0.7 bottom: 0 ];
 		yourself

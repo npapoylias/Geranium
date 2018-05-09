@@ -1,4 +1,0 @@
-initialization
-input
-
-	^ input

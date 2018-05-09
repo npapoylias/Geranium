@@ -6,15 +6,17 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"menu",
-		"roassal",
-		"input",
 		"slider",
 		"min",
 		"max",
 		"step",
 		"rwnd",
-		"ff"
+		"ff",
+		"play",
+		"pause",
+		"stop",
+		"inputDiagrams",
+		"mapDiagram"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"
