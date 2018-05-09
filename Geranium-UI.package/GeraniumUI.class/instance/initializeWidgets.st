@@ -1,5 +1,6 @@
 initialization
 initializeWidgets
+	| tab  |
 	rwnd := self newButton
 						aboutText: 'Rewind';
 						icon: (self appIcon: #rewind);
@@ -34,9 +35,54 @@ initializeWidgets
 		setValueSelector: #stepChanged:;
 		getValueSelector: #step;
 		extent: 24@24) asSpecAdapter. 
-	mapDiagram := self instantiate: RoassalModel.	
+	mapDiagram := RoassalModel new.	
 	mapDiagram script: [ :view :canvas | GeraniumUIOsmView new renderInView: view; geraniumAreaMapExample ].
-	inputDiagrams := self instantiate: RoassalModel.
+	inputDiagrams := RoassalModel new. 
 	inputDiagrams script: [:v :c | (GeraniumReportVisualization new with: self report; inHorizontalExampleView: v) setCanvas: c].
-	outputDiagrams := self instantiate: RoassalModel.
+	outputDiagrams := RoassalModel new.
 	outputDiagrams script: [:v :c | (GeraniumReportVisualization new with: self report; inVerticalExampleView: v) setCanvas: c].
+	
+	tabmgrMap := self newTabManager.
+	tab := self newTab.
+	tab model: mapDiagram.
+	tab label: 'Map'; closeable: false; 
+		icon: Smalltalk ui icons thumbsUpIcon. 
+	tabmgrMap addTab: tab.
+	tab := self newTab.
+	"tab model: inputDiagrams."
+	tab label: 'Model'; closeable: false;
+		icon: Smalltalk ui icons thumbsUpIcon. 
+	tabmgrMap addTab: tab.
+	tab := self newTab.
+	"tab model: inputDiagrams."
+	
+	tabmgrInput := self newTabManager.
+	tab := self newTab.
+	tab model: inputDiagrams.
+	tab label: 'Structural'; closeable: false; 
+		icon: Smalltalk ui icons thumbsUpIcon. 
+	tabmgrInput addTab: tab.
+	tab := self newTab.
+	"tab model: inputDiagrams."
+	tab label: 'Social'; closeable: false;
+		icon: Smalltalk ui icons thumbsUpIcon. 
+	tabmgrInput addTab: tab.
+	tab := self newTab.
+	"tab model: inputDiagrams."
+	tab label: 'Micro-Climate'; closeable: false;
+		icon: Smalltalk ui icons thumbsUpIcon. 
+	tabmgrInput addTab: tab.
+	
+	
+	tabmgrOutput := self newTabManager.
+	tab := self newTab.
+	tab model: outputDiagrams.
+	tab label: 'Electricity'; closeable: false; 
+		icon: Smalltalk ui icons repairIcon. 
+	tabmgrOutput addTab: tab.
+	tab := self newTab.
+	"tab model: outputDiagrams."
+	tab label: 'Gas'; closeable: false; 
+		icon: Smalltalk ui icons repairIcon. 
+	tabmgrOutput addTab: tab.
+

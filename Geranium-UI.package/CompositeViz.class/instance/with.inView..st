@@ -30,7 +30,7 @@ with: aBlock inView: aView"accepting composer view and returning rows of assoc n
 	names do: [:n | c nameGroup: n as: n asString].
 	c propagateHighlightToAll.
 	v := c view.
-	v canvas camera focusOnCenterScaled.
+	v canvas camera focusOnCenterScaled: v canvas extent * 1.5.
 	v @ RTDraggableView.
 	v @ (RTGridView new gridSize: 10).
 	v @ RTZoomableView.

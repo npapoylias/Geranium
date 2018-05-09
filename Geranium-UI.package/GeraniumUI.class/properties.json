@@ -15,9 +15,12 @@
 		"play",
 		"pause",
 		"stop",
-		"inputDiagrams",
 		"mapDiagram",
-		"outputDiagrams"
+		"tabmgrInput",
+		"tabmgrOutput",
+		"inputDiagrams",
+		"outputDiagrams",
+		"tabmgrMap"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"
