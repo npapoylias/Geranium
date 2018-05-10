@@ -6,6 +6,6 @@ splashLogo
 	logoMorph := (ImageReadWriter formFromStream: logoPath readStream)
 		asMorph.
 	logoMorph openCenteredInWorld.
-	[ (Delay forSeconds: 4) wait.
+	[ (Delay forSeconds: 8) wait.
 	logoMorph delete ] fork
 	"show logo for 3 seconds, while loading the UI in parallel"
