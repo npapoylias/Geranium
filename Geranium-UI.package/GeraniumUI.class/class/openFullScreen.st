@@ -1,5 +1,5 @@
 specs
 openFullScreen
 	"self openFullScreen"
-	self new openWorldWithSpec.
+	(self new openWithSpec; window) openFullscreen.
 	self splashLogo.
