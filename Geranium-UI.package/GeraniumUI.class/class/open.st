@@ -1,4 +1,5 @@
 specs
 open
-	
-	^ (self new openWithSpec; window) maximize
+	"self open"
+	(self new openWithSpec; window) maximize.
+	self splashLogo.
