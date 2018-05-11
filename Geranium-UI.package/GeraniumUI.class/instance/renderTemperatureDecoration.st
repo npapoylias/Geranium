@@ -1,4 +1,4 @@
-initialization
+rendering
 renderTemperatureDecoration
 
 	| shape el |
@@ -11,5 +11,5 @@ renderTemperatureDecoration
 		timesRepeat: [ el := shape element translateTo: self atRandomInsideBoundingBox.
 			el @ RTDraggable.
 			mapView view add: el.
-		 	tempAnimation value: el ].
+		 	tempAnimation value: (mapView decorationElements add: el) ].
 	tempContinue := false.
