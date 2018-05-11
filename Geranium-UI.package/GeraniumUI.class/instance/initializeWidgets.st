@@ -19,7 +19,7 @@ initializeWidgets
 				ifTrue: [ pausedOrStopped := false.
 					self resumeTemperatureAnimation.
 					[ [ pausedOrStopped or: [ step = max ] ]
-						whileFalse: [ self doStep ] ] fork ] ].
+						whileFalse: [ self doStep. (Delay forMilliseconds: 500) wait ] ] fork ] ].
 	pause := self newButton
 		aboutText: 'Pause';
 		icon: (self appIcon: #pause);
@@ -29,7 +29,7 @@ initializeWidgets
 		aboutText: 'Stop';
 		icon: (self appIcon: #stop);
 		action: [ pausedOrStopped := true.
-			self pauseTemperatureAnimation
+			self pauseTemperatureAnimation.
 			self gotoStep: 0.
 		].
 	slider := (GeraniumSlider new
