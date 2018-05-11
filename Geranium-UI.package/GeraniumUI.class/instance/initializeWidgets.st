@@ -1,6 +1,7 @@
 initialization
 initializeWidgets
 	| tab  |
+	pausedOrStopped := true.
 	rwnd := self newButton
 						aboutText: 'Rewind';
 						icon: (self appIcon: #rewind);
@@ -14,15 +15,20 @@ initializeWidgets
 	play := self newButton
 						aboutText: 'Play';
 						icon: (self appIcon: #play);
-						action: [].
+						action: [pausedOrStopped ifTrue: [
+								pausedOrStopped := false. self resumeTemperatureAnimation. 
+								[pausedOrStopped] 
+									whileFalse: [self stepChanged: step + 1. slider widget updateValue]]
+						].
 	pause := self newButton
 						aboutText: 'Pause';
 						icon: (self appIcon: #pause);
-						action: [].
+						action: [pausedOrStopped := true. self pauseTemperatureAnimation].
 	stop := self newButton
 						aboutText: 'Stop';
 						icon: (self appIcon: #stop);
-						action: [self stepChanged: 0. slider widget updateValue].
+						action: [pausedOrStopped := true. self stepChanged: 0. slider widget updateValue].
+	
 	slider := (GeraniumSlider new
 		model: self;
 		quantum: 1;
@@ -35,8 +41,10 @@ initializeWidgets
 		setValueSelector: #stepChanged:;
 		getValueSelector: #step;
 		extent: 24@24) asSpecAdapter. 
+		
 	mapDiagram := RoassalModel new.	
-	mapDiagram script: [ :view :canvas | GeraniumUIOsmView new renderInView: view; geraniumAreaMapExample ].
+	mapDiagram script: [ :view :canvas | mapView := GeraniumUIOsmView new. mapView renderInView: view; geraniumAreaMapExample ].
+	self renderTemperatureDecoration.
 	inputDiagrams := RoassalModel new. 
 	inputDiagrams script: [:v :c | (GeraniumReportVisualization new with: self report; inHorizontalExampleView: v) setCanvas: c].
 	outputDiagrams := RoassalModel new.

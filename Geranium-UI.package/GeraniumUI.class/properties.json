@@ -20,7 +20,11 @@
 		"tabmgrOutput",
 		"inputDiagrams",
 		"outputDiagrams",
-		"tabmgrMap"
+		"tabmgrMap",
+		"mapView",
+		"pausedOrStopped",
+		"tempContinue",
+		"tempAnimation"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"

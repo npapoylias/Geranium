@@ -1,0 +1,5 @@
+initialization
+pauseTemperatureAnimation
+
+	tempContinue := false
+	
