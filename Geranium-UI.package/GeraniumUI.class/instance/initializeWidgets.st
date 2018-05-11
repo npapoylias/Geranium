@@ -15,10 +15,12 @@ initializeWidgets
 	play := self newButton
 						aboutText: 'Play';
 						icon: (self appIcon: #play);
-						action: [pausedOrStopped ifTrue: [
+						action: [
+							pausedOrStopped ifTrue: [
 								pausedOrStopped := false. self resumeTemperatureAnimation. 
-								[pausedOrStopped] 
-									whileFalse: [self stepChanged: step + 1. slider widget updateValue]]
+								[[pausedOrStopped] 
+									whileFalse: [self stepChanged: step + 1. slider widget updateValue]] fork 
+							]
 						].
 	pause := self newButton
 						aboutText: 'Pause';
@@ -43,8 +45,7 @@ initializeWidgets
 		extent: 24@24) asSpecAdapter. 
 		
 	mapDiagram := RoassalModel new.	
-	mapDiagram script: [ :view :canvas | mapView := GeraniumUIOsmView new. mapView renderInView: view; geraniumAreaMapExample ].
-	self renderTemperatureDecoration.
+	mapDiagram script: [ :view :canvas | mapView := GeraniumUIOsmView new. mapView renderInView: view; geraniumAreaMapExample. self renderTemperatureDecoration].
 	inputDiagrams := RoassalModel new. 
 	inputDiagrams script: [:v :c | (GeraniumReportVisualization new with: self report; inHorizontalExampleView: v) setCanvas: c].
 	outputDiagrams := RoassalModel new.
@@ -93,4 +94,3 @@ initializeWidgets
 	tab label: 'Gas'; closeable: false; 
 		icon: Smalltalk ui icons repairIcon. 
 	tabmgrOutput addTab: tab.
-
