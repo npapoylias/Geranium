@@ -3,7 +3,6 @@ mapWithBuildingsCenteredAroundBoundingBox: aBoundingBox
 
 	"refactor in its own spec/roassal widget.."
 
-	| map mapData |
 	"other info or handle the roads as lines etc"
 	view ifNil: [view := RTView new].
 	map := RTOSM new ratio: 100.

@@ -9,7 +9,9 @@
 		"view",
 		"boundingBox",
 		"mapElements",
-		"decorationElements"
+		"decorationElements",
+		"map",
+		"mapData"
 	],
 	"name" : "GeraniumUIOsmView",
 	"type" : "normal"

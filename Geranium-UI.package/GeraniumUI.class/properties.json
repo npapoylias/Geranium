@@ -24,7 +24,8 @@
 		"mapView",
 		"pausedOrStopped",
 		"tempContinue",
-		"tempAnimation"
+		"tempAnimation",
+		"boundingBox"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"

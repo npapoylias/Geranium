@@ -29,8 +29,9 @@ initializeWidgets
 		aboutText: 'Stop';
 		icon: (self appIcon: #stop);
 		action: [ pausedOrStopped := true.
-			self stepChanged: 0.
-			slider widget updateValue ].
+			self pauseTemperatureAnimation
+			self gotoStep: 0.
+		].
 	slider := (GeraniumSlider new
 		model: self;
 		quantum: 1;
@@ -50,6 +51,7 @@ initializeWidgets
 			mapView
 				renderInView: view;
 				geraniumAreaMapExample.
+			self boundingBox: mapView boundingBox.
 			self renderTemperatureDecoration ].
 	inputDiagrams := RoassalModel new.
 	inputDiagrams
