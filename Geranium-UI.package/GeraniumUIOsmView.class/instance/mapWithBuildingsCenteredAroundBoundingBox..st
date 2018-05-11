@@ -10,7 +10,7 @@ mapWithBuildingsCenteredAroundBoundingBox: aBoundingBox
 	view add: map element.
 	mapData := self
 		retrieveMapDataDefinedAs: {'way["building"="yes"]' . 'way["highway"=residential]'}
-		positionedWithInBoundingBox: aBoundingBox "'46.16352961038194,-1.1302614212036133,46.166851083597415,-1.1267745494842527'".
+		positionedWithInBoundingBox: (boundingBox := aBoundingBox) "'46.16352961038194,-1.1302614212036133,46.166851083597415,-1.1267745494842527'".
 	self 
 		renderTriple: { 'way' . 'building' . 'yes' } 
 		of: mapData for: view asPolygonIn: map 

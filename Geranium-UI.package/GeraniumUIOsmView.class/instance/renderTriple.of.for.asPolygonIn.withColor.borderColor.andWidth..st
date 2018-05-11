@@ -1,5 +1,5 @@
 examples
-renderTriple: aTriple of: mapData for: view asPolygonIn: map withColor: color borderColor: bcolor andWidth: borderWidth
+renderTriple: aTriple of: mapData for: aView asPolygonIn: map withColor: color borderColor: bcolor andWidth: borderWidth
 
 	| nodes type parameter value |
 
@@ -17,4 +17,4 @@ renderTriple: aTriple of: mapData for: view asPolygonIn: map withColor: color bo
 						color: color.
 					shape
 						vertices: ((item at: 'nodes') collect: [ :n | nodes at: n ]).
-					view add: (shape elementOn: (item at: 'tags')) @ RTPopup ] ]
+					aView add: (mapElements add: (shape elementOn: (item at: 'tags'))) @ RTPopup ] ]

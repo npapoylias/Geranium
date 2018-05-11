@@ -1,6 +1,9 @@
 as yet unclassified
 exampleGrapherAnimation
 
+	"after 100 it becomes slower, but maybe this is due to the computation cumsum
+	performed ++ of course the total redraw"
+
 	| pts view draw |
 	pts := Dictionary new.
 	pts at: Color red put: OrderedCollection new.

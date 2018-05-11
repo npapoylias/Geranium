@@ -6,7 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"view"
+		"view",
+		"boundingBox",
+		"mapElements",
+		"decorationElements"
 	],
 	"name" : "GeraniumUIOsmView",
 	"type" : "normal"
