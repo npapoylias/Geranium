@@ -15,13 +15,13 @@ inVerticalExampleView: aView
 						boxedPlot: Color green withCaption: nil inView: view).
 					
 				}.
-				{"3rd" 
+				"{ 
 					#DPLOT -> ([|x| x:= PMGaussianGenerator new. ((1 to: 100) collect: [:i | x next]) 
 						dottedPlot: Color red withCaption: nil inView: view] value).
 				 
 				}.
-				{"4th"  
+				{  
 					#IDHIST -> ((1 to: 10) identityHistogram: Color yellow withCaption: nil inView: view)
-				}
+				}"
 			}
 		] inView: aView

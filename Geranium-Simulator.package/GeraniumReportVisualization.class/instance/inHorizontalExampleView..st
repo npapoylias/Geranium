@@ -22,7 +22,7 @@ inHorizontalExampleView: aView
 							inView: view).
 						"#HIST -> ([ |x| x := PMGaussianGenerator new. ((1 to: 100) collect: [:i | x next]) 
 						frequencyHistogram: Color orange withCaption: nil inView: view] value)."
-					self appartmentPercentagesHistogramsInView: view.
+					"self appartmentPercentagesHistogramsInView: view."
 					"#CPLOT -> ([|x| x:= PMGaussianGenerator new. ((1 to: 100) collect: [:i | x next]) 
 						connectedPlot: Color red withCaption: nil inView: view] value)."
 					

@@ -13,11 +13,11 @@ defaultSpec
 						add: #rwnd left: 0.15 right: 0.80; 
 						add: #slider left: 0.20 right: 0.05; 
 						add: #ff left: 0.95 right: 0.0] top: 0 bottom: 0.94;
-						add: #tabmgrMap top: 0.06 bottom: 0.3;
+						add: #tabmgrMap top: 0.06 bottom: 0.4;
 						addSplitter;
-						add: #tabmgrInput top: 0.7 bottom: 0 
-			] left: 0 right: 0.25;
+						add: #tabmgrInput top: 0.6 bottom: 0 
+			] left: 0 right: 0.30;
 			addSplitter;
-			add: #tabmgrOutput left: 0.75 right: 0.
+			add: #tabmgrOutput left: 0.70 right: 0.
 		]; 						
 		yourself
