@@ -18,7 +18,7 @@ initializeWidgets
 		action: [ pausedOrStopped
 				ifTrue: [ pausedOrStopped := false.
 					self resumeTemperatureAnimation.
-					[ [ pausedOrStopped and: [ step < max ] ]
+					[ [ pausedOrStopped or: [ step = max ] ]
 						whileFalse: [ self doStep ] ] fork ] ].
 	pause := self newButton
 		aboutText: 'Pause';
