@@ -1,36 +1,36 @@
 initialization
 initializeWidgets
-	| tab  |
+	| tab |
 	pausedOrStopped := true.
 	rwnd := self newButton
-						aboutText: 'Rewind';
-						icon: (self appIcon: #rewind);
-						action: [step > min ifTrue: 
-							[self stepChanged: step - 1. slider widget updateValue]].		
+		aboutText: 'Rewind';
+		icon: (self appIcon: #rewind);
+		action: [ step > min
+				ifTrue: [ self gotoStep: step - 1 ] ].
 	ff := self newButton
-						aboutText: 'Fast-Fwd';
-						icon: (self appIcon: #'fast-forward');
-						action: [step < max 
-							ifTrue: [self stepChanged: step + 1. slider widget updateValue]].
+		aboutText: 'Fast-Fwd';
+		icon: (self appIcon: #'fast-forward');
+		action: [ step < max
+				ifTrue: [ self doStep ] ].
 	play := self newButton
-						aboutText: 'Play';
-						icon: (self appIcon: #play);
-						action: [
-							pausedOrStopped ifTrue: [
-								pausedOrStopped := false. self resumeTemperatureAnimation. 
-								[[pausedOrStopped] 
-									whileFalse: [self stepChanged: step + 1. slider widget updateValue]] fork 
-							]
-						].
+		aboutText: 'Play';
+		icon: (self appIcon: #play);
+		action: [ pausedOrStopped
+				ifTrue: [ pausedOrStopped := false.
+					self resumeTemperatureAnimation.
+					[ [ pausedOrStopped and: [ step < max ] ]
+						whileFalse: [ self doStep ] ] fork ] ].
 	pause := self newButton
-						aboutText: 'Pause';
-						icon: (self appIcon: #pause);
-						action: [pausedOrStopped := true. self pauseTemperatureAnimation].
+		aboutText: 'Pause';
+		icon: (self appIcon: #pause);
+		action: [ pausedOrStopped := true.
+			self pauseTemperatureAnimation ].
 	stop := self newButton
-						aboutText: 'Stop';
-						icon: (self appIcon: #stop);
-						action: [pausedOrStopped := true. self stepChanged: 0. slider widget updateValue].
-	
+		aboutText: 'Stop';
+		icon: (self appIcon: #stop);
+		action: [ pausedOrStopped := true.
+			self stepChanged: 0.
+			slider widget updateValue ].
 	slider := (GeraniumSlider new
 		model: self;
 		quantum: 1;
@@ -42,55 +42,78 @@ initializeWidgets
 		label: min asString , '/' , max asString;
 		setValueSelector: #stepChanged:;
 		getValueSelector: #step;
-		extent: 24@24) asSpecAdapter. 
-		
-	mapDiagram := RoassalModel new.	
-	mapDiagram script: [ :view :canvas | mapView := GeraniumUIOsmView new. mapView renderInView: view; geraniumAreaMapExample. self renderTemperatureDecoration].
-	inputDiagrams := RoassalModel new. 
-	inputDiagrams script: [:v :c | (GeraniumReportVisualization new with: self report; inHorizontalExampleView: v) setCanvas: c].
+		extent: 24 @ 24) asSpecAdapter.
+	mapDiagram := RoassalModel new.
+	mapDiagram
+		script: [ :view :canvas | 
+			mapView := GeraniumUIOsmView new.
+			mapView
+				renderInView: view;
+				geraniumAreaMapExample.
+			self renderTemperatureDecoration ].
+	inputDiagrams := RoassalModel new.
+	inputDiagrams
+		script: [ :v :c | 
+			(GeraniumReportVisualization new
+				with: self report;
+				inHorizontalExampleView: v) setCanvas: c ].
 	outputDiagrams := RoassalModel new.
-	outputDiagrams script: [:v :c | (GeraniumReportVisualization new with: self report; inVerticalExampleView: v) setCanvas: c].
-	
+	outputDiagrams
+		script: [ :v :c | 
+			(GeraniumReportVisualization new
+				with: self report;
+				inVerticalExampleView: v) setCanvas: c ].
 	tabmgrMap := self newTabManager.
 	tab := self newTab.
 	tab model: mapDiagram.
-	tab label: 'Map'; closeable: false; 
-		icon: Smalltalk ui icons thumbsUpIcon. 
+	tab
+		label: 'Map';
+		closeable: false;
+		icon: Smalltalk ui icons thumbsUpIcon.
 	tabmgrMap addTab: tab.
 	tab := self newTab.
 	"tab model: inputDiagrams."
-	tab label: 'Model'; closeable: false;
-		icon: Smalltalk ui icons thumbsUpIcon. 
+	tab
+		label: 'Model';
+		closeable: false;
+		icon: Smalltalk ui icons thumbsUpIcon.
 	tabmgrMap addTab: tab.
 	tab := self newTab.
 	"tab model: inputDiagrams."
-	
 	tabmgrInput := self newTabManager.
 	tab := self newTab.
 	tab model: inputDiagrams.
-	tab label: 'Structural'; closeable: false; 
-		icon: Smalltalk ui icons thumbsUpIcon. 
+	tab
+		label: 'Structural';
+		closeable: false;
+		icon: Smalltalk ui icons thumbsUpIcon.
 	tabmgrInput addTab: tab.
 	tab := self newTab.
 	"tab model: inputDiagrams."
-	tab label: 'Social'; closeable: false;
-		icon: Smalltalk ui icons thumbsUpIcon. 
+	tab
+		label: 'Social';
+		closeable: false;
+		icon: Smalltalk ui icons thumbsUpIcon.
 	tabmgrInput addTab: tab.
 	tab := self newTab.
 	"tab model: inputDiagrams."
-	tab label: 'Micro-Climate'; closeable: false;
-		icon: Smalltalk ui icons thumbsUpIcon. 
+	tab
+		label: 'Micro-Climate';
+		closeable: false;
+		icon: Smalltalk ui icons thumbsUpIcon.
 	tabmgrInput addTab: tab.
-	
-	
 	tabmgrOutput := self newTabManager.
 	tab := self newTab.
 	tab model: outputDiagrams.
-	tab label: 'Electricity'; closeable: false; 
-		icon: Smalltalk ui icons repairIcon. 
+	tab
+		label: 'Electricity';
+		closeable: false;
+		icon: Smalltalk ui icons repairIcon.
 	tabmgrOutput addTab: tab.
 	tab := self newTab.
 	"tab model: outputDiagrams."
-	tab label: 'Gas'; closeable: false; 
-		icon: Smalltalk ui icons repairIcon. 
-	tabmgrOutput addTab: tab.
+	tab
+		label: 'Gas';
+		closeable: false;
+		icon: Smalltalk ui icons repairIcon.
+	tabmgrOutput addTab: tab
