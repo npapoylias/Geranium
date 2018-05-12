@@ -1,5 +1,5 @@
 initialization
 gotoStep: aStep
 
-	self stepChanged: aStep.
+	self stepChanged: (step := aStep).
 	slider widget updateValue
