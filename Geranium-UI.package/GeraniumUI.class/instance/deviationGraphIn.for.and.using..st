@@ -46,7 +46,7 @@ deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aC
 		ds
 			connectUsing:
 				(RTLine new
-					color: (color alpha: 0.5); 
+					color: (color alpha: 0.01); 
 					width: 1).
 		b add: ds.
 		b addDecorator: dec ].
