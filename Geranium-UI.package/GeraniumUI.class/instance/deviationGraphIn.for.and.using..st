@@ -49,7 +49,7 @@ deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aC
 					color: (color alpha: 0.5); 
 					width: 1).
 		b add: ds.
-		b addDecorator: dec ].
+		"b addDecorator: dec" ].
 	b
 		axisX;
 		axisY.
@@ -58,8 +58,11 @@ deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aC
 	lb view: b view.
 	averageDataPoints doWithIndex: [ :c :i | lb addColor: (aColorPallete at: i) text: 'Series  ' , i printString ].
 	lb build.
-	view canvas camera focusOnCenterScaled: view canvas extent * 0.9.
-	b view @ RTZoomableView @ RTZoomableBoxView.
+	view canvas camera focusOnCenterScaled: view canvas extent * 1.0.
+	view @ RTDraggableView.
+	view @ (RTGridView new gridSize: 10).
+	view @ RTZoomableView.
+	view @ RTDoubleScrollBar.
 	b view signalUpdate.
 	^ b view.
 

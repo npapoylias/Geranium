@@ -2,4 +2,5 @@ api
 gotoStep: aStep
 
 	self stepChanged: (step := aStep).
-	slider widget updateValue
+	slider widget updateValue.
+	self updateElectricityConsumption.

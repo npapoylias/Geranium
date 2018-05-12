@@ -10,4 +10,3 @@ updateElectricityConsumption
 		for: averageDataPoints
 		and: deviationDataPoints
 		using: Color distinctTenLightColors.
-	outputElectricityView signalUpdate.
