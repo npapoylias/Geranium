@@ -9,4 +9,4 @@ updateElectricityConsumption
 		deviationGraphIn: outputElectricityView 
 		for: averageDataPoints
 		and: deviationDataPoints
-		using: Color distinctTenLightColors.
+		using: Color distinctTenStrongColors.
