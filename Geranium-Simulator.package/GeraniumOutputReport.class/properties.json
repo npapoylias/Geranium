@@ -10,7 +10,9 @@
 		"minAvgExpectedConsumptionPerYear",
 		"maxAvgExpectedConsumptionPerYear",
 		"avgConsumptionPerYear",
-		"areaOfInterest"
+		"areaOfInterest",
+		"consumptionHistory",
+		"consumptionHistoryOfBuildings"
 	],
 	"name" : "GeraniumOutputReport",
 	"type" : "normal"

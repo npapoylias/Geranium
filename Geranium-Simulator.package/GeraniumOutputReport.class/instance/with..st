@@ -5,7 +5,10 @@ with: anAreaOfInterest
 	categories := (areaOfInterest residences collect: [ :r | r category ]) asSet.
 	minAvgExpectedConsumptionPerYear := (categories collect: [ :c | c yearlyInterval key ]) min.
 	maxAvgExpectedConsumptionPerYear := (categories collect: [ :c | c yearlyInterval value ]) max.
-	avgConsumptionPerYear := (areaOfInterest historyOf: #consumption) sum / areaOfInterest numberOfResidences.
+	consumptionHistory := areaOfInterest historyOf: #consumption.
+	consumptionHistoryOfBuildings := Dictionary new.
+	areaOfInterest buildings do: [ :b | consumptionHistoryOfBuildings at: b put: (b historyOf: #consumption) ]. 
+	avgConsumptionPerYear := consumptionHistory sum / areaOfInterest numberOfResidences.
 	Transcript 
 		show: categories; cr;
 		show: minAvgExpectedConsumptionPerYear; cr;
