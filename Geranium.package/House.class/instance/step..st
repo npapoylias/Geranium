@@ -1,6 +1,6 @@
 accessing
 step: time
 
-	self 
+	^ self 
 		historyOf: #consumption
 		add: (super step: time) 		
