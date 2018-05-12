@@ -1,9 +1,10 @@
-examples
+accessing
 report
 
-	self fullInternalApiScript.
-	"min/max for non-hoping categories"
-
-	^ GeraniumSimulation new
+	^ report ifNil: [ 
+		self fullInternalApiScript.
+		"min/max for non-hoping categories"
+		report := GeraniumSimulation new
 			for: #ScenarioA;
-			run.
+			run
+	]

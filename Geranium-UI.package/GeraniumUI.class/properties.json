@@ -25,7 +25,8 @@
 		"pausedOrStopped",
 		"tempContinue",
 		"tempAnimation",
-		"boundingBox"
+		"boundingBox",
+		"report"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"
