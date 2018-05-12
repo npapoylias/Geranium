@@ -29,4 +29,4 @@ inHorizontalExampleView: aView
 				} deepFlatten.
 			
 			}
-		] inView: aView
+		] inView: aView focusing: 1.6

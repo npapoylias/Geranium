@@ -24,4 +24,4 @@ inVerticalExampleView: aView
 					#IDHIST -> ((1 to: 10) identityHistogram: Color yellow withCaption: nil inView: view)
 				}"
 			}
-		] inView: aView
+		] inView: aView focusing: 1.4
