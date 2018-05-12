@@ -56,7 +56,7 @@ step: time
 			forValue: self occupants awareness
 			inBooleanOptimumOf: true).
 			
-	^ consumption "self 
+	^ consumption * surface "self 
 			historyOf: #consumption
 			add: consumption" 			
 	 	

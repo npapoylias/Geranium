@@ -12,7 +12,8 @@
 		"avgConsumptionPerYear",
 		"areaOfInterest",
 		"consumptionHistory",
-		"consumptionHistoryOfBuildings"
+		"consumptionHistoryOfBuildings",
+		"totalSurface"
 	],
 	"name" : "GeraniumOutputReport",
 	"type" : "normal"

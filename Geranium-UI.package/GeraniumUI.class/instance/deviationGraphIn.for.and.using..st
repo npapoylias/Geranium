@@ -37,12 +37,12 @@ deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aC
 	pts keysAndValuesDo: [ :color :seriesDevPair | |ds dec| 
 		ds := RTData new.
 		ds points: seriesDevPair key.
-		dec := RTDevVarDecorator new.
+		"dec := RTDevVarDecorator new.
 		dec
 			moveBehind;
-			deviation: 0.5; "this should be a different value for each point -- should inherit from RTDevVarDecorator"
+			deviation: 0.5; should add the actual deviation here
 			color: (color alpha: 0.3);
-			points: seriesDevPair key.
+			points: seriesDevPair key."
 		ds
 			connectUsing:
 				(RTLine new
