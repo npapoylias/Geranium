@@ -3,6 +3,8 @@ retrieveMapDataDefinedAs: overpassDataTypeAndParamPairsStrings positionedWithInB
 	
 	| s |
 	
+	"you can consider serializing here and generally caching to avoid suprises with connection errors"
+	
 	s := WriteStream on: String new.
 	s nextPutAll: '[out:json][timeout:25];('.
 	overpassDataTypeAndParamPairsStrings 
