@@ -1,4 +1,4 @@
-accessing
+events
 stepChanged: aStep
 
-	slider widget label: (step := aStep) asString , '/' , max asString "fix for max" 
+	slider widget label: aStep asString , '/' , max asString "fix for max" 

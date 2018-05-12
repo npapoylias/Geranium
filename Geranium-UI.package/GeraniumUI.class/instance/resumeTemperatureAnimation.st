@@ -1,4 +1,4 @@
-initialization
+api
 resumeTemperatureAnimation
 
 	tempContinue := true.

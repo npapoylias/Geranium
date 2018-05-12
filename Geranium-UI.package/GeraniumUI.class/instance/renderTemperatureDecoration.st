@@ -1,4 +1,4 @@
-rendering
+visualization
 renderTemperatureDecoration
 
 	| shape el |

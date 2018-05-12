@@ -1,7 +1,7 @@
-initialization
+examples
 report
 
-		self fullInternalApiScript.
+	self fullInternalApiScript.
 	"min/max for non-hoping categories"
 
 	^ GeraniumSimulation new

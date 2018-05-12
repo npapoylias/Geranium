@@ -1,4 +1,4 @@
-initialization
+api
 gotoStep: aStep
 
 	self stepChanged: (step := aStep).

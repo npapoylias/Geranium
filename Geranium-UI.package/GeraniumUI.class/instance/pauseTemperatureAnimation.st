@@ -1,4 +1,4 @@
-initialization
+api
 pauseTemperatureAnimation
 
 	tempContinue := false

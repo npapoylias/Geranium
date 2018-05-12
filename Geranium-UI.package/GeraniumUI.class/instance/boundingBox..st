@@ -1,4 +1,4 @@
-accessing
+helper
 boundingBox: aString
 
 	boundingBox := (aString substrings: ',') collect: [ :s | s asNumber ].

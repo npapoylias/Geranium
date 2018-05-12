@@ -1,4 +1,4 @@
-initialization
+examples
 fullInternalApiScript
 
 	StatisticalScenario new 

@@ -1,4 +1,4 @@
-accessing
+helper
 atRandomInsideBoundingBox
 	|p1 p2|
 	"you can optimize here by computing the projection once per iteration / not per shape"
