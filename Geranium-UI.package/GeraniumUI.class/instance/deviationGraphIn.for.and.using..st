@@ -1,5 +1,5 @@
 visualization
-deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aColorPallete
+deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aColorPallete "should add support for the labels here"
 
 	"after 100 it becomes slower, but maybe this is due to the computation cumsum
 	performed ++ of course the total redraw"
@@ -58,7 +58,7 @@ deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aC
 	lb view: b view.
 	averageDataPoints doWithIndex: [ :c :i | lb addColor: (aColorPallete at: i) text: 'Series  ' , i printString ].
 	lb build.
-	view canvas camera focusOnCenterScaled: view canvas extent * 1.0.
+	view canvas camera focusOnCenterScaled: view canvas extent * 0.9.
 	view @ RTDraggableView.
 	view @ (RTGridView new gridSize: 10).
 	view @ RTZoomableView.
