@@ -3,6 +3,23 @@ deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aC
 
 	"after 100 it becomes slower, but maybe this is due to the computation cumsum
 	performed ++ of course the total redraw"
+	
+	"usage:
+	
+		deviationGraphIn: v 
+		for: {
+			(1 to: 50) collect: [ :i | 50 atRandom ]. 
+			(1 to: 50) collect: [ :i | 50 atRandom ].
+			(1 to: 50) collect: [ :i | 50 atRandom ].
+		} 
+		and: {
+			(1 to: 50) collect: [ :i | 5 atRandom ].
+			(1 to: 50) collect: [ :i | 5 atRandom ].
+			(1 to: 50) collect: [ :i | 5 atRandom ].
+		}
+		using: Color distinctTenLightColors
+	
+	"
 
 	| pts b lb|
 	
@@ -25,7 +42,7 @@ deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aC
 			moveBehind;
 			deviation: 0.5; "this should be a different value for each point -- should inherit from RTDevVarDecorator"
 			color: (color alpha: 0.3);
-			points: seriesDevPair.
+			points: seriesDevPair key.
 		ds
 			connectUsing:
 				(RTLine new
@@ -39,7 +56,7 @@ deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aC
 	b build.
 	lb := RTLegendBuilder new.
 	lb view: b view.
-	aColorPallete doWithIndex: [ :c :i | lb addColor: c text: 'Series  ' , i printString ].
+	averageDataPoints doWithIndex: [ :c :i | lb addColor: (aColorPallete at: i) text: 'Series  ' , i printString ].
 	lb build.
 	view canvas camera focusOnCenterScaled: view canvas extent * 0.9.
 	b view @ RTZoomableView @ RTZoomableBoxView.
