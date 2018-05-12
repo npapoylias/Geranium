@@ -26,7 +26,8 @@
 		"tempContinue",
 		"tempAnimation",
 		"boundingBox",
-		"report"
+		"report",
+		"outputElectricityView"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"
