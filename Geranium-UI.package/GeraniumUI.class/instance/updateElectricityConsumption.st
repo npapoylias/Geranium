@@ -19,7 +19,7 @@ updateElectricityConsumption
 						using: Color distinctTenStrongColors)).
 			(#TotalConsumption
 				->
-					((self consumptionHistoryCumSumAt: step )
+					((self consumptionHistoryCumSumAt: step + 1)
 						asHistogram: Color blue
 						withCaption: 'Totals'
 						inView: view
