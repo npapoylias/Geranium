@@ -15,17 +15,17 @@ updateElectricityConsumption
 		with: [:view | 
 			{ 
 				{
-					#'Cosnumption-Per-100h' -> self
+					#'Cosnumption-Per-100h' -> (self
 						deviationGraphIn: view 
 						for: consumptionHistory
 						and: deviationDataPoints
-						using: Color distinctTenStrongColors.
+						using: Color distinctTenStrongColors).
 					#TotalConsumption -> (consumptionHistory collect: [:h | h cumsum])
 						asHistogram: Color blue 
 						withCaption: 'Totals' 
 						inView: view 
-						describing: ((self report output buildingProfiles 
-											collect: [ :p | p name asString ]) addFirst: 'Total'; yourself).
+						describing: ((self report output buildingProfiles "scenarios per building is a collection -- fix !" 
+											collect: [ :p | p first name asString ]) addFirst: 'Total'; yourself).
 				}
 			}
 		] inView: outputElectricityView focusing: 0.9.	
