@@ -7,5 +7,4 @@ report
 		report := GeraniumSimulation new
 			for: #ScenarioA;
 			run.
-		self halt.
 	]

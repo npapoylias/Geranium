@@ -5,7 +5,7 @@ updateElectricityConsumption
 	min := step < 100 ifTrue: [1] ifFalse: [(step // 100) * 100]. 
 	max := step + 1.
 	
-	consumptionHistory := (self report output consumptionHistoryOfBuildingProfiles copy 
+	consumptionHistory := (self report output consumptionHistoryOfBuildingProfiles values copy 
 		collect: [ :h | h copyFrom: min to: max ]) 
 		addFirst: (self report output consumptionHistory copyFrom: min to: max).
 	deviationDataPoints := consumptionHistory.	"should compute it here -- not used by the viz yet"
