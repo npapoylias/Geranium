@@ -1,12 +1,17 @@
 visualization
 updateElectricityConsumption
-	| averageDataPoints deviationDataPoints |
-	averageDataPoints := {(self report output consumptionHistory
-		copyFrom: 1
-		to: step + 1)}.
-	deviationDataPoints := averageDataPoints.	"should compute it here -- not used by the viz yet"
+	| consumptionHistory deviationDataPoints totalsHistogram consumptionHistoryOfBuildingProfiles buildingProfiles|
+	
+	min := step < 100 ifTrue: [1] ifFalse: [(step // 100) * 100]. 
+	max := step + 1.
+	
+	consumptionHistory := (self report output consumptionHistoryOfBuildingProfiles copy 
+		collect: [ :h | h copyFrom: min to: max ]) 
+		addFirst: (self report output consumptionHistory copyFrom: min to: max).
+	deviationDataPoints := consumptionHistory.	"should compute it here -- not used by the viz yet"
 	self
 		deviationGraphIn: outputElectricityView 
-		for: averageDataPoints
+		for: consumptionHistory
 		and: deviationDataPoints
 		using: Color distinctTenStrongColors.
+	"asHistogram: aColor withCaption: aString inView: aView describing: anotherCollection"
