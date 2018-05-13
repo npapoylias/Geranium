@@ -1,0 +1,4 @@
+instance creation
+consumptionHistoryOfBuildingProfiles
+
+	^ consumptionHistoryOfBuildingProfiles

@@ -1,4 +1,4 @@
 instance creation
 generateOutputReport
 
-	^ outputData := GeraniumOutputReport new with: areaOfInterest
+	^ outputData := GeraniumOutputReport new with: areaOfInterest andInput: visitor

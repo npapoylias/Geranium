@@ -13,7 +13,10 @@
 		"areaOfInterest",
 		"consumptionHistory",
 		"consumptionHistoryOfBuildings",
-		"totalSurface"
+		"totalSurface",
+		"buildingProfiles",
+		"consumptionHistoryOfBuildingProfiles",
+		"inputVisitor"
 	],
 	"name" : "GeraniumOutputReport",
 	"type" : "normal"

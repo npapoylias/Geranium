@@ -6,5 +6,6 @@ report
 		"min/max for non-hoping categories"
 		report := GeraniumSimulation new
 			for: #ScenarioA;
-			run
+			run.
+		self halt.
 	]
