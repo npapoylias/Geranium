@@ -1,7 +1,7 @@
 *Geranium-Distributions
 asHistogram: aColor withCaption: aString inView: aView describing: anotherCollection
 	
-	| b ds |
+	| b ds histDict |
 	
 	"(1 to: 10) identityHistogram: Color yellow withCaption: 'hallo'"
 	
@@ -10,9 +10,8 @@ asHistogram: aColor withCaption: aString inView: aView describing: anotherCollec
 	aView ifNotNil: [ b view: aView ].
 	ds := RTData new.
 	ds interaction popup.
-	"histDict := self frequencies."
-	ds points: self.
-	ds y: anotherCollection.
+	ds points: anotherCollection.
+	ds y: [:x | self at: (anotherCollection indexOf: x)]."This is sub-optimal to say the least.. revise"
 	ds dotShape rectangle color: aColor.
 	ds barShape
 		color: aColor;
