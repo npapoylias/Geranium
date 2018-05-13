@@ -14,7 +14,7 @@ updateElectricityConsumption
 				->
 					(self
 						deviationGraphIn: view
-						for: consumptionHistory
+						for: historyUpTillNow
 						and: deviationDataPoints
 						using: Color distinctTenStrongColors)).
 			(#TotalConsumption
