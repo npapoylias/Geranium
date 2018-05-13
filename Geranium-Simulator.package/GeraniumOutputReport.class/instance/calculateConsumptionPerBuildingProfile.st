@@ -15,4 +15,6 @@ calculateConsumptionPerBuildingProfile
 				collect: [ :b | consumptionHistoryOfBuildings at: b ].
 			1 to: historiesOfP first size do: [ :i | 
 				(consumptionHistoryOfBuildingProfiles at: p)
-					add: (historiesOfP collect: [ :h | h at: i ]) sum ] ]
+					add: (historiesOfP collect: [ :h | h at: i ]) sum ] ].
+	self assert: buildingProfiles size = consumptionHistoryOfBuildingProfiles keys size.		
+	

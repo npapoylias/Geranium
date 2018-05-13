@@ -33,7 +33,7 @@ updateElectricityConsumption
 				 }
 			} ]
 		inView: outputElectricityView
-		focusing: 1.1.
+		focusing: 0.9.
 	outputElectricityView signalUpdate.
 	^ outputElectricityView
 	"asHistogram: aColor withCaption: aString inView: aView describing: anotherCollection"
