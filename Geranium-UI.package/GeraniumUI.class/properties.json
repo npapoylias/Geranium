@@ -7,8 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"slider",
-		"min",
-		"max",
 		"step",
 		"rwnd",
 		"ff",
@@ -27,7 +25,9 @@
 		"tempAnimation",
 		"boundingBox",
 		"report",
-		"outputElectricityView"
+		"outputElectricityView",
+		"stepMax",
+		"stepMin"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"

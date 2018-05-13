@@ -1,13 +1,13 @@
 visualization
 updateElectricityConsumption
-	| consumptionHistory deviationDataPoints totalsHistogram consumptionHistoryOfBuildingProfiles buildingProfiles|
+	| consumptionHistory deviationDataPoints totalsHistogram showMin showMax |
 	
-	min := step < 100 ifTrue: [1] ifFalse: [(step // 100) * 100]. 
-	max := step + 1.
+	showMin := step < 100 ifTrue: [1] ifFalse: [(step // 100) * 100]. 
+	showMax := step + 1.
 	
 	consumptionHistory := (self report output consumptionHistoryOfBuildingProfiles values copy asOrderedCollection
-		collect: [ :h | h copyFrom: min to: max ]) 
-		addFirst: (self report output consumptionHistory copyFrom: min to: max); yourself.
+		collect: [ :h | h copyFrom: showMin to: showMax ]) 
+		addFirst: (self report output consumptionHistory copyFrom: showMin to: showMax); yourself.
 	deviationDataPoints := consumptionHistory.	"should compute it here -- not used by the viz yet"
 	self
 		deviationGraphIn: outputElectricityView 

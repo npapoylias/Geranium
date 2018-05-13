@@ -2,15 +2,15 @@ initialization
 createNavigationToolbar
 
 	rwnd := self newButton aboutText: 'Rewind'; icon: (self appIcon: #rewind); 
-		action: [ step > min ifTrue: [ self gotoStep: step - 1 ] ].
+		action: [ step > stepMin ifTrue: [ self gotoStep: step - 1 ] ].
 	ff := self newButton aboutText: 'Fast-Fwd'; icon: (self appIcon: #'fast-forward');
-		action: [ step < max ifTrue: [ self doStep ] ].
+		action: [ step < stepMax ifTrue: [ self doStep ] ].
 	play := self newButton aboutText: 'Play'; icon: (self appIcon: #play);
 		action: [ 
 			pausedOrStopped
 				ifTrue: [ pausedOrStopped := false.
 					self resumeTemperatureAnimation.
-					[ [ pausedOrStopped or: [ step = max ] ]
+					[ [ pausedOrStopped or: [ step = stepMax ] ]
 						whileFalse: [ self doStep. (Delay forMilliseconds: 500) wait ] ] fork ] 
 	].
 	pause := self newButton aboutText: 'Pause'; icon: (self appIcon: #pause);
@@ -23,9 +23,9 @@ createNavigationToolbar
 		fontColor: Color white;
 		hResizing: #spaceFill;
 		vResizing: #spaceFill;
-		min: (step := min := 0);
-		max: (max := 100);
-		label: min asString , '/' , max asString;
+		min: (step := stepMin := 0);
+		max: (stepMax := 100);
+		label: stepMin asString , '/' , stepMax asString;
 		setValueSelector: #stepChanged:;
 		getValueSelector: #step;
 		extent: 24 @ 24) asSpecAdapter.
