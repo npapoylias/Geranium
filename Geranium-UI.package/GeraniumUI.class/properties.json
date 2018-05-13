@@ -27,7 +27,9 @@
 		"report",
 		"outputElectricityView",
 		"stepMax",
-		"stepMin"
+		"stepMin",
+		"consumptionHistory",
+		"consumptionHistoryCumSum"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"

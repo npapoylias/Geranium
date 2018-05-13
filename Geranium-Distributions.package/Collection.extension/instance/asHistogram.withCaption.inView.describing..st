@@ -12,7 +12,7 @@ asHistogram: aColor withCaption: aString inView: aView describing: anotherCollec
 	ds interaction popup.
 	"histDict := self frequencies."
 	ds points: self.
-	ds y: [ :x | anotherCollection ].
+	ds y: anotherCollection.
 	ds dotShape rectangle color: aColor.
 	ds barShape
 		color: aColor;

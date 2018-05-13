@@ -1,35 +1,35 @@
 visualization
 updateElectricityConsumption
-	| consumptionHistory deviationDataPoints showMin showMax |
-	
-	showMin := step < 100 ifTrue: [1] ifFalse: [(step // 100) * 100]. 
+	| historyUpTillNow deviationDataPoints showMin showMax |
+	showMin := step < 100
+		ifTrue: [ 1 ]
+		ifFalse: [ step // 100 * 100 ].
 	showMax := step + 1.
-	
-	consumptionHistory := (self report output consumptionHistoryOfBuildingProfiles values copy asOrderedCollection
-		collect: [ :h | h copyFrom: showMin to: showMax ]) 
-		addFirst: (self report output consumptionHistory copyFrom: showMin to: showMax); yourself.
+	historyUpTillNow := self consumptionHistoryFrom: showMin To: showMax.
 	deviationDataPoints := consumptionHistory.	"should compute it here -- not used by the viz yet"
-	
 	outputElectricityView cleanAll.
 	CompositeViz new
-		with: [:view | 
-			{ 
-				{
-					#'Cosnumption-Per-100h' -> (self
-						deviationGraphIn: view 
+		with: [ :view | 
+			{{(#'Cosnumption-Per-100h'
+				->
+					(self
+						deviationGraphIn: view
 						for: consumptionHistory
 						and: deviationDataPoints
-						using: Color distinctTenStrongColors).
-					#TotalConsumption -> (consumptionHistory collect: [:h | h cumsum])
-						asHistogram: Color blue 
-						withCaption: 'Totals' 
-						inView: view 
-						describing: ((self report output buildingProfiles "scenarios per building is a collection -- fix !" 
-											collect: [ :p | p first name asString ]) addFirst: 'Total'; yourself).
-				}
-			}
-		] inView: outputElectricityView focusing: 0.9.	
-		outputElectricityView signalUpdate.
-		
-		^ outputElectricityView.
+						using: Color distinctTenStrongColors)).
+			(#TotalConsumption
+				->
+					((self consumptionHistoryCumSumAt: step )
+						asHistogram: Color blue
+						withCaption: 'Totals'
+						inView: view
+						describing:
+							((self report output buildingProfiles
+								collect: [ :p | p first name asString ]) asOrderedCollection
+								addFirst: 'Total';
+								yourself)))	"scenarios per building is a collection -- fix !"}} ]
+		inView: outputElectricityView
+		focusing: 0.9.
+	outputElectricityView signalUpdate.
+	^ outputElectricityView
 	"asHistogram: aColor withCaption: aString inView: aView describing: anotherCollection"
