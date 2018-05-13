@@ -1,7 +1,7 @@
 *Geranium-Distributions
 asHistogram: aColor withCaption: aString inView: aView describing: anotherCollection
 	
-	| b ds histDict |
+	| b ds |
 	
 	"(1 to: 10) identityHistogram: Color yellow withCaption: 'hallo'"
 	
@@ -30,5 +30,5 @@ asHistogram: aColor withCaption: aString inView: aView describing: anotherCollec
 	b axisX
 		noTick;
 		noLabel.
-	self addLabel: aString onGraph: b.
+	aString ifNotNil: [self addLabel: aString onGraph: b].
 	^ b

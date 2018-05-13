@@ -10,26 +10,30 @@ updateElectricityConsumption
 	outputElectricityView cleanAll.
 	CompositeViz new
 		with: [ :view | 
-			{{(#'Cosnumption-Per-100h'
-				->
-					(self
-						deviationGraphIn: view
-						for: historyUpTillNow
-						and: deviationDataPoints
-						using: Color distinctTenStrongColors)).
-			(#TotalConsumption
-				->
+			{
+				{(#'Cosnumption-Per-100h'
+					->
+						(self
+							deviationGraphIn: view
+							for: historyUpTillNow
+							and: deviationDataPoints
+							using: Color distinctTenStrongColors))
+				}.
+				{(#TotalConsumption
+					->
 					((self consumptionHistoryCumSumAt: step + 1)
 						asHistogram: Color blue
-						withCaption: 'Totals'
+						withCaption: nil
 						inView: view
 						describing:
 							((self report output buildingProfiles
 								collect: [ :p | p first name asString ]) asOrderedCollection
 								addFirst: 'Total';
-								yourself)))	"scenarios per building is a collection -- fix !"}} ]
+								yourself)))	"scenarios per building is a collection -- fix !"
+				 }
+			} ]
 		inView: outputElectricityView
-		focusing: 0.9.
+		focusing: 1.1.
 	outputElectricityView signalUpdate.
 	^ outputElectricityView
 	"asHistogram: aColor withCaption: aString inView: aView describing: anotherCollection"

@@ -8,4 +8,5 @@ createOutputDiagrams
 			"(GeraniumReportVisualization new
 				with: self report;
 				inVerticalExampleView: v) setCanvas: c"
-			self updateElectricityConsumption]
+			self updateElectricityConsumption.
+			v signalUpdate]
