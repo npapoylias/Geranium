@@ -32,7 +32,7 @@ deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aC
 		pts at: (aColorPallete at: index) put: row -> (deviationDataPoints at: index).
 	].
 
-	view cleanAll.
+	"view cleanAll."
 	b := RTGrapher new view: view.
 	pts keysAndValuesDo: [ :color :seriesDevPair | |ds dec| 
 		ds := RTData new.
@@ -58,11 +58,11 @@ deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aC
 	lb view: b view.
 	averageDataPoints doWithIndex: [ :c :i | lb addColor: (aColorPallete at: i) text: 'Series  ' , i printString ].
 	lb build.
-	view canvas camera focusOnCenterScaled: view canvas extent * 0.9.
+	"view canvas camera focusOnCenterScaled: view canvas extent * 0.9."
 	view @ RTDraggableView.
 	view @ (RTGridView new gridSize: 10).
 	view @ RTZoomableView.
 	"view @ RTDoubleScrollBar."
-	b view signalUpdate.
+	"b view signalUpdate."
 	^ b view.
 

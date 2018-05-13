@@ -1,3 +1,3 @@
 accessing
-buidlingProfiles
+buildingProfiles
 	^ buildingProfiles 
