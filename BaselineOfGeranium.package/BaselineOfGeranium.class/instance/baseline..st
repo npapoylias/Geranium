@@ -13,6 +13,8 @@ baseline: spec
 			configuration: 'PolyMath' with: [ 
 				spec version: #stable; 
 				repository: 'http://smalltalkhub.com/mc/PolyMath/PolyMath/main']; 
+			baseline: 'DataFrame' with: [
+      			spec repository: 'github://PolyMathOrg/DataFrame' ];
 			package: 'Geranium';
 			package: 'Geranium-Distributions';
 			package: 'Geranium-Scenarios';
