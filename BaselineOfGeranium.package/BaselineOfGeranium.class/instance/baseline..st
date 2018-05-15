@@ -10,6 +10,9 @@ baseline: spec
 			configuration: 'NeoJSON' with: [ 
 				spec versionString: #stable; 
 				repository: 'http://mc.stfx.eu/Neo/'];
+			configuration: 'NeoCSV' with: [ 
+				spec versionString: #stable; 
+				repository: 'http://mc.stfx.eu/Neo/'];
 			configuration: 'PolyMath' with: [ 
 				spec version: #stable; 
 				repository: 'http://smalltalkhub.com/mc/PolyMath/PolyMath/main']; 
