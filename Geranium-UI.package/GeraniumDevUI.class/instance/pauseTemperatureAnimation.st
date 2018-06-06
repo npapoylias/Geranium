@@ -1,0 +1,5 @@
+api
+pauseTemperatureAnimation
+
+	tempContinue := false
+	
