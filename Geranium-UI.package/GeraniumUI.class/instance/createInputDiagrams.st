@@ -1,8 +1,9 @@
 initialization
 createInputDiagrams
-	inputDiagrams := RoassalModel new.
+	inputDiagrams := GeraniumStructuralInputDiagrams new "passing initializers ?"
+	"inputDiagrams := RoassalModel new.
 	inputDiagrams
 		script: [ :v :c | 
 			(GeraniumReportVisualization new
 				with: self report;
-				inHorizontalExampleView: v) setCanvas: c ]
+				inHorizontalExampleView: v) setCanvas: c ]"

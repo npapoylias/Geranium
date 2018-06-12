@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposableModel",
+	"category" : "Geranium-UI-IO-Diagrams",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GeraniumEmissionsOutputDiagrams",
+	"type" : "normal"
+}

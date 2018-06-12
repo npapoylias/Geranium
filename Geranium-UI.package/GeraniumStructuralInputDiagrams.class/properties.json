@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposableModel",
+	"category" : "Geranium-UI-IO-Diagrams",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scatterplot",
+		"pie",
+		"report",
+		"barStack"
+	],
+	"name" : "GeraniumStructuralInputDiagrams",
+	"type" : "normal"
+}

@@ -1,5 +1,5 @@
 visualization
-renderTemperatureDecoration
+renderTemperatureHumidityDecoration
 
 	| shape el |
 	shape := RTEllipse new
