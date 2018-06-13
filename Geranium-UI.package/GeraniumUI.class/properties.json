@@ -29,7 +29,13 @@
 		"stepMax",
 		"stepMin",
 		"consumptionHistory",
-		"consumptionHistoryCumSum"
+		"consumptionHistoryCumSum",
+		"temperatureLabel",
+		"humidityLabel",
+		"consumptionLabel",
+		"temperatureHistory",
+		"humidityHistory",
+		"reportMutex"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"

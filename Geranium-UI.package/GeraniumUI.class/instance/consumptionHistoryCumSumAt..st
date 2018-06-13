@@ -1,5 +1,5 @@
 visualization
 consumptionHistoryCumSumAt: t 
 	^ (consumptionHistoryCumSum ifNil: [  
-		consumptionHistoryCumSum := consumptionHistory collect: [ :h | h cumsum ]
+		consumptionHistoryCumSum := self consumptionHistory collect: [ :h | h cumsum ]
 	]) collect: [ :s | s at: t ]

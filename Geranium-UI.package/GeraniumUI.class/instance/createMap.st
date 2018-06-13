@@ -8,4 +8,5 @@ createMap
 				renderInView: view;
 				geraniumAreaMapExample.
 			self boundingBox: mapView boundingBox.
-			self renderTemperatureHumidityDecoration ]
+			self renderTemperatureHumidityDecoration.
+			self renderClimateConsumptionIndicators ] 
