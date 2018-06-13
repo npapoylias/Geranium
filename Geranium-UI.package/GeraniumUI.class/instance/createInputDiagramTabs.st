@@ -22,3 +22,9 @@ createInputDiagramTabs
 		closeable: false;
 		icon: Smalltalk ui icons thumbsUpIcon.
 	tabmgrInput addTab: tab.
+	"tab := self newTab.
+	tab
+		label: 'Live-Exploration';
+		closeable: false;
+		icon: Smalltalk ui icons thumbsUpIcon.
+	tabmgrInput addTab: tab."

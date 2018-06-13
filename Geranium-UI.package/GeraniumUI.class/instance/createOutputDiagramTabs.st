@@ -11,7 +11,7 @@ createOutputDiagramTabs
 	tabmgrOutput addTab: tab.
 	tab := self newTab.
 	tab
-		label: 'Gas';
+		label: 'Emissions';
 		closeable: false;
 		icon: Smalltalk ui icons repairIcon.
 	tabmgrOutput addTab: tab
