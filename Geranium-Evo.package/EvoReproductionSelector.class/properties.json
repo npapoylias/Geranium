@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "EvoSelector",
+	"category" : "Geranium-Evo",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "EvoReproductionSelector",
+	"type" : "normal"
+}

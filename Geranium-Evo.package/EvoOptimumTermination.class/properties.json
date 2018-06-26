@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "EvoEvaluator",
+	"category" : "Geranium-Evo",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "EvoOptimumTermination",
+	"type" : "normal"
+}
