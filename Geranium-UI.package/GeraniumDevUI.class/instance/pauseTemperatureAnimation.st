@@ -1,5 +1,0 @@
-api
-pauseTemperatureAnimation
-
-	tempContinue := false
-	

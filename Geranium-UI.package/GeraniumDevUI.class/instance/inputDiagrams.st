@@ -1,4 +1,0 @@
-accessing
-inputDiagrams
-
-	^ inputDiagrams

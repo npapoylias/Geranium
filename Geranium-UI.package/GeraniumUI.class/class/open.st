@@ -1,5 +1,7 @@
 specs
 open
 	"self open"
-	(self new openWithSpec; window) maximize.
+	|instance|
+	instance := self new.
+	(instance openWithSpec; window) maximize.
 	self splashLogo.

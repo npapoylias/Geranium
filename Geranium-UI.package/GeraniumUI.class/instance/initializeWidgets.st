@@ -10,4 +10,5 @@ initializeWidgets
 	self createOutputDiagrams.
 	self createMapModelTabs.
 	self createInputDiagramTabs.
-	self createOutputDiagramTabs
+	self createOutputDiagramTabs.
+
