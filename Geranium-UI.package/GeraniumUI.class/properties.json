@@ -16,7 +16,6 @@
 		"mapDiagram",
 		"tabmgrInput",
 		"tabmgrOutput",
-		"inputDiagrams",
 		"outputDiagrams",
 		"tabmgrMap",
 		"mapView",
@@ -35,7 +34,10 @@
 		"consumptionLabel",
 		"temperatureHistory",
 		"humidityHistory",
-		"reportMutex"
+		"reportMutex",
+		"structuralInputDiagrams",
+		"socialInputDiagrams",
+		"microClimateInputDiagrams"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"

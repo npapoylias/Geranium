@@ -1,4 +1,4 @@
 accessing
 humidityPlot
 
-	^ self humiditySeries connectedPlot
+	^ self humiditySeries connectedPlot: (Color yellow copy setAlpha: 0.1)

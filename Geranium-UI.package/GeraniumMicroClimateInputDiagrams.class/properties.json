@@ -1,11 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "ComposableModel",
+	"super" : "GeraniumReportDiagrams",
 	"category" : "Geranium-UI-IO-Diagrams",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"temperaturePlot",
+		"humidityPlot",
+		"exposurePlot"
+	],
 	"name" : "GeraniumMicroClimateInputDiagrams",
 	"type" : "normal"
 }

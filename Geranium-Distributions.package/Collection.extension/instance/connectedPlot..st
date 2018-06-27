@@ -17,4 +17,5 @@ connectedPlot: aColor
 	b
 		axisX;
 		axisY.
+	b addDecorator: RTMeanDevVarDecorator new moveInFront.
 	^ b.

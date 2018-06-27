@@ -1,4 +1,4 @@
 accessing
 inputDiagrams
 
-	^ inputDiagrams
+	^ structuralInputDiagrams
