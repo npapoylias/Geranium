@@ -19,6 +19,7 @@ generate
 					mother := reproductionPopulation at: randomIndividual next.
 			].
 			newGeneration add: (father reproduceWith: mother) mutate.
+			reproductionPopulation remove: father.
 	].
 
 	^ newGeneration
