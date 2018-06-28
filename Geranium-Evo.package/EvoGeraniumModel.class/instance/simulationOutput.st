@@ -1,4 +1,4 @@
 examples
 simulationOutput
 
-	^ simulationOutput ifNil: [ simulationOutput := self simulateAndReport output ]
+	^ simulationOutput ifNil: [ Transcript show: '.'; cr. simulationOutput := self simulateAndReport output ]
