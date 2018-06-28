@@ -42,7 +42,7 @@ visitStatisticalScenario: aStatisticalScenario
 		with: (perfecture := (self visitNode: trendsProfile)). "country also will be created
 	here with the profiles"
 	areaOfInterest prefecture: perfecture. 
-	areaOfInterest prefecture country weightsProfile: weightsProfile.
+	areaOfInterest prefecture country weightsProfile: weightsProfile deepCopy.
 	self associate: weightsProfile with: (self visitNode: weightsProfile).
 	self associate: aStatisticalScenario with: areaOfInterest.
 	

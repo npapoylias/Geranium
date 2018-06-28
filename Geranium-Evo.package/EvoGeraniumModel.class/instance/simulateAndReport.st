@@ -1,5 +1,6 @@
 examples
-report
+simulateAndReport
+
 	| r |
 	Building disableHistory.
 	r := self class simulation runForTotalConsumptionReport.
