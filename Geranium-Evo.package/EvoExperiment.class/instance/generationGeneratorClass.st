@@ -1,0 +1,4 @@
+running
+generationGeneratorClass
+
+	self subclassResponsibility

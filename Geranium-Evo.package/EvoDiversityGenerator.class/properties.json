@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"size"
+	],
 	"name" : "EvoDiversityGenerator",
 	"type" : "normal"
 }

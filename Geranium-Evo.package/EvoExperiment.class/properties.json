@@ -5,7 +5,13 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"population",
+		"fitnessMetric",
+		"terminationCondition",
+		"epoch",
+		"generationGenerator"
+	],
 	"name" : "EvoExperiment",
 	"type" : "normal"
 }

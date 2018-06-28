@@ -1,13 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "EvoExperiment",
 	"category" : "Geranium-Evo",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"individuals"
-	],
-	"name" : "EvoPopulation",
+	"instvars" : [ ],
+	"name" : "EvoGeraniumExperiment",
 	"type" : "normal"
 }

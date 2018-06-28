@@ -1,4 +1,4 @@
 examples
-fitness
+fitnessMetric
 
 	^ self simulationOutput

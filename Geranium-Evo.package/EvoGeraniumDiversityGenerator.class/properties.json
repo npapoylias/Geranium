@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "EvoSelector",
+	"super" : "EvoDiversityGenerator",
 	"category" : "Geranium-Evo",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "EvoMutationGenerator",
+	"name" : "EvoGeraniumDiversityGenerator",
 	"type" : "normal"
 }

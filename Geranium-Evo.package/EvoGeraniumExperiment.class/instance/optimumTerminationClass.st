@@ -1,0 +1,4 @@
+running
+optimumTerminationClass
+
+	^ EvoGeraniumOptimumTermination

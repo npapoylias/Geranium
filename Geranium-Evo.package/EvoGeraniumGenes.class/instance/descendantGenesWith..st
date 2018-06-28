@@ -10,3 +10,6 @@ descendantGenesWith: anotherSetOfGenes
 		descendandGenes weightsProfile instVarAt: i	 put: (weightsProfile instVarAt: i)
 	].
 	
+	self crossOverPoint + 1 to: self geneSize do: [ :i |
+		descendandGenes weightsProfile instVarAt: i	 put: (anotherSetOfGenes weightsProfile instVarAt: i)	
+	]

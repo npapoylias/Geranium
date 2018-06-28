@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"sortedPopulation",
+		"bestDistPercentage"
+	],
 	"name" : "EvoFitness",
 	"type" : "normal"
 }

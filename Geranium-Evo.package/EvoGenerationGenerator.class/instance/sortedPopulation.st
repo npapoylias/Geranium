@@ -1,0 +1,4 @@
+instance creation
+sortedPopulation
+
+	^ sortedPopulation

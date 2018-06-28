@@ -1,0 +1,4 @@
+accessing
+populationSize
+	
+	self subclassResponsibility 

@@ -1,0 +1,4 @@
+public access
+sortedPopulation
+
+	^ sortedPopulation

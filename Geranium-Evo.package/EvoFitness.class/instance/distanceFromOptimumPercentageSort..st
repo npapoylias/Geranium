@@ -1,0 +1,4 @@
+public access
+distanceFromOptimumPercentageSort: aPopulation
+
+	self subclassResponsibility
