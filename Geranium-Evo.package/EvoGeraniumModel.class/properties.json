@@ -2,12 +2,12 @@
 	"commentStamp" : "",
 	"super" : "EvoIndividual",
 	"category" : "Geranium-Evo",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"simulation"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"report"
-	],
+	"instvars" : [ ],
 	"name" : "EvoGeraniumModel",
 	"type" : "normal"
 }

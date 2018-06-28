@@ -1,6 +1,8 @@
 {
 	"classtraitcomposition" : "TAgent classTrait",
-	"classvars" : [ ],
+	"classvars" : [
+		"historyEnabled"
+	],
 	"instvars" : [
 		"coordinates",
 		"belongsTo"
@@ -10,9 +12,7 @@
 	"super" : "Object",
 	"traitcomposition" : "TAgent",
 	"type" : "normal",
-	"classinstvars" : [
-		"historyEnabled"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"category" : "Geranium"
 }
