@@ -23,11 +23,13 @@ visitStatisticalScenario: aStatisticalScenario
 	1 to: numberOfBuildings do: [ :i | |building|
 		
 		((self check: numberOfDeclaredResidences versus: totalResidences) 
-			and: [ self check: numberOfDeclaredPopulation versus: totalPopulation ])
+			"and: [ self check: numberOfDeclaredPopulation versus: totalPopulation ]")
 			ifTrue: [ 
 				buildings "double dispatch and traversal logic in the visitor makes sense here"
 					add: (building := (self visitNode: (resolvedResidenceProfiles at: (residenceDistribution next)))).
-				building area: areaOfInterest 
+				building area: areaOfInterest .
+				totalResidences := totalResidences + building numberOfResidences.
+				totalPopulation := totalPopulation + building occupantSize.
 			]. 
 	
 	].

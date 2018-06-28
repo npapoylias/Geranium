@@ -39,7 +39,7 @@ fullInternalApiScript
 		named: #AppartmentTypeA;
 		category: DPEA;
 		surface: [50.0 -> 80.0];
-		occupantClass: {SingleAdult . Couple . Family} % {0.60 . 0.30. 0.10};
+		occupantClass: {SingleAdult . Couple . Family} % {0.40 . 0.30. 0.30};
 		numberOfChildren: [1 -> 3]; "valid only for family"
 		income: (72000.0 ~ 10000) | [36000.0 -> 100000];
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.40 . 0.60};
@@ -49,8 +49,8 @@ fullInternalApiScript
 		named: #AppartmentTypeB;
 		category: DPEB;
 		surface: [80.0 -> 110];
-		occupantClass: {Family . Couple} % {0.50 . 0.40};
-		numberOfChildren: [1 -> 3]; "valid only for family"
+		occupantClass: {SingleAdult . Couple . Family} % {0.40 . 0.30. 0.30};
+		numberOfChildren: [0 -> 3]; "valid only for family"
 		income: (92000.0 ~ 15000) | [66000.0 -> 180000];
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.10 . 0.90};
 		ownership: true % 10.
@@ -60,7 +60,7 @@ fullInternalApiScript
 		category: DPEC;
 		surface: [90.0 -> 130.0];
 		exposure: (5 ~ 1) | [0 -> 5]; 
-		occupantClass: Family; 
+		occupantClass: {SingleAdult . Couple . Family} % {0.70 . 0.20. 0.10};
 		numberOfChildren: [1 -> 3]; "valid only for family"
 		income: (72000.0 ~ 10000) | [36000.0 -> 80000];
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.15 . 0.85};
