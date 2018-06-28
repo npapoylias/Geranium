@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GeraniumUI",
+	"category" : "Geranium-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GeraniumUIEvo",
+	"type" : "normal"
+}
