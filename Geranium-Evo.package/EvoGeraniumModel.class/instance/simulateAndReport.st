@@ -1,8 +1,8 @@
 examples
 simulateAndReport
 
-	| r |
-	Building disableHistory.
-	r := self class simulation runForTotalConsumptionReport.
-	Building enableHistory.
-	^ r
+	^ report ifNil: [  
+		Building disableHistory.
+		report := self class simulation runForTotalConsumptionReport.
+		Building enableHistory.
+		report ]
