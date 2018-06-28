@@ -16,7 +16,7 @@ fullInternalApiScript
 		climateProfile: #UrbanClimateA;
 		trendsProfile: #FrenchConsumptionTrends;
 		weightsProfile: #UrbanHypothesisA;
-		years: 0.01.
+		years: 1.
 		
 		
 	UrbanProfileForAppartmentBlock new
