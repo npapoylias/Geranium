@@ -1,4 +1,4 @@
 instance creation
 survivalPercentage
 
-	^ 0.25
+	^ 0.80
