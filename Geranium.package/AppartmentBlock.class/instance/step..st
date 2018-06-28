@@ -1,6 +1,14 @@
 accessing
 step: time
 
-	^ self 
-			historyOf: #consumption
-			add: (self appartments values collect: [ :appartment | appartment step: time ]) sum
+	|step|
+	step := (self appartments values collect: 
+		[ :appartment | appartment step: time ]) sum.
+
+	^ self class historyEnabled 
+		ifTrue: [ 
+			self 
+				historyOf: #consumption
+				add: step 
+		] ifFalse: [ step ]
+

@@ -10,7 +10,9 @@
 	"super" : "Object",
 	"traitcomposition" : "TAgent",
 	"type" : "normal",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"historyEnabled"
+	],
 	"pools" : [ ],
 	"category" : "Geranium"
 }

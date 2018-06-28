@@ -1,0 +1,4 @@
+accessing
+disableHistory
+
+	^ historyEnabled := false

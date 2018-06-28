@@ -1,6 +1,13 @@
 accessing
 step: time
-
-	^ self 
-		historyOf: #consumption
-		add: (super step: time) 		
+	
+	|step|
+	step := super step: time.
+	
+	^ self class historyEnabled 
+		ifTrue: [ 
+			self 
+				historyOf: #consumption
+				add: step 
+		] ifFalse: [ step ]
+		 		
