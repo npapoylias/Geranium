@@ -12,7 +12,7 @@ run
 
 	[ terminationCondition 
 		evaluate: (stats add: (fitnessMetric evaluate: population)) 
-		atEpoch: epoch ] whileFalse: [  
+		atEpoch: epoch ] whileFalse: [
 			population individuals: 
 				(generationGenerator 
 					from: fitnessMetric sortedPopulation; 
