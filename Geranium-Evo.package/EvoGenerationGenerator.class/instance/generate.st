@@ -12,8 +12,10 @@ generate
 	
 	threshold + 1 to: self sortedPopulation size do: [ :i | 
 			|father mother|
-			father := self sortedPopulation at: randomIndividual next.
-			mother := self sortedPopulation at: randomIndividual next.
+			[ father ~= mother ] whileFalse: [ 
+					father := self sortedPopulation at: randomIndividual next.
+					mother := self sortedPopulation at: randomIndividual next.
+			].
 			newGeneration add: (father reproduceWith: mother) mutate.
 	].
 
