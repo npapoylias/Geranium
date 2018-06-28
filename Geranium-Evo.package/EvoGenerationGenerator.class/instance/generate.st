@@ -10,10 +10,9 @@ generate
 	
 	reproductionPopulation := newGeneration shallowCopy.
 	
-	randomIndividual := [ 1 -> reproductionPopulation size ] asRangedDistribution.
-	
 	threshold + 1 to: self sortedPopulation size do: [ :i | 
 			|father mother|
+			randomIndividual := [ 1 -> reproductionPopulation size ] asRangedDistribution.
 			[ father == mother ] whileTrue: [ 
 					father := reproductionPopulation at: randomIndividual next.
 					mother := reproductionPopulation at: randomIndividual next.
