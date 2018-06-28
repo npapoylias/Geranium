@@ -15,7 +15,9 @@
 		"areaOfInterest",
 		"perfecture",
 		"country",
-		"climate"
+		"climate",
+		"numberOfDeclaredResidences",
+		"numberOfDeclaredPopulation"
 	],
 	"name" : "ScenarioToModelVisitor",
 	"commentStamp" : "",

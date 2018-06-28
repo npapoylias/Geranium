@@ -1,9 +1,13 @@
 visiting
 visitStatisticalScenario: aStatisticalScenario
 
+	|totalResidences totalPopulation|
+
 	areaOfInterest := AreaOfInterest new.
 	areaOfInterest coordinates: aStatisticalScenario coordinates.
 	numberOfBuildings := aStatisticalScenario resolveTotalNumberOfBuildings next.
+	numberOfDeclaredResidences := aStatisticalScenario resolveResidences.
+	numberOfDeclaredPopulation := aStatisticalScenario resolvePopulation.
 	residenceDistribution := aStatisticalScenario urbanProfilesToPercentages.
 	resolvedResidenceProfiles := aStatisticalScenario resolveUrbanProfiles.
 	climateProfile := aStatisticalScenario resolveClimateProfile.
@@ -13,10 +17,19 @@ visitStatisticalScenario: aStatisticalScenario
 	
 	buildings := OrderedCollection new.
 	
+	totalResidences := 0.
+	totalPopulation := 0.
+	
 	1 to: numberOfBuildings do: [ :i | |building|
-		buildings "double dispatch and traversal logic in the visitor makes sense here"
-			add: (building := (self visitNode: (resolvedResidenceProfiles at: (residenceDistribution next)))).
-		building area: areaOfInterest. 
+		
+		((self check: numberOfDeclaredResidences versus: totalResidences) 
+			and: [ self check: numberOfDeclaredPopulation versus: totalPopulation ])
+			ifTrue: [ 
+				buildings "double dispatch and traversal logic in the visitor makes sense here"
+					add: (building := (self visitNode: (resolvedResidenceProfiles at: (residenceDistribution next)))).
+				building area: areaOfInterest 
+			]. 
+	
 	].
 	
 	areaOfInterest buildings: buildings.

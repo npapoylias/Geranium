@@ -6,6 +6,8 @@ fullInternalApiScript
 		coordinates: (46.1630 @ -1.1389) -> (46.1676 @ -1.1194);
 		"(46.16352961038194 @ -1.1302614212036133) -> (46.166851083597415 @ -1.1267745494842527);"
 		totalNumberOfBuildings: #determinedByMap; "20"
+		totalNumberOfPopulation: 3751;
+		totalNumberOfResidences: 2166;
 		residencePercentages:{  
 			#AppartmentBlockTypeA.
 			#AppartmentBlockTypeB.

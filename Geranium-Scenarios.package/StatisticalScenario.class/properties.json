@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"urbanProfilesToPercentages"
+		"urbanProfilesToPercentages",
+		"totalNumberOfResidences",
+		"totalNumberOfPopulation"
 	],
 	"name" : "StatisticalScenario",
 	"type" : "normal"
