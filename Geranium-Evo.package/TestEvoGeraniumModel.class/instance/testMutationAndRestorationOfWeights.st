@@ -20,7 +20,7 @@ testMutationAndRestorationOfWeights
 	self assert: initial ~= mutated.
 
 	e2 := EvoGeraniumModel new.
-	e1 areaOfInterestWeightsProfile day: [ -0.01 -> 0.01 ]; yourself.
+	e2 areaOfInterestWeightsProfile copy: e2 scenarioWeightsProfile.
 	restored := e2 simulateAndReport output.
 
 	self assert: { e2 areaOfInterest numberOfBuildings .
