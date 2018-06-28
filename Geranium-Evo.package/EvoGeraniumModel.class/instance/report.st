@@ -8,4 +8,5 @@ report
 			for: #ScenarioA;
 			run.
 		Building enableHistory.
+		report
 	]

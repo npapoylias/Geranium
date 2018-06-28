@@ -1,0 +1,3 @@
+accessing
+occupantSize
+	self subclassResponsibility

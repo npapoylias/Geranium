@@ -1,0 +1,3 @@
+accessing
+occupantSize
+	^ occupants size
