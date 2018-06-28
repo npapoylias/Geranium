@@ -1,4 +1,4 @@
 public access
-distanceFromOptimumPercentage: fitnessMetric
+distanceFromOptimumPercentage: individual
 
-	^ (fitnessMetric - self optimumFitness) abs / self optimumFitness
+	^ (individual fitnessMetric - self optimumFitness) abs / self optimumFitness

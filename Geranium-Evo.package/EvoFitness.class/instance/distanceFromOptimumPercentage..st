@@ -1,4 +1,4 @@
 public access
-distanceFromOptimumPercentage: fitnessMetric
+distanceFromOptimumPercentage: individual
 
 	self subclassResponsibility
