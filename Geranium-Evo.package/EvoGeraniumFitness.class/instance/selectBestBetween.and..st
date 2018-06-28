@@ -4,7 +4,7 @@ selectBestBetween: a and: b
 	| aDist bDist |
 	aDist := self distanceFromOptimumPercentage: a.
 	bDist := self distanceFromOptimumPercentage: b.
-	aDist < bDist
+	^ aDist < bDist
 		ifTrue: [ bestDistPercentage := aDist. true ]
 		ifFalse: [ bestDistPercentage := bDist. false ] 
 
