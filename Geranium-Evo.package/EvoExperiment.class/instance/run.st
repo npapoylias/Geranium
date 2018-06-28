@@ -14,6 +14,7 @@ run
 			population individuals: 
 				(generationGenerator 
 					from: fitnessMetric sortedPopulation; 
-					generate)  
+					generate).
+			epoch := epoch + 1  
 		]
 		
