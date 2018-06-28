@@ -10,7 +10,8 @@
 		"fitnessMetric",
 		"terminationCondition",
 		"epoch",
-		"generationGenerator"
+		"generationGenerator",
+		"stats"
 	],
 	"name" : "EvoExperiment",
 	"type" : "normal"

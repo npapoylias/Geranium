@@ -6,7 +6,7 @@ generate
 	randomIndividual := [ 1 -> self sortedPopulation size ] asRangedDistribution.
 	
 	newGeneration := OrderedCollection new.
-	threshold := (self sortedPopulation size * self survivalPercentage) round.
+	threshold := (self sortedPopulation size * self survivalPercentage) rounded.
 	
 	1 to: threshold do: [:i | newGeneration add: (self sortedPopulation at: i) ].
 	
@@ -15,5 +15,7 @@ generate
 			father := self sortedPopulation at: randomIndividual next.
 			mother := self sortedPopulation at: randomIndividual next.
 			newGeneration add: (father reproduceWith: mother) mutate.
-	]
+	].
+
+	^ newGeneration
 	
