@@ -1,4 +1,4 @@
 as yet unclassified
 withSize: populationSize
 
-	individuals := (1 to: populationSize) collect: [self individualClass new randomInitialize]
+	individuals := (1 to: populationSize) collect: [:i | self individualClass new randomInitialize]

@@ -11,8 +11,9 @@ run
 	[ terminationCondition 
 		evaluate: (fitnessMetric evaluate: population) 
 		atEpoch: epoch ] whileFalse: [  
-			population := generationGenerator 
-				from: fitnessMetric sortedPopulation; 
-				generate  
+			population individuals: 
+				(generationGenerator 
+					from: fitnessMetric sortedPopulation; 
+					generate)  
 		]
 		

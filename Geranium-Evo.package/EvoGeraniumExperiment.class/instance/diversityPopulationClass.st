@@ -1,4 +1,4 @@
 running
 diversityPopulationClass
 
-	^ EvoDiversityGenerator
+	^ EvoGeraniumDiversityGenerator
