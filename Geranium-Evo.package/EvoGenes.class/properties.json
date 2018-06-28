@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "EvoModel",
+	"name" : "EvoGenes",
 	"type" : "normal"
 }

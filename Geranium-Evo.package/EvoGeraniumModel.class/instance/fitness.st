@@ -1,0 +1,4 @@
+examples
+fitness
+
+	^ self simulationOutput

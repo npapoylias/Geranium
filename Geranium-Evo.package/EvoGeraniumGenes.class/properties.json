@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "EvoGenes",
 	"category" : "Geranium-Evo",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "EvoGene",
+	"instvars" : [
+		"weightsProfile"
+	],
+	"name" : "EvoGeraniumGenes",
 	"type" : "normal"
 }
