@@ -18,5 +18,8 @@ connectedPlot: aColor withCaption: aString inView: aView
 	b
 		axisX;
 		axisY.
+	self size > 1 ifTrue: [
+		b addDecorator: RTMeanDevVarDecorator new moveInFront
+	].
 	self addLabel: aString onGraph: b.
 	^ b
