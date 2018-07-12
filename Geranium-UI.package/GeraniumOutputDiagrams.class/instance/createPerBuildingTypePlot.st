@@ -11,6 +11,7 @@ createPerBuildingTypePlot
 								collect: [ :p | p first name asString ]) asOrderedCollection
 								addFirst: 'Total';
 								yourself).	"scenarios per building is a collection -- fix !"
+		self halt.
 		v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.
 		v @ RTDraggableView.
 		v @ (RTGridView new gridSize: 10).

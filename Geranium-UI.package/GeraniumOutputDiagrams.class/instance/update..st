@@ -2,7 +2,7 @@ initialization
 update: aStep
 
 	step := aStep.
-	climatePlot refresh.
-	totalsPlot refresh.
-	ownAwarenessPlot refresh.
-	buildingTypePlot refresh
+	climatePlot smoothRefresh.
+	totalsPlot smoothRefresh.
+	ownAwarenessPlot smoothRefresh.
+	buildingTypePlot smoothRefresh
