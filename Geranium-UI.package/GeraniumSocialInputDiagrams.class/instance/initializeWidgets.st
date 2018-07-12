@@ -1,6 +1,6 @@
 initialization
 initializeWidgets
 
-	self createScatterPlot.
+	self createBoxPlot.
 	self createPie.
 	self createBarStack.

@@ -8,16 +8,17 @@ b interaction popup.
 b
 	objects:
 		(Array 
-			with: DPEA
-			with: DPEB
-			with: DPEC
-			with: DPED).
+			with: Couple
+			with: Family
+			with: SingleAdult).
 d := [0 -> 100] asRangedDistribution.
 b slice: [:a | d next].
 b normalizer distinctColor.
 b labeled.
-b emphasize: DPEA by: 20.
-b emphasize: DPEB by: 20.
+b emphasize: Couple by: 20.
+b emphasize: Family by: 20.
+b normalizer distinctColor.
+"b normalizer normalizeColorUsing: Color defaultColors4."
 b build.
 v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.
 v @ RTDraggableView.

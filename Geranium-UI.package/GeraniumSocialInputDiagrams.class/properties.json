@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"scatterplot",
 		"pie",
-		"barStack"
+		"barStack",
+		"boxplot"
 	],
 	"name" : "GeraniumSocialInputDiagrams",
 	"type" : "normal"
