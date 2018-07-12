@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "GeraniumReportDiagrams",
+	"category" : "Geranium-UI-IO-Diagrams",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"climatePlot",
+		"totalsPlot",
+		"ownAwarenessPlot",
+		"buildingTypePlot",
+		"step",
+		"consumptionHistory",
+		"consumptionHistoryCumSum"
+	],
+	"name" : "GeraniumOutputDiagrams",
+	"type" : "normal"
+}

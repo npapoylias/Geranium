@@ -14,7 +14,7 @@ b
 			with: DPED).
 d := [0 -> 100] asRangedDistribution.
 b slice: [:a | d next].
-b normalizer distinctColor.
+"b normalizer distinctColor."
 b labeled.
 b emphasize: DPEA by: 20.
 b emphasize: DPEB by: 20.

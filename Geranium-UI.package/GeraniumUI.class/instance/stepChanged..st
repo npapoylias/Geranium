@@ -2,5 +2,5 @@ events
 stepChanged: aStep
 
 	slider widget label: (step := aStep) asString , '/' , stepMax asString. "fix for max" 
-	self updateElectricityConsumption.
+	outputDiagrams update: step."self updateElectricityConsumption."
 	self renderClimateConsumptionIndicators.

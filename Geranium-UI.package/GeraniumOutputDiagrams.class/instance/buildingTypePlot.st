@@ -1,0 +1,3 @@
+accessing
+buildingTypePlot
+	^ buildingTypePlot
