@@ -1,4 +1,4 @@
-initialization
+as yet unclassified
 createOwnAwarenessPlot
 	ownAwarenessPlot  := RoassalModel new.
 	ownAwarenessPlot 

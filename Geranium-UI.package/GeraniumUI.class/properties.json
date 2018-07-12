@@ -16,7 +16,6 @@
 		"mapDiagram",
 		"tabmgrInput",
 		"tabmgrOutput",
-		"outputDiagrams",
 		"tabmgrMap",
 		"mapView",
 		"pausedOrStopped",
@@ -37,7 +36,9 @@
 		"reportMutex",
 		"structuralInputDiagrams",
 		"socialInputDiagrams",
-		"microClimateInputDiagrams"
+		"microClimateInputDiagrams",
+		"outputDiagramsTotStructure",
+		"outputDiagramsSocialMicroClimate"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"

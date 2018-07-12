@@ -1,6 +1,7 @@
 initialization
 createOutputDiagrams
-	outputDiagrams := GeraniumOutputDiagrams new: self report. 
+	outputDiagramsTotStructure  := GeraniumTotalStructureOutputDiagrams new: self report. 
+	outputDiagramsSocialMicroClimate  := GeraniumSocialMicroClimateOutputDiagrams new: self report. 
 	"outputDiagrams := RoassalModel new.
 	outputDiagrams
 		script: [ :v :c | 

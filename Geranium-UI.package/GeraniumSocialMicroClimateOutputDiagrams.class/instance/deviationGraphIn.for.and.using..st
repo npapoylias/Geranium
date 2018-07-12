@@ -54,10 +54,10 @@ deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aC
 		axisX;
 		axisY.
 	b build.
-	lb := RTLegendBuilder new.
+	"lb := RTLegendBuilder new.
 	lb view: b view.
 	averageDataPoints doWithIndex: [ :c :i | lb addColor: (aColorPallete at: i) text: 'Series  ' , i printString ].
-	lb build.
+	lb build."
 	"view canvas camera focusOnCenterScaled: view canvas extent * 0.9."
 	"view @ RTDraggableView.
 	view @ (RTGridView new gridSize: 10).

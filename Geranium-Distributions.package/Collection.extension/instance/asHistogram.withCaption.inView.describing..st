@@ -31,4 +31,4 @@ asHistogram: aColor withCaption: aString inView: aView describing: anotherCollec
 		noTick;
 		noLabel.
 	aString ifNotNil: [self addLabel: aString onGraph: b].
-	^ b
+	^ b build
