@@ -3,25 +3,21 @@ createOwnAwarenessPlot
 	ownAwarenessPlot  := RoassalModel new.
 	ownAwarenessPlot 
 		script: [ :v :c | |b d|
-			b := RTPieBuilder new view: v;yourself.
-			b interaction popup.
-			b
-				objects:
-				(Array 
-					with: DPEA
-					with: DPEB
-					with: DPEC
-					with: DPED).
-			d := [0 -> 100] asRangedDistribution.
-			b slice: [:a | d next].
-			"b normalizer distinctColor."
-			b labeled.
-			b emphasize: DPEA by: 20.
-			b emphasize: DPEB by: 20.
+			
+			b := RTGrapher new view: v. 
+			d := RTHorizontalMultipleData new.
+			
+			d barShape color: Color blue.
+			d points: #(#('hello' 1 2 1) #('world' 2 4 2) #('bonjour' 3 5 4) #('Gutten Morgen' -1 4 -5)).
+			d addMetric: #second.
+			d addMetric: #third.
+			d addMetric: #fourth.
+
+			"d barChartWithBarCenteredTitle: #first."
+			d barChartWithBarTitle: #first rotation: -30.
+			b add: d.
+			"b addDecorator: RTMeanDevVarDecorator new moveInFront."
 			b build.
 			v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.
-			v @ RTDraggableView.
 			v @ (RTGridView new gridSize: 10).
-			v @ RTZoomableView.
-			v @ RTDoubleScrollBar.
 			v]

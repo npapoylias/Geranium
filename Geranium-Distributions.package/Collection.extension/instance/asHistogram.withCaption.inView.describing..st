@@ -30,5 +30,6 @@ asHistogram: aColor withCaption: aString inView: aView describing: anotherCollec
 	b axisX
 		noTick;
 		noLabel.
+	b addDecorator: RTMeanDevVarDecorator new moveInFront.
 	aString ifNotNil: [self addLabel: aString onGraph: b].
 	^ b build

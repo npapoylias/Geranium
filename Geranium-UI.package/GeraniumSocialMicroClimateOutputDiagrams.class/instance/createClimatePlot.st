@@ -1,24 +1,47 @@
 as yet unclassified
 createClimatePlot
-	
+	|methodsRoassal methodsTrachel greatestAge p1 p2 |
 	climatePlot := RoassalModel new.
+	methodsRoassal := RTObject withAllSubclasses flatCollect: #rtmethods.
+	methodsTrachel := TRObject withAllSubclasses flatCollect: #rtmethods.
+	methodsRoassal := methodsRoassal select: [ :m | m numberOfLinesOfCode < 2 ].
+	methodsTrachel := methodsTrachel select: [ :m | m numberOfLinesOfCode < 2 ].
+	greatestAge := (methodsTrachel , methodsRoassal collect: [ :m | m date asUnixTime ]) min.
+	p1 := methodsRoassal collect: [ :m | ((m date asUnixTime - greatestAge) / 3600) -> m numberOfLinesOfCode ].
+	p2 := methodsTrachel collect: [ :m | ((m date asUnixTime - greatestAge) / 3600) -> m numberOfLinesOfCode ].
 	climatePlot script: [ :v :c |
-		| b |
-		b := RTStackBarPlot new view: v.
-		b interaction popupText.
-		b colorPalette colors: (Array with: Color blue with: Color lightBlue).
-		b add: #(37 33 0 0 0) title: 'Building Type'.
-		b add: #(24 26 17 3 0) title: 'Appertment Type'.
-		b add: #(25 29 15 1 0) title: 'House Type'.
-		"b addLegend: #('strongly agree' 'agree' 'neutral' 'disagree' 'strongly disagree')."
-		b barWidth: 260 height: 20.
-		b addLabelToBars: [ :assoc | (assoc key / b totalSum * 100) asInteger asString , '%' ] if: [ :assoc | assoc key > 5 ] color: Color white.
+			| b ds |
+		b := RTGrapher new view: v.
+		"b extent: 300 @ 300."
+		ds := RTData new.
+		ds dotShape circle
+			color: (Color green alpha: 0.3);
+			size: 5.
+		ds
+			points: p1;
+			x: #key;
+			y: #value.
+		ds interaction popup.
+		b add: ds.
+		ds := RTData new.
+		ds dotShape circle
+			color: (Color orange alpha: 0.3);
+			size: 5.
+		ds
+			points: p2;
+			x: #key;
+			y: #value.
+		ds interaction popup.
+		b add: ds.
+		b axisX
+			noDecimal;
+			noLabel;
+			title: 'Buildings'.
+		b axisY
+			noDecimal;
+			title: 'Residences'.
 		b build.
-		b view.
 		v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.
-		v @ RTDraggableView.
 		v @ (RTGridView new gridSize: 10).
-		v @ RTZoomableView.
-		v @ RTDoubleScrollBar.
 		v
 	]
