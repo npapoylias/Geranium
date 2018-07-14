@@ -5,13 +5,13 @@ identityHistogram: aColor withCaption: aString inView: aView
 	"(1 to: 10) identityHistogram: Color yellow withCaption: 'hallo'"
 	
 	b := RTGrapher new.
-	b extent: self vizSize.
+	"b extent: self vizSize."
 	aView ifNotNil: [ b view: aView ].
 	ds := RTData new.
 	ds interaction popup.
-	histDict := self frequencies.
+	histDict := (self frequencies associations collect: [:assoc| assoc key asString -> assoc value]) asDictionary.
 	ds points: histDict keys sorted.
-	ds y: [ :x | histDict at: x ].
+	ds y: [ :x | histDict at: x].
 	ds dotShape rectangle color: aColor.
 	ds barShape
 		color: aColor;
@@ -30,5 +30,5 @@ identityHistogram: aColor withCaption: aString inView: aView
 	b axisX
 		noTick;
 		noLabel.
-	self addLabel: aString onGraph: b.
+	aString ifNotNil: [self addLabel: aString onGraph: b].
 	^ b

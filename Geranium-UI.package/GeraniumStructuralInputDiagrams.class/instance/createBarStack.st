@@ -3,11 +3,12 @@ createBarStack
 
 	| residencesTypes |
 
-	residencesTypes := (report inputVisitor residences collect: [ :r | r class  ]).
+	residencesTypes := (report inputVisitor residences collect: [ :r | (report scenarioEntityOf: r) name ]).
 	barStack := RoassalModel new.
 	barStack script: [ :v :c |
 		| b |
-		b:=residencesTypes frequencyHistogram: Color orange withCaption: nil inView: v.
+		b:=residencesTypes identityHistogram: Color orange withCaption: nil inView: v.
+		b addDecorator: RTMeanDevVarDecorator new moveInFront.
 		b build.
 		b view.
 		v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.
