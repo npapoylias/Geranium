@@ -22,7 +22,7 @@ visitUrbanProfileForResidence: aUrbanProfileForResidence ofClass: aResidenceClas
 	numberOfChildren := aUrbanProfileForResidence numberOfChildren.
 	income := aUrbanProfileForResidence income.
 	awareness := aUrbanProfileForResidence awareness.
-	ownership := aUrbanProfileForResidence awareness.
+	ownership := aUrbanProfileForResidence ownership.
 	
 	occupants
 		income: income next;
