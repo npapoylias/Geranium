@@ -5,7 +5,7 @@ ringPieWithCaption: aString inView: aView
 
 	| b |
 	b := RTPieBuilder new.
-	b extent: self vizSize.
+	"b extent: self vizSize."
 	aView ifNotNil: [ b view: aView ].
 	b shape current
 		innerRadius: 70;
@@ -15,5 +15,5 @@ ringPieWithCaption: aString inView: aView
 	b slice: [:assoc | assoc value].
 	b normalizer distinctColor.
 	b labeled: [ :assoc | assoc key ].
-	self addLabel: aString onGraph: b.
+	aString ifNotNil: [self addLabel: aString onGraph: b].
 	^ b 
