@@ -17,7 +17,8 @@
 		"country",
 		"climate",
 		"numberOfDeclaredResidences",
-		"numberOfDeclaredPopulation"
+		"numberOfDeclaredPopulation",
+		"residences"
 	],
 	"name" : "ScenarioToModelVisitor",
 	"commentStamp" : "",
