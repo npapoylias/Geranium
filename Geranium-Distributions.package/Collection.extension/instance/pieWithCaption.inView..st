@@ -14,5 +14,5 @@ pieWithCaption: aString inView: aView
 	b labeled: [ :assoc | assoc key ].
 	b emphasize: self first by: 20. 
 	b emphasize: self second by: 20.
-	self addLabel: aString onGraph: b.
+	aString ifNotNil: [self addLabel: aString onGraph: b].
 	^ b 
