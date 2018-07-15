@@ -15,8 +15,10 @@ boxedPlot: aColor withCaption: aString inView: aView
 			ds model: assoc key.
 			ds y: [ :x | x ].
 			ds boxShape fillColor: aColor.
-			ds boxWidth: 80.
-			b add: ds ].
+			ds boxWidth: 40.
+			"ds boxLineShape color: Color blue."
+			b add: ds 
+	].
 	b axisX
 		noTick;
 		noLabel.

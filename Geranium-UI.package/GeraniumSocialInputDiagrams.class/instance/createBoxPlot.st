@@ -8,11 +8,12 @@ createBoxPlot
 			ifTrue: [ p resolvedAppartmentProfiles ] 
 			ifFalse: [ p ]
 		]) deepFlatten asSet.
-	incomes := residenceProfiles collect: [ :rp | rp name -> (rp income next: 100) ].
+	incomes := (residenceProfiles collect: [ :rp | rp name -> (rp income next: 100) ])
+		asOrderedCollection.
 	
 	boxplot := RoassalModel new.
 	boxplot script: [ :v :c | | b |
-		b := incomes boxedPlot: (Color orange alpha: 0.7) withCaption: nil inView: v.
+		b := incomes boxedPlot: (Color lightBrown) withCaption: nil inView: v.
 		b build.
 		v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.
 		v @ RTDraggableView.
