@@ -5,11 +5,12 @@ boxedPlot: aColor withCaption: aString inView: aView
 		boxedPlot: Color green withCaption: 'hallo'"
 	b := RTGrapher new.
 	aView ifNotNil: [ b view: aView ].
-	b extent: self vizSize.
+	"b extent: self vizSize."
 	self
 		do: [ :assoc | 
 			| ds |
 			ds := RTBoxPlotDataSet new.
+			ds showMean: true.
 			ds points: assoc value.
 			ds model: assoc key.
 			ds y: [ :x | x ].
@@ -24,5 +25,5 @@ boxedPlot: aColor withCaption: aString inView: aView
 		labelRotation: -45;
 		labelConversion: [ :index | (self at: index) key ].
 	b addDecorator: deco.
-	self addLabel: aString onGraph: b.
+	aString ifNotNil: [self addLabel: aString onGraph: b].
 	^ b
