@@ -1,8 +1,11 @@
 initialization
 createPie
-	|residences categories|
+	|residences categories |
+	
 	residences := report inputVisitor residences.
-	categories := (residences collect: [ :r | r category ]) frequencies associations.
+	categories := residences collect: [ :r | r category ].
+	categories :=  categories frequencies associations.
+	
 	pie := RoassalModel new.
 	pie
 		script: [ :v :c | |b| 
@@ -14,4 +17,4 @@ createPie
 			v @ RTZoomableView.
 			v @ RTDoubleScrollBar.
 			v
-]
+		]
