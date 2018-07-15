@@ -1,0 +1,4 @@
+converting
+asBoolean
+
+	^ true

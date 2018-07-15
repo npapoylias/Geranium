@@ -1,0 +1,4 @@
+converting
+asBoolean 
+
+	self subclassResponsibility 

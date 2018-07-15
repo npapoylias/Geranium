@@ -10,7 +10,9 @@
 		"ownAwarenessPlot",
 		"step",
 		"consumptionHistory",
-		"consumptionHistoryCumSum"
+		"consumptionHistoryCumSum",
+		"ownConsumptionHistoryCumSum",
+		"awareConsumptionHistoryCumSum"
 	],
 	"name" : "GeraniumSocialMicroClimateOutputDiagrams",
 	"type" : "normal"
