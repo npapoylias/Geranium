@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RTDevVarDecorator",
+	"category" : "Geranium-UI-IO-Diagrams",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FasterRTDevVarDecorator",
+	"type" : "normal"
+}
