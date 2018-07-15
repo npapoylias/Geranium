@@ -30,6 +30,7 @@ createScatterPlot
 		g axisY
 			noDecimal;
 			title: 'Surface'.
+		"g addDecorator: (RTCursorFollower new color: Color blue)." "FOLLOWING WITH THE MOUSE..."
 		g build.
 		v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.
 		v @ RTDraggableView.
