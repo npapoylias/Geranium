@@ -9,6 +9,12 @@ createExposurePlot
 	exposurePlot script: [ :v :c | 
 		b := exposures
 			connectedDottedPlot: Color magenta withCaption: nil inView: v.
+		b axisX
+			noDecimal;
+			title: 'Exposure'.
+		b axisY
+			noDecimal;
+			title: 'Instances'.
 		b build.
 		v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.
 		v @ RTDraggableView.

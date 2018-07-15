@@ -9,6 +9,9 @@ createBarStack
 		| b |
 		b:=residencesTypes identityHistogram: Color orange withCaption: nil inView: v.
 		b addDecorator: RTMeanDevVarDecorator new moveInFront.
+		b axisY
+			noDecimal;
+			title: 'Instances'.
 		b build.
 		b view.
 		v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.

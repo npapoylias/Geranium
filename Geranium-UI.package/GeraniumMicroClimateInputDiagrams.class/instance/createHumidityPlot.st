@@ -5,6 +5,12 @@ createHumidityPlot
 	humidityPlot script: [ :v :c | 
 		|b|
 		b := report input climateProfile humidityPlot.
+		b axisX
+			noDecimal;
+			title: 'Hour'.
+		b axisY
+			noDecimal;
+			title: 'Humidity'.
 		b view: v.
 		b build.
 		v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.

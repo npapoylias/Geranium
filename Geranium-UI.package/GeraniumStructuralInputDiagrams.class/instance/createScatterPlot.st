@@ -18,7 +18,7 @@ createScatterPlot
 				size: [:_b | _b occupantSize * 5]. "n_residences"
 			ds
 				points: {b};
-				x: [:_b | type_colors keys indexOf: (building_to_type value: _b)]; "index according to type"
+				x: [:_b | buildings indexOf: _b "type_colors keys indexOf: (building_to_type value: _b)"]; "index according to type"
 				y: [:_b | _b surface]."n_occupants" "should be surface"
 			ds interaction popup.
 			g add: ds.
@@ -26,7 +26,7 @@ createScatterPlot
 		g axisX
 			noDecimal;
 			noLabel;
-			title: 'Building Type'.
+			title: 'Buildings'.
 		g axisY
 			noDecimal;
 			title: 'Surface'.

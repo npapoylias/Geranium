@@ -14,6 +14,9 @@ createBoxPlot
 	boxplot := RoassalModel new.
 	boxplot script: [ :v :c | | b |
 		b := incomes boxedPlot: (Color lightBrown) withCaption: nil inView: v.
+		b axisY
+			noDecimal;
+			title: 'Income'.
 		b build.
 		v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.
 		v @ RTDraggableView.
