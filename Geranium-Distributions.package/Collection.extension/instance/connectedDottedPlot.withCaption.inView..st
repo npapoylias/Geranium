@@ -1,5 +1,5 @@
 *Geranium-Distributions
-connectedPlot: aColor withCaption: aString inView: aView
+connectedDottedPlot: aColor withCaption: aString inView: aView
 
 	| b ds |
 	
@@ -11,7 +11,6 @@ connectedPlot: aColor withCaption: aString inView: aView
 	aView ifNotNil: [ b view: aView ].
 	b extent: self vizSize.
 	ds := RTData new.
-		ds noDot.
 		ds points: self.
 		ds connectColor: aColor.
 		b add: ds.
