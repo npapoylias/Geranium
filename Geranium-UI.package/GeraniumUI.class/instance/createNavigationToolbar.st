@@ -24,7 +24,7 @@ createNavigationToolbar
 		hResizing: #spaceFill;
 		vResizing: #spaceFill;
 		min: (step := stepMin := 0);
-		max: (stepMax := 100);
+		max: (stepMax := 365*24);
 		label: stepMin asString , '/' , stepMax asString;
 		setValueSelector: #stepChanged:;
 		getValueSelector: #step;
