@@ -14,7 +14,6 @@ pieWithCaption: aString inView: aView
 	b slice: [:assoc | assoc value].
 	b normalizer distinctColor.
 	b labeled: [ :assoc | assoc key asString , ': ' , ((percentages at: assoc key) printShowingDecimalPlaces: 1) , '%' ].
-	b labeled: [ :assoc | assoc key ].
 	b emphasize: self first by: 20. 
 	b emphasize: self second by: 20.
 	aString ifNotNil: [self addLabel: aString onGraph: b].

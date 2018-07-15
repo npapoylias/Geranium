@@ -53,7 +53,7 @@ deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aC
 	b
 		axisX;
 		axisY.
-	b build.
+	"b build."
 	"lb := RTLegendBuilder new.
 	lb view: b view.
 	averageDataPoints doWithIndex: [ :c :i | lb addColor: (aColorPallete at: i) text: 'Series  ' , i printString ].
@@ -64,5 +64,5 @@ deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aC
 	view @ RTZoomableView."
 	"view @ RTDoubleScrollBar."
 	"b view signalUpdate."
-	^ b view.
+	^ b .
 

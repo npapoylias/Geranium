@@ -5,3 +5,4 @@ stepChanged: aStep
 	outputDiagramsTotStructure update: step. 
 	outputDiagramsSocialMicroClimate update: step. 
 	self renderClimateConsumptionIndicators.
+	aStep = stepMax ifTrue: [ self pauseTemperatureAnimation  ]

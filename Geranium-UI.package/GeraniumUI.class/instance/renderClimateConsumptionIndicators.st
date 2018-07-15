@@ -1,4 +1,4 @@
-visualization
+rendering
 renderClimateConsumptionIndicators
 	|consumption temperature humidity |
 	consumptionLabel ifNotNil: [  
@@ -18,4 +18,5 @@ renderClimateConsumptionIndicators
 	consumptionLabel := ((RTLabel new color: Color black; height: 3) elementOn: consumption asString, 'kWh') 
 		translateTo: (self relativeToBoundingBox: 17@40).
 	mapView view add: temperatureLabel; add: humidityLabel; add: consumptionLabel. 
+	tempContinue = false ifTrue: [mapView view signalUpdate]. "there is an additional signal update from animation -- should animate more cleanly"
 		
