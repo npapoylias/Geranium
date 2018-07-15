@@ -18,8 +18,8 @@ exposureFor: aLocationWithinTheBlock
 	(appNumber > 1 and: [ appNumber < appartmentsPerCorridor  ]) "Middle Appartments"
 		ifTrue: [ exposure := exposure - 2 ]
 		ifFalse: [ exposure := exposure - 1 ]. "First and Last appartements"
-	exposure = 4 ifTrue: [self halt].
-	Transcript show: exposure; cr.
+	"exposure = 4 ifTrue: [self halt].
+	Transcript show: exposure; cr."
 	^ exposure
 		
 	
