@@ -24,12 +24,10 @@ createOwnAwarenessPlot
 			"d barChartWithBarCenteredTitle: #first."
 			d barChartWithBarTitle: #first rotation: -30.
 			b add: d.
-			b addDecorator: RTMeanDevVarDecorator new moveInFront.
+			"b addDecorator: RTMeanDevVarDecorator new moveInFront."
 			b axisY
 				noDecimal;
-				title: 'Total kWh'.
-			b axisX
-				title: 'Per Residence'.
+				title: 'Avg. Total kWh / Residence'.
 			b build.
 			v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.
 			v @ (RTGridView new gridSize: 10).
