@@ -24,13 +24,13 @@ createBarStack
 		"b addLegend: #('strongly agree' 'agree' 'neutral' 'disagree' 'strongly disagree')."
 		b barWidth: 40 height: 260.
 		b addLegend: #('yes' 'no').
-		b addLabelToBars: [ :assoc | assoc key printShowingDecimalPlaces: 1 , '%' ] if: [ :assoc | assoc key > 5 ] color: Color white.
+		b addLabelToBars: [ :assoc | (assoc key printShowingDecimalPlaces: 1 ), '%' ] if: [ :assoc | assoc key > 5 ] color: Color white.
 		b build.
 		b view.
 		v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.
-		v @ RTDraggableView.
+		"v @ RTDraggableView."
 		v @ (RTGridView new gridSize: 10).
-		v @ RTZoomableView.
-		v @ RTDoubleScrollBar.
+"		v @ RTZoomableView.
+		v @ RTDoubleScrollBar."
 		v
 	]

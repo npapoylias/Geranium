@@ -10,8 +10,12 @@ adjustDPE: categories
 		a value + differencePerCategory < 0
 			ifTrue: [ 
 				difference := difference + a value. 
-				differencePerCategory := difference / (otherCategories size - index).
-				a key -> 0 
+				otherCategories size - index = 0
+					ifTrue: [ a key -> 0 ]
+					ifFalse: [ 
+						differencePerCategory := difference / (otherCategories size - index).
+						a key -> 0
+					] 
 			] ifFalse: [ 
 				a key -> (a value + differencePerCategory)
 			] 
