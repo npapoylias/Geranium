@@ -5,7 +5,7 @@ createAwarenessSlider
 			gradientRange: (259.9 to: 159.0 by: -0.1);
 			initialize;
 			model: self;
-			quantum: 1;
+			quantum: 0.1;
 			fontColor: Color black;
 			hResizing: #spaceFill;
 			vResizing: #spaceFill;
