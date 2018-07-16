@@ -1,6 +1,6 @@
 initialization
 createScatterPlot
-	| buildings  types type_colors building_to_type|
+	| buildings  types type_colors building_to_type clickSet |
 	
 	buildings := report inputVisitor buildings."{ n_residences . n_occupants . block_or_house . type }"
 	building_to_type := [: b | (report inputVisitor modelToScenarioDict at: b) first].
@@ -9,6 +9,7 @@ createScatterPlot
 	
 	scatterplot := RoassalModel new.
 	scatterplot script: [ :v :c | | g ds |
+		clickSet ifNil: [clickSet := true. self setWhatIfClickOn: c].
 		g := RTGrapher new view: v.
 		"b extent: 300 @ 300."
 		buildings do: [ :b |

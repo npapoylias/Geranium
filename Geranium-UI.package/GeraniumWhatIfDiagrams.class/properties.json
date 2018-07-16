@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "GeraniumReportDiagrams",
+	"category" : "Geranium-UI-IO-Diagrams",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scatterplot",
+		"pie",
+		"barStack",
+		"ownPercentages",
+		"awarePercentages"
+	],
+	"name" : "GeraniumWhatIfDiagrams",
+	"type" : "normal"
+}
