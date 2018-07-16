@@ -11,9 +11,9 @@ createDPESlider
 			vResizing: #spaceFill;
 			min: 0;
 			max: 100;"check limits on displaying ..."
-			label: 'Set DPEA to: ' , ((dpeAPercentage * 100) printShowingDecimalPlaces: 1) , '%'; 
+			label: 'Set DPEA to: ' , (dpeAPercentage printShowingDecimalPlaces: 1) , '%'; 
 			setValueSelector: #dpeAChanged:;
 			getValueSelector: #dpeAPercentage;
 			extent: 24 @ 24) asSpecAdapter.
-		dpeASlider widget value: dpeAPercentage.
+		dpeASlider widget value: dpeAPercentage / 100.
 		^ dpeASlider

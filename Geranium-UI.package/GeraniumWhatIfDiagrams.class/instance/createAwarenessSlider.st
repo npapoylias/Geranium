@@ -11,9 +11,9 @@ createAwarenessSlider
 			vResizing: #spaceFill;
 			min: 0;
 			max: 100;"check limits on displaying ..."
-			label: 'Set awareness to: ' , ((awarenessPercentage * 100) printShowingDecimalPlaces: 1) , '%';
+			label: 'Set awareness to: ' , (awarenessPercentage printShowingDecimalPlaces: 1) , '%';
 			setValueSelector: #awarenessChanged:;
 			getValueSelector: #awarenessPercentage;
 			extent: 24 @ 24) asSpecAdapter.
-		awarenessSlider widget value: awarenessPercentage.
+		awarenessSlider widget value: awarenessPercentage / 100.
 		^ awarenessSlider 
