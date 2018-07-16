@@ -11,7 +11,7 @@ createTemperatureSlider
 			vResizing: #spaceFill;
 			min: 0;
 			max: 5;"check limits on displaying ..."
-			label: 'Temp +0';"(dpePercentages at: #DPEA);" 
+			label: 'Temperature Increase by: ' , temperature asString; 
 			setValueSelector: #temperatureChanged:;
 			getValueSelector: #temperature;
 			extent: 24 @ 24) asSpecAdapter.

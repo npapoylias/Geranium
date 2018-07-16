@@ -1,6 +1,7 @@
 initialization
 initializeWidgets
 
+	temperature := 0.
 	self createScatterPlot.
 	self createPie.
 	self createBarStack.
