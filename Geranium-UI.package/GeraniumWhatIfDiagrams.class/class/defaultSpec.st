@@ -18,6 +18,6 @@ defaultSpec
 								col add: #temperatureSlider top: 0.0 bottom: 0.95;
 								add: #scatterplot top: 0.05 bottom: 0.00
 							] left: 0.66 right: 0.01
-			]; 
-		newRow: [ :row | row add: #applyButton ]						
+			] top: 0.0 bottom: 0.05; 
+		newRow: [ :row | row add: #applyButton ] top: 0.95 bottom: 0.0						
 		yourself
