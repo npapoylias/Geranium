@@ -1,0 +1,4 @@
+initialization
+awarenessPercentage
+
+	^ awarenessPercentage

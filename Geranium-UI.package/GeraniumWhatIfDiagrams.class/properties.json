@@ -12,7 +12,10 @@
 		"dpeASlider",
 		"awarenessSlider",
 		"temperatureSlider",
-		"applyButton"
+		"applyButton",
+		"awarenessPercentage",
+		"dpeAPercentage",
+		"temperature"
 	],
 	"name" : "GeraniumWhatIfDiagrams",
 	"type" : "normal"
