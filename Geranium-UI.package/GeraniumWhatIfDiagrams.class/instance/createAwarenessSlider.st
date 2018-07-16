@@ -1,10 +1,12 @@
 initialization
 createAwarenessSlider
 
-	^ awarenessSlider := (GeraniumSlider new
+	^ awarenessSlider := (GeraniumSlider basicNew
+			gradientRange: (259.9 to: 159.0 by: -0.1);
+			initialize;
 			model: self;
 			quantum: 1;
-			fontColor: Color white;
+			fontColor: Color black;
 			hResizing: #spaceFill;
 			vResizing: #spaceFill;
 			min: 0;

@@ -11,7 +11,8 @@
 		"barStack",
 		"dpeASlider",
 		"awarenessSlider",
-		"temperatureSlider"
+		"temperatureSlider",
+		"applyButton"
 	],
 	"name" : "GeraniumWhatIfDiagrams",
 	"type" : "normal"

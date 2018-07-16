@@ -1,10 +1,12 @@
 initialization
 createDPESlider
 
-	^ dpeASlider := (GeraniumSlider new
+	^ dpeASlider := (GeraniumSlider basicNew
+			gradientRange: (359.9 to: 259.0 by: -0.1);
+			initialize;
 			model: self;
 			quantum: 1;
-			fontColor: Color white;
+			fontColor: Color black;
 			hResizing: #spaceFill;
 			vResizing: #spaceFill;
 			min: 0;
