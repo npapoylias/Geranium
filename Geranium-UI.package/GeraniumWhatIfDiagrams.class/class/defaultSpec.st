@@ -4,9 +4,15 @@ defaultSpec
 	^ SpecLayout composed
 		newRow: [ :row | 
 						row 
-							add: #pie  left: 0.0 right: 0.66;
+							newColumn: [ :col | 
+							 	col add: #pie  top: 0.0 bottom: 0.05;
+									 add: #dpeASlider top: 0.95 bottom: 0.0
+							] left: 0.0 right: 0.66;
 							addSplitter; 
-							add: #barStack left:0.33 right: 0.33;
+							newColumn: [:col |
+								col add: #barStack top: 0.0 bottom: 0.05;
+									add: #awarenessSlider top: 0.95 bottom: 00
+							] left:0.33 right: 0.33;
 							addSplitter;
 							add: #scatterplot left: 0.66 right: 0.0
 			]; 						

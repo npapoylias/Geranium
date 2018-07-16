@@ -1,15 +1,11 @@
 initialization
 createBarStack
-	|ownership awareness ownershipSum awareSum |
+	|ownership awareness |
 	
 	ownership := (report inputVisitor residences collect: [ :r |  r occupants ownership ]) frequencies.
 	ownership := { ownership at: true . ownership at: false } asArray.
-	ownershipSum := ownership sum.
-	ownPercentages := ownership collect: [ :o | ((o / ownershipSum) * 100) asInteger ].
 	awareness := (report inputVisitor residences collect: [ :r |  r occupants awareness ]) frequencies.
 	awareness := { awareness at: ConsumptionAware . awareness at: ConsumptionUnaware } asArray.
-	awareSum := awareness sum.
-	awarePercentages := awareness collect: [ :o | ((o / awareSum) * 100) asInteger ]. 
 
 	barStack := RoassalModel new.
 	barStack script: [ :v :c |
@@ -18,8 +14,8 @@ createBarStack
 		b vertical.
 		b interaction popupText.
 		b colorPalette colors: (RTColorPalette qualitative colors: 3 scheme:'Set1') reverse."{Color red. Color green}"
-		b add: ownPercentages title: 'Ownership'.
-		b add: awarePercentages title: 'Awareness'.
+		b add: ownership title: 'Ownership'.
+		b add: awareness title: 'Awareness'.
 		"b add: #(25 29 15 1 0) title: 'House Type'."
 		"b addLegend: #('strongly agree' 'agree' 'neutral' 'disagree' 'strongly disagree')."
 		b barWidth: 40 height: 260.

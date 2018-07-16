@@ -9,8 +9,8 @@
 		"scatterplot",
 		"pie",
 		"barStack",
-		"ownPercentages",
-		"awarePercentages"
+		"dpeASlider",
+		"awarenessSlider"
 	],
 	"name" : "GeraniumWhatIfDiagrams",
 	"type" : "normal"
