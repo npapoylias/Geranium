@@ -5,3 +5,4 @@ initializeWidgets
 	self createPie.
 	self createBarStack.
 	self createDPESlider.
+	self createAwarenessSlider.

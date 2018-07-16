@@ -1,4 +1,4 @@
 accessing
 setWhatIfClickOn: canvas
 
-	canvas when: TRMouseClick do: [ :event | (GeraniumWhatIfDiagrams new: report) openWithSpec ].
+	canvas when: TRMouseClick do: [ :event | (GeraniumWhatIfDiagrams new: report) open ].

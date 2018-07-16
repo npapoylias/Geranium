@@ -1,4 +1,4 @@
 initialization
 title
 
-	^ self class name asString
+	^ 'What If Scenarios'

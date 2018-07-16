@@ -10,7 +10,8 @@
 		"pie",
 		"barStack",
 		"dpeASlider",
-		"awarenessSlider"
+		"awarenessSlider",
+		"temperatureSlider"
 	],
 	"name" : "GeraniumWhatIfDiagrams",
 	"type" : "normal"
