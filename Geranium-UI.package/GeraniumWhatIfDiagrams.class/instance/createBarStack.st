@@ -28,9 +28,9 @@ createBarStack
 		b build.
 		b view.
 		v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.
-		"v @ RTDraggableView."
+		v @ RTDraggableView.
 		v @ (RTGridView new gridSize: 10).
-"		v @ RTZoomableView.
-		v @ RTDoubleScrollBar."
+		v @ RTZoomableView.
+		v @ RTDoubleScrollBar.
 		v
 	]
