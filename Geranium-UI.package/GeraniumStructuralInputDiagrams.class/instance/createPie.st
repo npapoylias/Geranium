@@ -9,6 +9,7 @@ createPie
 	pie := RoassalModel new.
 	pie
 		script: [ :v :c | |b| 
+			self storeCanvas: c and: v.
 			b := categories ringPieWithCaption: nil inView: v.
 			b build.
 			v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.

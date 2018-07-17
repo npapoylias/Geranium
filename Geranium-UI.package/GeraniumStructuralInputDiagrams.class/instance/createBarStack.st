@@ -7,6 +7,7 @@ createBarStack
 	barStack := RoassalModel new.
 	barStack script: [ :v :c |
 		| b |
+		self storeCanvas: c and: v.
 		b:=residencesTypes identityHistogram: Color orange withCaption: nil inView: v.
 		b addDecorator: RTMeanDevVarDecorator new moveInFront.
 		b axisY

@@ -4,6 +4,7 @@ createHumidityPlot
 	humidityPlot := RoassalModel new.
 	humidityPlot script: [ :v :c | 
 		|b|
+		self storeCanvas: c and: v.
 		b := report input climateProfile humidityPlot.
 		b axisX
 			noDecimal;

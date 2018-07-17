@@ -1,4 +1,4 @@
 accessing
-setWhatIfClickOn: canvas
+setWhatIfClickOn: aCanvas
 
-	canvas when: TRMouseClick do: [ :event | (GeraniumWhatIfDiagrams new: report) open ].
+	aCanvas when: TRMouseClick do: [ :event | (GeraniumWhatIfDiagrams new: report) open ].

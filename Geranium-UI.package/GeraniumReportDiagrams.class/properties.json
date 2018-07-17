@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"report"
+		"report",
+		"canvas"
 	],
 	"name" : "GeraniumReportDiagrams",
 	"type" : "normal"

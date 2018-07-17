@@ -10,6 +10,7 @@ createBarStack
 	barStack := RoassalModel new.
 	barStack script: [ :v :c |
 		| b |
+		self storeCanvas: c and: v.
 		b := RTStackBarPlot new view: v.
 		b vertical.
 		b interaction popupText.

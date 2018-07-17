@@ -7,6 +7,7 @@ createOwnAwarenessPlot
 	ownAwarenessPlot  := RoassalModel new.
 	ownAwarenessPlot 
 		script: [ :v :c | |b d|
+			self storeCanvas: c and: v.
 			total := (self consumptionHistoryCumSumAt: step + 1) first.
 			own := self ownConsumptionHistoryCumSumAt: step + 1.
 			aware := self awareConsumptionHistoryCumSumAt: step + 1.

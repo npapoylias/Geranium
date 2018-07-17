@@ -1,4 +1,4 @@
 accessing
-setClickOn: canvas with: aBlock
+setClickOn: aCanvas with: aBlock
 
-	canvas when: TRMouseClick do: aBlock
+	aCanvas when: TRMouseClick do: aBlock

@@ -12,6 +12,7 @@ createClimatePlot
 	p2 := methodsTrachel collect: [ :m | ((m date asUnixTime - greatestAge) / 3600) -> m numberOfLinesOfCode ]."
 	climatePlot script: [ :v :c |
 			| b ds |
+		self storeCanvas: c and: v.
 		showMin := step < 100
 			ifTrue: [ 1 ]
 			ifFalse: [ step // 100 * 100 ].

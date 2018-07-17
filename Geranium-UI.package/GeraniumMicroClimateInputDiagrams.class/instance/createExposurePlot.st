@@ -7,6 +7,7 @@ createExposurePlot
 	exposures := (exposures associations sort: [:x :y | x key < y key]) collect: [:a | a value].
 	exposurePlot := RoassalModel new.
 	exposurePlot script: [ :v :c | 
+		self storeCanvas: c and: v.
 		b := exposures
 			connectedDottedPlot: Color magenta withCaption: nil inView: v.
 		b axisX

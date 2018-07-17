@@ -4,6 +4,7 @@ createTemperaturePlot
 	temperaturePlot := RoassalModel new.
 	temperaturePlot script: [ :v :c | 
 		|b|
+		self storeCanvas: c and: v.
 		b := report input climateProfile temperaturePlot.
 		b view: v.
 		b axisX

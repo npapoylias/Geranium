@@ -13,6 +13,7 @@ createBoxPlot
 	
 	boxplot := RoassalModel new.
 	boxplot script: [ :v :c | | b |
+		self storeCanvas: c and: v. 
 		b := incomes boxedPlot: (Color lightBrown) withCaption: nil inView: v.
 		b axisY
 			noDecimal;
