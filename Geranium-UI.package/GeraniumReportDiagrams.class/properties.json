@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"report",
-		"canvas"
+		"canvas",
+		"view"
 	],
 	"name" : "GeraniumReportDiagrams",
 	"type" : "normal"

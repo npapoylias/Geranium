@@ -2,5 +2,5 @@ accessing
 storeCanvas: aCanvas and: aView
 
 	canvas := aCanvas.
-	view := aView.
+	view := aView. 
 	self setWhatIfClickOn: canvas.
