@@ -1,4 +1,4 @@
 accessing
 processCanvas: aCanvas and: aView
 
-	self setWhatIfClickOn: aCanvas.
+	self registerClicksOn: aCanvas and: aView.
