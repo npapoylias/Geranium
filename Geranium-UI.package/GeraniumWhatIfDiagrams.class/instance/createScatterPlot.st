@@ -4,6 +4,7 @@ createScatterPlot
 	scatterplot  := RoassalModel new.
 	scatterplot script: [ :v :c | 
 		|b|
+		processed ifNil: [processed := true. self processCanvas: c and: v].
 		b := report input climateProfile temperaturePlot.
 		b view: v.
 		b axisX

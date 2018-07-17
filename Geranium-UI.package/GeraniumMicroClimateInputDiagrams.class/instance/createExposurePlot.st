@@ -14,7 +14,7 @@ createExposurePlot
 			noDecimal;
 			title: 'Exposure'.
 		b axisY
-			noDecimal;
+			"noDecimal;"
 			title: 'Instances'.
 		b build.
 		v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.

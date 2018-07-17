@@ -1,6 +1,6 @@
 initialization
 createBarStack
-	|ownership awareness residences  |
+	|ownership awareness residences  processed |
 	
 	residences := report inputVisitor residences.
 	ownership := (report inputVisitor residences collect: [ :r |  r occupants ownership ]) frequencies.
@@ -14,6 +14,8 @@ createBarStack
 	barStack := RoassalModel new.
 	barStack script: [ :v :c |
 		| b |
+		b := RTStackBarPlot new view: v.
+		processed ifNil: [processed := true. self processCanvas: c and: v].
 		b vertical.
 		b interaction popupText.
 		b colorPalette colors: (RTColorPalette qualitative colors: 3 scheme:'Set1') reverse."{Color red. Color green}"
