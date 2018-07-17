@@ -1,10 +1,11 @@
 initialization
 createHumidityPlot
 
+	| processed |
 	humidityPlot := RoassalModel new.
 	humidityPlot script: [ :v :c | 
 		|b|
-		self storeCanvas: c and: v.
+		processed ifNil: [processed := true. self processCanvas: c and: v].
 		b := report input climateProfile humidityPlot.
 		b axisX
 			noDecimal;

@@ -1,7 +1,7 @@
 initialization
 createBoxPlot
 	
-	| incomes buildingProfiles residenceProfiles |
+	| incomes buildingProfiles residenceProfiles processed |
 	buildingProfiles := report inputVisitor resolvedResidenceProfiles.
 	residenceProfiles := (buildingProfiles collect: [ :p | 
 		p class = UrbanProfileForAppartmentBlock 
@@ -13,7 +13,7 @@ createBoxPlot
 	
 	boxplot := RoassalModel new.
 	boxplot script: [ :v :c | | b |
-		self storeCanvas: c and: v. 
+		processed ifNil: [processed := true. self processCanvas: c and: v].
 		b := incomes boxedPlot: (Color lightBrown) withCaption: nil inView: v.
 		b axisY
 			noDecimal;

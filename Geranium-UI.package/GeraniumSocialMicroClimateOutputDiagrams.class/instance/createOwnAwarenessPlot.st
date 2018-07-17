@@ -1,13 +1,13 @@
 as yet unclassified
 createOwnAwarenessPlot
-	| total own aware totalOwners totalAware totalResidences|
+	| total own aware totalOwners totalAware totalResidences processed |
 	totalOwners := (report inputVisitor residences select: [ :r | r occupants ownership ]) size.
 	totalAware :=  (report inputVisitor residences select: [ :r | r occupants awareness asBoolean ]) size.
 	totalResidences := report inputVisitor residences size.
 	ownAwarenessPlot  := RoassalModel new.
 	ownAwarenessPlot 
 		script: [ :v :c | |b d|
-			self storeCanvas: c and: v.
+			processed ifNil: [processed := true. self processCanvas: c and: v].
 			total := (self consumptionHistoryCumSumAt: step + 1) first.
 			own := self ownConsumptionHistoryCumSumAt: step + 1.
 			aware := self awareConsumptionHistoryCumSumAt: step + 1.

@@ -1,6 +1,6 @@
 initialization
 createBarStack
-	|ownership awareness|
+	|ownership awareness processed |
 	
 	ownership := (report inputVisitor residences collect: [ :r |  r occupants ownership ]) frequencies.
 	ownership := { ownership at: true . ownership at: false } asArray.
@@ -10,7 +10,7 @@ createBarStack
 	barStack := RoassalModel new.
 	barStack script: [ :v :c |
 		| b |
-		self storeCanvas: c and: v.
+		processed ifNil: [processed := true. self processCanvas: c and: v].
 		b := RTStackBarPlot new view: v.
 		b vertical.
 		b interaction popupText.

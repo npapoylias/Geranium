@@ -6,7 +6,7 @@ createPie
 	pie := RoassalModel new.
 	pie
 		script: [ :v :c | | b |
-			self storeCanvas: c and: v. 
+			self processCanvas: c and: v. 
 			b := stats pieWithCaption: nil inView: v.
 			"color setting does not seem to work"
 			b normalizer normalizeColorUsing:  (RTColorPalette qualitative colors: 3 scheme:'Set2') reverse.

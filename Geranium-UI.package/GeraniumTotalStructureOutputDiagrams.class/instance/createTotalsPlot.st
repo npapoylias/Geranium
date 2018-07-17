@@ -2,11 +2,11 @@ initialization
 createTotalsPlot
 
 	
-	| b |
+	| b processed |
 	totalsPlot := RoassalModel new.
 	totalsPlot script: [ :v :c | 
 		| historyUpTillNow deviationDataPoints showMin showMax |
-		self storeCanvas: c and: v.
+		processed ifNil: [processed := true. self processCanvas: c and: v].
 		showMin := step < 100
 		ifTrue: [ 1 ]
 		ifFalse: [ step // 100 * 100 ].

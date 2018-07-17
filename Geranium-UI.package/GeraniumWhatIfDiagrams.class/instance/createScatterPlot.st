@@ -1,5 +1,6 @@
 initialization
 createScatterPlot
+	| processed |
 	scatterplot  := RoassalModel new.
 	scatterplot script: [ :v :c | 
 		|b|
