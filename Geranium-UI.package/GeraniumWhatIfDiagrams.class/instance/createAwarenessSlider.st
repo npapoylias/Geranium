@@ -9,8 +9,8 @@ createAwarenessSlider
 			fontColor: Color black;
 			hResizing: #spaceFill;
 			vResizing: #spaceFill;
-			min: 0;
-			max: 100;"check limits on displaying ..."
+			min: 1;
+			max: 99;"check limits on displaying ..."
 			label: 'Set awareness to: ' , (awarenessPercentage printShowingDecimalPlaces: 1) , '%';
 			setValueSelector: #awarenessChanged:;
 			getValueSelector: #awarenessPercentage;

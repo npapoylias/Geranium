@@ -5,7 +5,7 @@ createBarStack
 	ownership := (report inputVisitor residences collect: [ :r |  r occupants ownership ]) frequencies.
 	ownership := { ownership at: true . ownership at: false } asArray.
 	awareness := (report inputVisitor residences collect: [ :r |  r occupants awareness ]) frequencies.
-	awareness := { awareness at: ConsumptionAware . awareness at: ConsumptionUnaware } asArray.
+	awareness := { awareness at: ConsumptionAware ifAbsent: [ 0 ] . awareness at: ConsumptionUnaware ifAbsent: [ 0 ] } asArray.
 
 	barStack := RoassalModel new.
 	barStack script: [ :v :c |

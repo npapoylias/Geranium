@@ -9,8 +9,8 @@ createDPESlider
 			fontColor: Color black;
 			hResizing: #spaceFill;
 			vResizing: #spaceFill;
-			min: 0;
-			max: 100;"check limits on displaying ..."
+			min: 1;
+			max: 99;"check limits on displaying ..."
 			label: 'Set DPEA to: ' , (dpeAPercentage printShowingDecimalPlaces: 1) , '%'; 
 			setValueSelector: #dpeAChanged:;
 			getValueSelector: #dpeAPercentage;

@@ -8,4 +8,4 @@ initializeWidgets
 	self createDPESlider.
 	self createAwarenessSlider.
 	self createTemperatureSlider.
-	applyButton := self newButton label: 'Apply Changes !'"; icon: (self appIcon: #apply)"; action: [ ].
+	applyButton := self newButton label: 'Apply Changes !'"; icon: (self appIcon: #apply)"; action: [ self applyChanges ].

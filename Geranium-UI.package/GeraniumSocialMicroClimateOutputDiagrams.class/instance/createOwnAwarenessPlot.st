@@ -11,6 +11,7 @@ createOwnAwarenessPlot
 			total := (self consumptionHistoryCumSumAt: step + 1) first.
 			own := self ownConsumptionHistoryCumSumAt: step + 1.
 			aware := self awareConsumptionHistoryCumSumAt: step + 1.
+
 			b := RTGrapher new view: v. 
 			d := RTHorizontalMultipleData new.
 			
