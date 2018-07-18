@@ -23,7 +23,7 @@ step: time
 	consumption := consumption + 
 		(self consumptionForWeightInterval: weightsProfile temperature 
 			forValue: temperature
-			inMedianOptimumOf: -10 -> 50). "comfort in 20"
+			inMedianOptimumOf: -5 -> 35). "comfort in 20"
 	
 	humidity := self area climateData humidity at: time.
 	consumption := consumption + 

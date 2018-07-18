@@ -66,9 +66,9 @@ fullInternalApiScript
 		
 	ClimateProfile new 
 		named: #UrbanClimateA; 
-		medianTemperature: (20.0 ~ 1.5) | [0 -> 32]; 
-		seasonalTemperatureVariation: 3;
-		medianHumidity: [ 40.0 ~> 100.0 ];
+		medianTemperature: (13.25 ~ 5.3) | [0 -> 32]; 
+		seasonalTemperatureVariation: 2.5;
+		medianHumidity: (81.16 ~ 4.05) | [0 -> 100];
 		seasonalHumidityVariation: 2. 
 		
 	TrendsProfile new

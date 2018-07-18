@@ -1,4 +1,4 @@
 accessing
 medianOf: anInterval
 
-	^ (anInterval value + anInterval key) / 2 
+	^ (anInterval value abs + anInterval key abs) / 2 

@@ -5,7 +5,7 @@ consumptionForWeightInterval: weightInterval andTrend: trendPercentage
 
 	fInterval := self category fluctuationInterval.
 	trendPercentage < 0
-		ifTrue: [ impactPercentage := weightInterval key  ]
+		ifTrue: [ impactPercentage := weightInterval key abs  ]
 		ifFalse: [ impactPercentage := weightInterval value ].
 	impact := impactPercentage * trendPercentage.
 	^ fInterval * impact
