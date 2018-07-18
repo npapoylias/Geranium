@@ -3,13 +3,15 @@ createScatterPlot
 	| processed |
 	scatterplot  := RoassalModel new.
 	scatterplot script: [ :v :c | 
-		|b|
-		processed ifNil: [processed := true. self processCanvas: c and: v].
-		b := report input climateProfile temperaturePlot.
+		|b ts|
+
+		ts := report input climateProfile temperatureSeries.
+		ts := (1 to: ts size by: 24) collect: [:t | (ts at: t) + self temperature  ].
+		b :=  ts connectedPlot: (Color red alpha: 0.4).
 		b view: v.
 		b axisX
 			noDecimal;
-			title: 'Hour'.
+			title: 'Day'.
 		b axisY
 			noDecimal;
 			title: 'Temperature'.
