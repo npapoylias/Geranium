@@ -16,9 +16,14 @@ createOwnAwarenessPlot
 			d := RTHorizontalMultipleData new.
 			
 			d barShape color: Color blue.
+			
 			d points: {
-				{'Ownership (Y/N)' . own / totalOwners . (total - own) / (totalResidences - totalOwners)} . 
-				{'Awareness (Y/N)' . aware / totalAware . (total - aware) / (totalResidences - totalAware)} 
+				{'Ownership (Y/N)' . 
+				(totalOwners = 0 ifTrue: [0] ifFalse: [(own / totalOwners)]) . 
+				(total=own) ifTrue: [0] ifFalse: [(total - own) / (totalResidences - totalOwners)]} . 
+				{'Awareness (Y/N)' . 
+				(totalAware = 0 ifTrue: [0] ifFalse: [aware / totalAware]) . 
+				(total=aware) ifTrue: [0] ifFalse: [(total - aware) / (totalResidences - totalAware)]} 
 			}.
 			d addMetric: #second.
 			d addMetric: #third.
