@@ -66,19 +66,19 @@ fullInternalApiScript
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.15 . 0.85};
 		ownership: true % 60.
 		
-	ClimateProfile new 
+		ClimateProfile new 
 		named: #UrbanClimateA; 
-		medianTemperature: (20.0 ~ 1.5) | [0 -> 32]; 
-		seasonalTemperatureVariation: 3;
-		medianHumidity: [ 40.0 ~> 100.0 ];
+		medianTemperature: (13.25 ~ 1.5) | [0 -> 32]; 
+		seasonalTemperatureVariation: 2.0;
+		medianHumidity: (81.16 ~ 4.05) | [0 -> 100];
 		seasonalHumidityVariation: 2. 
 		
 	TrendsProfile new
 		named: #FrenchConsumptionTrends;
 		seasonal: { 
 			#Winter -> 1. 
-			#Spring -> -0.2. 
-			#Fall -> -0.1. 
+			#Spring -> 0.5. 
+			#Fall -> 0.5. 
 			#Summer -> 1
 		};	daily: {  
 			#Monday -> 0.8.
@@ -89,7 +89,7 @@ fullInternalApiScript
 			#Saturday -> 1.
 			#Sunday -> 1.
 		}; hourly: {  
-			#Midnight -> { -1 . -1 . -1 . -1 . -1 . -1 . -0.5 }.
+			#Midnight -> { 0.2 . 0.2 . 0.2 . 0.2 . 0.2 . 0.2 . 0.2 }.
 			#Morning -> { 1 . 1 . 1 . 0.5 . 0.5 . 1 }.
 			#Afternoon -> { 0.5 . 0.5 . 0.5 . 0.5 . 0.5 }.
 			#Night -> { 1 . 1 . 1 . 1 . 1 . 1 }
