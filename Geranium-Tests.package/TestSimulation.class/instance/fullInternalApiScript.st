@@ -5,7 +5,7 @@ fullInternalApiScript
 		named: #ScenarioA;
 		coordinates: (46.16352961038194 @ -1.1302614212036133) 
 		-> (46.166851083597415 @ -1.1267745494842527);
-		totalNumberOfBuildings: 10; "#determinedByMap;"
+		totalNumberOfBuildings: 20; "#determinedByMap;"
 		residencePercentages:{  
 			#AppartmentBlockTypeA.
 			#AppartmentBlockTypeB.
@@ -66,9 +66,9 @@ fullInternalApiScript
 		
 	ClimateProfile new 
 		named: #UrbanClimateA; 
-		medianTemperature: (20.0 ~ 1.5) | [0 -> 32]; 
-		seasonalTemperatureVariation: 3;
-		medianHumidity: [ 40.0 ~> 100.0 ];
+		medianTemperature: (13.25 ~ 5.3) | [0 -> 32]; 
+		seasonalTemperatureVariation: 2.5;
+		medianHumidity: (81.16 ~ 4.05) | [0 -> 100];
 		seasonalHumidityVariation: 2. 
 		
 	TrendsProfile new
