@@ -10,7 +10,7 @@ fullInternalApiScript
 			#AppartmentBlockTypeA.
 			#AppartmentBlockTypeB.
 			#HouseTypeA
-		} % { 0.3 . 0.2 . 0.5 }; 
+		} % { 0.5 . 0.2 . 0.3 }; 
 		climateProfile: #UrbanClimateA;
 		trendsProfile: #FrenchConsumptionTrends;
 		weightsProfile: #UrbanHypothesisA;
