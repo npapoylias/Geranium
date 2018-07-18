@@ -1,4 +1,5 @@
 initialization
+"protocol: examples"
 fullInternalApiScript
 
 	StatisticalScenario new 
@@ -75,8 +76,8 @@ fullInternalApiScript
 		named: #FrenchConsumptionTrends;
 		seasonal: { 
 			#Winter -> 1. 
-			#Spring -> -0.2. 
-			#Fall -> -0.1. 
+			#Spring -> 0.5. 
+			#Fall -> 0.5. 
 			#Summer -> 1
 		};	daily: {  
 			#Monday -> 0.8.
@@ -87,7 +88,7 @@ fullInternalApiScript
 			#Saturday -> 1.
 			#Sunday -> 1.
 		}; hourly: {  
-			#Midnight -> { -1 . -1 . -1 . -1 . -1 . -1 . -0.5 }.
+			#Midnight -> { 0.2 . 0.2 . 0.2 . 0.2 . 0.2 . 0.2 . 0.2 }.
 			#Morning -> { 1 . 1 . 1 . 0.5 . 0.5 . 1 }.
 			#Afternoon -> { 0.5 . 0.5 . 0.5 . 0.5 . 0.5 }.
 			#Night -> { 1 . 1 . 1 . 1 . 1 . 1 }
