@@ -7,7 +7,7 @@ createScatterPlot
 
 		ts := report input climateProfile temperatureSeries.
 		ts := (1 to: ts size by: 24) collect: [:t | (ts at: t) + self temperature  ].
-		b :=  ts connectedPlot: (Color red alpha: 0.4).
+		b :=  ts connectedPlot: (Color red alpha: 0.6).
 		b view: v.
 		b axisX
 			noDecimal;
