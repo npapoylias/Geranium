@@ -19,6 +19,6 @@ run
 					generate).
 			epoch := epoch + 1  
 		].
-	
+	Transcript show: stats; cr.
 	^ {self . stats . fitnessMetric sortedPopulation first} 
 		
