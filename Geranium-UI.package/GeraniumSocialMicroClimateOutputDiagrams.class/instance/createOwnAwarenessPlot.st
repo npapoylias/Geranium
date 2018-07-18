@@ -20,10 +20,16 @@ createOwnAwarenessPlot
 			d points: {
 				{'Ownership (Y/N)' . 
 				(totalOwners = 0 ifTrue: [0] ifFalse: [(own / totalOwners)]) . 
-				(total=own) ifTrue: [0] ifFalse: [(total - own) / (totalResidences - totalOwners)]} . 
+				(total=own) ifTrue: [0] ifFalse: [
+					(total - own) / ((totalResidences - totalOwners) = 0 
+					ifTrue: [1] ifFalse: [(totalResidences - totalOwners)])
+				]}. 
 				{'Awareness (Y/N)' . 
 				(totalAware = 0 ifTrue: [0] ifFalse: [aware / totalAware]) . 
-				(total=aware) ifTrue: [0] ifFalse: [(total - aware) / (totalResidences - totalAware)]} 
+				(total=aware) ifTrue: [0] ifFalse: [
+					(total - aware) / ((totalResidences - totalAware)=0 
+					ifTrue: [ 1 ] ifFalse: [ (totalResidences - totalAware) ])
+				]} 
 			}.
 			d addMetric: #second.
 			d addMetric: #third.

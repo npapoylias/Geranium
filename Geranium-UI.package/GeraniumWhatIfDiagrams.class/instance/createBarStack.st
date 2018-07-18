@@ -6,8 +6,8 @@ createBarStack
 	ownership := (report inputVisitor residences collect: [ :r |  r occupants ownership ]) frequencies.
 	ownership := { ownership at: true . ownership at: false } asArray.
 	awareness := (report inputVisitor residences collect: [ :r |  r occupants awareness ]) frequencies.
-	awareness := { (awareness at: ConsumptionAware) asFloat / residences size * 100 . 
-		(awareness at: ConsumptionUnaware) asFloat / residences size * 100 } asArray.
+	awareness := { (awareness at: ConsumptionAware ifAbsent: [0]) asFloat / residences size * 100 . 
+		(awareness at: ConsumptionUnaware ifAbsent: [0]) asFloat / residences size * 100 } asArray.
 
 	awarenessPercentage := awareness at: 1.
 
