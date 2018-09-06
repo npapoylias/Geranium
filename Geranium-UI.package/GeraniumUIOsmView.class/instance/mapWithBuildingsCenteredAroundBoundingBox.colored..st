@@ -15,8 +15,10 @@ mapWithBuildingsCenteredAroundBoundingBox: aBoundingBox colored: catColorDistrib
 		of: mapData for: view asPolygonIn: map 
 		withColor: [:item | catColorDistribution next"Color blue"] 
 		borderColor: [:item | Color black] andWidth: 5.
-	view canvas addMenu: 'In' callback: [ RTZoomInMove on: view ].
-	view canvas addMenu: 'Out' callback: [ RTZoomOutMove on: view ].
+	view canvas addMenuAsSVG: self zoomInSVG scale: 0.2 callback: [ RTZoomInMove on: view ].
+	"view canvas addMenu: ' + Zoom In ' callback: [ RTZoomInMove on: view ]."
+	view canvas addMenuAsSVG: self zoomOutSVG scale: 0.2 callback: [ RTZoomOutMove on: view ].
+	"view canvas addMenu: ' - Zoom Out' callback: [ RTZoomOutMove on: view ]."
 	view @ RTDraggableView @ RTZoomableView.
 	view @ RTDoubleScrollBar.
 	RTEmptyViewContext setOnView: view.
