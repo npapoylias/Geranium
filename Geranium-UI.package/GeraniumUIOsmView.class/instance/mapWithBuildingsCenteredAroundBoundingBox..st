@@ -13,7 +13,8 @@ mapWithBuildingsCenteredAroundBoundingBox: aBoundingBox
 	self 
 		renderTriple: { 'way' . 'building' . 'yes' } 
 		of: mapData for: view asPolygonIn: map 
-		withColor: Color blue borderColor: Color black andWidth: 5.
+		withColor: [:item | Color blue] 
+		borderColor: [:item | Color black] andWidth: 5.
 	view canvas addMenu: 'In' callback: [ RTZoomInMove on: view ].
 	view canvas addMenu: 'Out' callback: [ RTZoomOutMove on: view ].
 	view @ RTDraggableView @ RTZoomableView.
