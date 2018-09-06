@@ -1,6 +1,5 @@
 examples
 fullInternalApiScript
-
 	StatisticalScenario new 
 		named: #ScenarioA;
 		coordinates: (46.16352961038194 @ -1.1302614212036133) 
