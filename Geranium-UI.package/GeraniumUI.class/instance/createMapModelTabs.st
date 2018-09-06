@@ -7,11 +7,12 @@ createMapModelTabs
 	tab
 		label: 'Map';
 		closeable: false;
-		icon: Smalltalk ui icons thumbsUpIcon.
+		icon: (self appIcon: #'map' size: 28@28).
 	tabmgrMap addTab: tab.
 	tab := self newTab.
+	tab model: modelEditor.
 	tab
 		label: 'Model';
 		closeable: false;
-		icon: Smalltalk ui icons thumbsUpIcon.
+		icon:  (self appIcon: #model size: 28@28).
 	tabmgrMap addTab: tab.

@@ -2,7 +2,7 @@ specs
 splashLogo
 	| logoMorph logoPath |
 	logoPath := SmalltalkImage current lastImagePath asFileReference
-		parent / 'splash-app-geranium.png'.
+		parent / 'splash-app-geranium-blue.png'.
 	logoMorph := (ImageReadWriter formFromStream: logoPath readStream)
 		asMorph.
 	logoMorph openCenteredInWorld.

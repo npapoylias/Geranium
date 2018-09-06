@@ -38,7 +38,8 @@
 		"socialInputDiagrams",
 		"microClimateInputDiagrams",
 		"outputDiagramsTotStructure",
-		"outputDiagramsSocialMicroClimate"
+		"outputDiagramsSocialMicroClimate",
+		"modelEditor"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"

@@ -6,6 +6,7 @@ initializeWidgets
 	report output consumptionHistoryOfBuildings."
 	self createNavigationToolbar.
 	self createMap.
+	self createModelEditor.
 	self createInputDiagrams.
 	self createOutputDiagrams.
 	self createMapModelTabs.
