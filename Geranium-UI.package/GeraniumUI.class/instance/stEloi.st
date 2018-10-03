@@ -1,11 +1,13 @@
 examples
 stEloi
 
-	StatisticalScenario new 
+		StatisticalScenario new 
 		named: #ScenarioA;
-		coordinates: (46.16352961038194 @ -1.1302614212036133) 
-		-> (46.166851083597415 @ -1.1267745494842527);
-		totalNumberOfBuildings: 20; "#determinedByMap;"
+		coordinates: (46.1630 @ -1.1389) -> (46.1676 @ -1.1194);
+		"(46.16352961038194 @ -1.1302614212036133) -> (46.166851083597415 @ -1.1267745494842527);"
+		totalNumberOfBuildings: #determinedByMap; "20"
+		totalNumberOfPopulation: 3751;
+		totalNumberOfResidences: 2166;
 		residencePercentages:{  
 			#AppartmentBlockTypeA.
 			#AppartmentBlockTypeB.
@@ -35,9 +37,9 @@ stEloi
 		
 	UrbanProfileForAppartment new 
 		named: #AppartmentTypeA;
-		category: DPEA;
+		category: DPEB;
 		surface: [50.0 -> 80.0];
-		occupantClass: {SingleAdult . Couple . Family} % {0.60 . 0.30. 0.10};
+		occupantClass: {SingleAdult . Couple . Family} % {0.40 . 0.30. 0.30};
 		numberOfChildren: [1 -> 3]; "valid only for family"
 		income: (72000.0 ~ 10000) | [36000.0 -> 100000];
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.40 . 0.60};
@@ -45,38 +47,38 @@ stEloi
 	
 	UrbanProfileForAppartment new 
 		named: #AppartmentTypeB;
-		category: DPEB;
+		category: DPEC;
 		surface: [80.0 -> 110];
-		occupantClass: {Family . Couple} % {0.50 . 0.40};
-		numberOfChildren: [1 -> 3]; "valid only for family"
+		occupantClass: {SingleAdult . Couple . Family} % {0.40 . 0.30. 0.30};
+		numberOfChildren: [0 -> 3]; "valid only for family"
 		income: (92000.0 ~ 15000) | [66000.0 -> 180000];
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.10 . 0.90};
 		ownership: true % 10.
 		
 	UrbanProfileForHouse new 
 		named: #HouseTypeA;
-		category: DPEC;
+		category: DPED;
 		surface: [90.0 -> 130.0];
 		exposure: (5 ~ 1) | [0 -> 5]; 
-		occupantClass: Family; 
+		occupantClass: {SingleAdult . Couple . Family} % {0.70 . 0.20. 0.10};
 		numberOfChildren: [1 -> 3]; "valid only for family"
 		income: (72000.0 ~ 10000) | [36000.0 -> 80000];
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.15 . 0.85};
 		ownership: true % 60.
 		
-	ClimateProfile new 
+		ClimateProfile new 
 		named: #UrbanClimateA; 
-		medianTemperature: (20.0 ~ 1.5) | [0 -> 32]; 
-		seasonalTemperatureVariation: 3;
-		medianHumidity: [ 40.0 ~> 100.0 ];
+		medianTemperature: (13.25 ~ 1.5) | [0 -> 32]; 
+		seasonalTemperatureVariation: 2.0;
+		medianHumidity: (81.16 ~ 4.05) | [0 -> 100];
 		seasonalHumidityVariation: 2. 
 		
 	TrendsProfile new
 		named: #FrenchConsumptionTrends;
 		seasonal: { 
 			#Winter -> 1. 
-			#Spring -> -0.2. 
-			#Fall -> -0.1. 
+			#Spring -> 1. 
+			#Fall -> 1. 
 			#Summer -> 1
 		};	daily: {  
 			#Monday -> 0.8.
@@ -87,8 +89,8 @@ stEloi
 			#Saturday -> 1.
 			#Sunday -> 1.
 		}; hourly: {  
-			#Midnight -> { -1 . -1 . -1 . -1 . -1 . -1 . -0.5 }.
-			#Morning -> { 1 . 1 . 1 . 0.5 . 0.5 . 1 }.
+			#Midnight -> { 0.2 . 0.2 . 0.2 . 0.2 . 0.2 . 0.2 . 0.2 }.
+			#Morning -> { 1 . 1 . 1 . 1 .  1 .  1 }.
 			#Afternoon -> { 0.5 . 0.5 . 0.5 . 0.5 . 0.5 }.
 			#Night -> { 1 . 1 . 1 . 1 . 1 . 1 }
 		}.
