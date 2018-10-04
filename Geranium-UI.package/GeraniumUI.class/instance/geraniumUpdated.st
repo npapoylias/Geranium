@@ -15,12 +15,11 @@ geraniumUpdated
 			#HLMHousing."1x11"
 			#SocialHousing."1x9"
 			#PrivateHousing "1x16"
-		} % { 0.0652 . 0.08695 . 0.0434 . 0.0217 . 0.2391 . 0.1956 . 0.3478 }; 
+		} % { 0.0652 . 0.08695 . 0.0434 . 0.0217 . 0.2391 . 0.1956 . 0.3478 }; "Percentages 0-100"
 		climateProfile: #LaRochelleAverage;
 		trendsProfile: #FrenchConsumptionTrends;
 		weightsProfile: #StEloiHypothesis;
-		years: 1.
-		
+		years: 1.		
 		
 	UrbanProfileForAppartmentBlock new
 		named: #SmallRenovatedHlmBlock;
@@ -45,7 +44,7 @@ geraniumUpdated
 	
 	UrbanProfileForAppartmentBlock new
 		named: #LargeNewHlmBlock;
-		dimensions: (4 x: 1 x: 5);
+		dimensions: (4 x: 1 x: 5);"Floors, Couloir, Residences/Couloir"
 		appartmentPercentages: {  
 			#HLMNew.
 		} % { 1.0 }.
@@ -64,7 +63,7 @@ geraniumUpdated
 		
 	UrbanProfileForAppartment new 
 		named: #HLMNew;
-		category: {DPEB . DPEC} % {0.6 . 0.4};
+		category: {DPEA . DPEB} % {0.6 . 0.4};
 		surface: [48->98];
 		occupantClass: {SingleAdult . Couple . Family} % {0.4210 . 0.2105 . 0.3684};
 		numberOfChildren: [1 -> 3]; "valid only for family"
@@ -87,7 +86,7 @@ geraniumUpdated
 		named: #SocialHousing;
 		category: {DPEB . DPEC} % {0.6 . 0.4};
 		surface: [60.0 -> 87.0];
-		exposure: (3 ~ 1) | [0 -> 5]; 
+		exposure: (3 ~ 1) | [3 -> 5]; 
 		occupantClass: {SingleAdult . Couple . Family} % {0.4444. 0.0 . 0.5556}; 
 		numberOfChildren: [1 -> 2]; 
 		income: [1150.0*12 -> 3000.0*12];
@@ -105,8 +104,8 @@ geraniumUpdated
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.6875 . 0.3125};
 		ownership: true % 100.	
 	
-	ClimateProfile new 
-		named: #UrbanClimateA; 
+	ClimateProfile new "4 Season"
+		named: #LaRochelleAverage; 
 		medianTemperature: (13.25 ~ 1.5) | [0 -> 32]; 
 		seasonalTemperatureVariation: 2.0;
 		medianHumidity: (81.16 ~ 4.05) | [0 -> 100];
@@ -115,10 +114,10 @@ geraniumUpdated
 	TrendsProfile new
 		named: #FrenchConsumptionTrends;
 		seasonal: { 
-			#Winter -> 1. 
-			#Spring -> -0.2. 
-			#Fall -> -0.1. 
-			#Summer -> 1
+			#Winter -> 0.1. 
+			#Spring -> 1. 
+			#Fall -> -1. 
+			#Summer -> 0.1.
 		};	daily: {  
 			#Monday -> 0.8.
 			#Tuesday -> 0.8.
@@ -134,15 +133,22 @@ geraniumUpdated
 			#Night -> { 1 . 1 . 1 . 1 . 1 . 1 }
 		}.
 		
-	WeightsProfile new
-		named: #UrbanHypothesisA;
-		season: [ -0.1 -> 0.1 ];
-		day: [ -0.01 -> 0.01 ];
-		hour: [ -0.1 -> 0.1 ];
-		exposure: [ -0.1 -> 0.1 ]; 
-		occupants: [ 0 -> 0.05 ]; 
-		income: [ -0.05 -> 0.05  ]; 
-		ownership: [ -0.05 -> 0.05 ]; 
-		awareness: [ -0.1 -> 0.1 ]; 
-		temperature: [ -0.4 -> 0.4 ]; 
-		humidity: [ -0.09 ->  0.04 ]. 
+	WeightsProfile new "Explorative Model: Education/Building Hypothesis"
+	
+		named: #EmpiricHypothesisA;
+"50%"
+		temperature: [ -0.4 -> 0.4 ];  "30%"
+	   	humidity: [ -0.09 ->  0.04 ]; "15%"
+	   	exposure: [ -0.1 -> 0.1 ];  "5%"
+
+"25%"
+		occupants: [ 0 -> 0.15 ]; "10%"
+		income: [ -0.05 -> 0.05  ]; "5%"
+		awareness: [ -0.1 -> 0.1 ]; "5%"
+		ownership: [ -0.05 -> 0.05 ]; "5%"
+
+"25%"
+		day: [ -0.01 -> 0.01 ];  "10%"
+		hour: [ -0.1 -> 0.1 ]; "10%"
+		season: [ -0.2 -> 0.2 ].	"5%"
+	
