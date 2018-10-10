@@ -3,7 +3,7 @@ AppartmentBlockTypeA
 
 	UrbanProfileForAppartmentBlock new
 		named: #AppartmentBlockTypeA;
-		dimensions: (3 x: 4 x: 5);
+		dimensions: (3 floors: 4 corridors: 5 appts);
 		appartmentPercentages: {  
 			#AppartmentTypeA.
 			#AppartmentTypeB.

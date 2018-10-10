@@ -23,28 +23,28 @@ geraniumUpdated
 		
 	UrbanProfileForAppartmentBlock new
 		named: #SmallRenovatedHlmBlock;
-		dimensions: (1 x: 2 x: 2);"will affect exposure -- beware of proxy/structure"
+		dimensions: (1 floors: 2 corridors: 2 appts);"will affect exposure -- beware of proxy/structure"
 		appartmentPercentages: {  
 			#HLMRenovated.
 		} % { 1.0 }.
 		
 	UrbanProfileForAppartmentBlock new
 		named: #LargeRenovatedHlmBlock;
-		dimensions: (3 x: 1 x: 2);
+		dimensions: (3 floors: 1 corridors: 2 appts);
 		appartmentPercentages: {  
 			#HLMRenovated.
 		} % { 1.0 }.
 		
 	UrbanProfileForAppartmentBlock new
 		named: #SmallNewHlmBlock;
-		dimensions: (1 x: 1 x: 3);
+		dimensions: (1 floors: 1 corridors: 3 appts);
 		appartmentPercentages: {  
 			#HLMNew.
 		} % { 1.0 }.
 	
 	UrbanProfileForAppartmentBlock new
 		named: #LargeNewHlmBlock;
-		dimensions: (4 x: 1 x: 5);"Floors, Couloir, Residences/Couloir"
+		dimensions: (4 floors: 1 corridors: 5 appts);"Floors, Couloir, Residences/Couloir"
 		appartmentPercentages: {  
 			#HLMNew.
 		} % { 1.0 }.

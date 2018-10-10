@@ -1,4 +1,4 @@
 *Geranium
-x: secondDimension x: thirdDimension
+floors: secondDimension corridors: thirdDimension
 
 	^ { self . secondDimension . thirdDimension }  

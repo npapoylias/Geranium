@@ -21,7 +21,7 @@ fullInternalApiScript
 		
 	UrbanProfileForAppartmentBlock new
 		named: #AppartmentBlockTypeA;
-		dimensions: (2 x: 1 x: 2);
+		dimensions: (2 floors: 1 corridors: 2 appts);
 		appartmentPercentages: {  
 			#AppartmentTypeA.
 			#AppartmentTypeB.
@@ -29,7 +29,7 @@ fullInternalApiScript
 		
 	UrbanProfileForAppartmentBlock new
 		named: #AppartmentBlockTypeB;
-		dimensions: (2 x: 1 x: 3);
+		dimensions: (2 floors: 1 corridors: 3 appts);
 		appartmentPercentages: {  
 			#AppartmentTypeA.
 			#AppartmentTypeB.
