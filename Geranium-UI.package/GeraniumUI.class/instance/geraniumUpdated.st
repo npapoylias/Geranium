@@ -1,6 +1,10 @@
 examples
 geraniumUpdated
 
+	"Updated Residence Proxy ++ Initial Analysis,
+	natural percentages, x:x: to floors etc, DPE
+	and weights"
+
 	StatisticalScenario new 
 		named: #Geranium;
 		coordinates: (46.16352961038194 @ -1.1302614212036133) 
