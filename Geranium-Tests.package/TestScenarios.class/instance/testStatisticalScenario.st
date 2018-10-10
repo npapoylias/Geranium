@@ -18,4 +18,4 @@ testStatisticalScenario
 	self assert: s weightsProfile = #UrbanHypothesisA.
 	self assert: s resolveWeightsProfile class = WeightsProfile.
 	self assert: s totalNumberOfBuildings = #determinedByMap.
-	self assert: s resolveTotalNumberOfBuildings = 192. "check with OSM here"
+	self assert: s resolveTotalNumberOfBuildings next = 194. "check with OSM here"
