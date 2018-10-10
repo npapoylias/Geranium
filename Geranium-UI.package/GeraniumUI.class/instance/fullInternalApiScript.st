@@ -30,26 +30,26 @@ fullInternalApiScript
 		appartmentPercentages: {  
 			#AppartmentTypeA.
 			#AppartmentTypeB.
-		} % { 0.5 . 0.5 }.
+		} % { 50.0 . 50.0 }.
 		
 	UrbanProfileForAppartment new 
 		named: #AppartmentTypeA;
 		category: DPEA;
 		surface: [50.0 -> 80.0];
-		occupantClass: {SingleAdult . Couple . Family} % {0.60 . 0.30. 0.10};
+		occupantClass: {SingleAdult . Couple . Family} % {60 . 30. 10};
 		numberOfChildren: [1 -> 3]; "valid only for family"
 		income: (72000.0 ~ 10000) | [36000.0 -> 100000];
-		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.40 . 0.60};
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {40 . 60};
 		ownership: true % 20.
 	
 	UrbanProfileForAppartment new 
 		named: #AppartmentTypeB;
 		category: DPEB;
 		surface: [80.0 -> 110];
-		occupantClass: {Family . Couple} % {0.50 . 0.40};
+		occupantClass: {Family . Couple} % {50 . 40};
 		numberOfChildren: [1 -> 3]; "valid only for family"
 		income: (92000.0 ~ 15000) | [66000.0 -> 180000];
-		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.10 . 0.90};
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {10 . 90};
 		ownership: true % 10.
 		
 	UrbanProfileForHouse new 
@@ -60,7 +60,7 @@ fullInternalApiScript
 		occupantClass: Family; 
 		numberOfChildren: [1 -> 3]; "valid only for family"
 		income: (72000.0 ~ 10000) | [36000.0 -> 80000];
-		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.15 . 0.85};
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {15 . 85};
 		ownership: true % 60.
 		
 	ClimateProfile new 
