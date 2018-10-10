@@ -1,0 +1,4 @@
+examples
+restoreInitialWeights
+
+	self areaOfInterestWeightsProfile copy: self scenarioWeightsProfile

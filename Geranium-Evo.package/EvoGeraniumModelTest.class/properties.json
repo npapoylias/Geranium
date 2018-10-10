@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "EvoIndividual",
+	"category" : "Geranium-Evo",
+	"classinstvars" : [
+		"simulation"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"simulationOutput",
+		"report"
+	],
+	"name" : "EvoGeraniumModelTest",
+	"type" : "normal"
+}
