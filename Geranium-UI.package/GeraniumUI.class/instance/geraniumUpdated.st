@@ -6,7 +6,7 @@ geraniumUpdated
 		coordinates: (46.16352961038194 @ -1.1302614212036133) 
 		-> (46.166851083597415 @ -1.1267745494842527);
 		totalNumberOfBuildings: 46; "#determinedByMap;"
-		totalNumberOfResidences: 87; "proxy of 99 -> proxy 186 (final number)"
+		totalNumberOfResidences: 186; "87;" "proxy of 99 (87 on record) -> proxy 186 (final number)"
 		residencePercentages:{  "will affect exposure -- beware of proxy/structure"
 			#SmallRenovatedHlmBlock."(3-4)x3"
 			#LargeRenovatedHlmBlock."(5-7)x4"
@@ -26,31 +26,29 @@ geraniumUpdated
 		dimensions: (1 floors: 2 corridors: 2 appts);"will affect exposure -- beware of proxy/structure"
 		appartmentPercentages: {  
 			#HLMRenovated.
-		} % { 1.0 }.
+		} % { 100.0 }.
 		
 	UrbanProfileForAppartmentBlock new
 		named: #LargeRenovatedHlmBlock;
 		dimensions: (3 floors: 1 corridors: 2 appts);
 		appartmentPercentages: {  
 			#HLMRenovated.
-		} % { 1.0 }.
+		} % { 100.0 }.
 		
 	UrbanProfileForAppartmentBlock new
 		named: #SmallNewHlmBlock;
 		dimensions: (1 floors: 1 corridors: 3 appts);
 		appartmentPercentages: {  
 			#HLMNew.
-		} % { 1.0 }.
+		} % { 100.0 }.
 	
 	UrbanProfileForAppartmentBlock new
 		named: #LargeNewHlmBlock;
 		dimensions: (4 floors: 1 corridors: 5 appts);"Floors, Couloir, Residences/Couloir"
 		appartmentPercentages: {  
 			#HLMNew.
-		} % { 1.0 }.
-		
-	
-		
+		} % { 100.0 }.
+			
 	UrbanProfileForAppartment new 
 		named: #HLMRenovated;
 		category: DPEB;"Survey ~= 50% BBC, 30% Non-BBC (DPE?), 20% (NSP)"
@@ -73,7 +71,7 @@ geraniumUpdated
 		
 	UrbanProfileForHouse new 
 		named: #HLMlHousing;
-		category: {DPED . DPEE} % {60.0 . 40.0};
+		category: DPEA;
 		surface: [47.0 -> 92.0];
 		exposure: (3 ~ 1) | [0 -> 5]; 
 		occupantClass: {SingleAdult . Couple . Family} % {18.18. 27.27 . 45.45}; 
