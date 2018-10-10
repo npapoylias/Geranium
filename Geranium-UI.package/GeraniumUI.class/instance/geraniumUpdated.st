@@ -18,7 +18,7 @@ geraniumUpdated
 		} % { 6.52 . 8.695 . 4.34 . 2.17 . 23.91 . 19.56 . 34.78 }; "Percentages 0-100"
 		climateProfile: #LaRochelleAverage;
 		trendsProfile: #FrenchConsumptionTrends;
-		weightsProfile: #StEloiHypothesis;
+		weightsProfile: #EmpiricHypothesisA;
 		years: 1.		
 		
 	UrbanProfileForAppartmentBlock new
