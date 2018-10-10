@@ -3,4 +3,4 @@
 
 	^ GRCategoricalDistribution new 
 		categories: self;
-		probabilities: anotherCollection
+		probabilities: (anotherCollection collect: [ :p | p / 100.0 ])
