@@ -53,55 +53,55 @@ geraniumUpdated
 		
 	UrbanProfileForAppartment new 
 		named: #HLMRenovated;
-		category: {DPEB . DPEC} % {0.6 . 0.4};"Survey ~= 50% BBC, 30% Non-BBC (DPE?), 20% (NSP)"
+		category: DPEB;"Survey ~= 50% BBC, 30% Non-BBC (DPE?), 20% (NSP)"
 		surface: [50->115];
-		occupantClass: {SingleAdult . Couple . Family} % {0.125 . 0.5 . 0.375}; "1, 2, >2"
+		occupantClass: {SingleAdult . Couple . Family} % {12.5 . 50.0 . 37.5}; "1, 2, >2"
 		numberOfChildren: [1 -> 4]; "valid only for family / For >2"
 		income: [1150.0*12 -> 4000.0*12];
-		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.3125 . 0.6875};
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {31.25 . 68.75};
 		ownership: false % 100.
 		
 	UrbanProfileForAppartment new 
 		named: #HLMNew;
-		category: {DPEA . DPEB} % {0.6 . 0.4};
+		category: DPEA;
 		surface: [48->98];
-		occupantClass: {SingleAdult . Couple . Family} % {0.4210 . 0.2105 . 0.3684};
+		occupantClass: {SingleAdult . Couple . Family} % {42.10 . 21.05 . 36.84};
 		numberOfChildren: [1 -> 3]; "valid only for family"
 		income: [1150.0*12 -> 3000.0*12];
-		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.3158 . 0.6841};
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {31.58 . 68.41};
 		ownership: false % 100.
 		
 	UrbanProfileForHouse new 
 		named: #HLMlHousing;
-		category: {DPEB . DPEC} % {0.6 . 0.4};
+		category: {DPED . DPEE} % {60.0 . 40.0};
 		surface: [47.0 -> 92.0];
 		exposure: (3 ~ 1) | [0 -> 5]; 
-		occupantClass: {SingleAdult . Couple . Family} % {0.1818. 0.2727 . 0.4545}; 
+		occupantClass: {SingleAdult . Couple . Family} % {18.18. 27.27 . 45.45}; 
 		numberOfChildren: [1 -> 4]; 
 		income: [1150.0*12 -> 3000.0*12];
-		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.1818 . 0.8182};
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {18.18 . 81.82};
 		ownership: true % 100.
 	
 	UrbanProfileForHouse new 
 		named: #SocialHousing;
-		category: {DPEB . DPEC} % {0.6 . 0.4};
+		category: {DPED . DPEE} % {60.0 . 40.0};
 		surface: [60.0 -> 87.0];
 		exposure: (3 ~ 1) | [3 -> 5]; 
-		occupantClass: {SingleAdult . Couple . Family} % {0.4444. 0.0 . 0.5556}; 
+		occupantClass: {SingleAdult . Couple . Family} % {44.44. 0.0 . 55.56}; 
 		numberOfChildren: [1 -> 2]; 
 		income: [1150.0*12 -> 3000.0*12];
-		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.3333 . 0.6667};
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {33.33 . 66.67};
 		ownership: true % 100.
 	
 	UrbanProfileForHouse new 
 		named: #PrivateHousing;
-		category: {DPEB . DPEC} % {0.6 . 0.4};
+		category: {DPED . DPEE} % {60.0 . 40.0};
 		surface: [80.0 -> 160.0];
 		exposure: (3 ~ 1) | [0 -> 5]; 
-		occupantClass: {SingleAdult . Couple . Family} % {0.1875. 0.1250 . 0.3125}; 
+		occupantClass: {SingleAdult . Couple . Family} % {18.75. 12.50 . 31.25}; 
 		numberOfChildren: [1 -> 2]; 
 		income: [1150.0*12 -> 4000.0*12];
-		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.6875 . 0.3125};
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {68.75 . 31.25};
 		ownership: true % 100.	
 	
 	ClimateProfile new "4 Season"
@@ -137,18 +137,18 @@ geraniumUpdated
 	
 		named: #EmpiricHypothesisA;
 "50%"
-		temperature: [ -0.4 -> 0.4 ];  "30%"
-	   	humidity: [ -0.09 ->  0.04 ]; "15%"
+		temperature: [ -0.3 -> 0.3 ];  "30%"
+	   	humidity: [ -0.15 ->  0.15 ]; "15%"
 	   	exposure: [ -0.1 -> 0.1 ];  "5%"
 
 "25%"
-		occupants: [ 0 -> 0.15 ]; "10%"
+		occupants: [ 0 -> 0.10 ]; "10%"
 		income: [ -0.05 -> 0.05  ]; "5%"
-		awareness: [ -0.1 -> 0.1 ]; "5%"
-		ownership: [ -0.05 -> 0.05 ]; "5%"
+		awareness: [ -0.05 -> 0.05 ]; "5%"
+		ownership: [ -0.5 -> 0.5 ]; "5%"
 
 "25%"
-		day: [ -0.01 -> 0.01 ];  "10%"
-		hour: [ -0.1 -> 0.1 ]; "10%"
-		season: [ -0.2 -> 0.2 ].	"5%"
+		day: [ -0.10 -> 0.10 ];  "10%"
+		hour: [ -0.10 -> 0.10 ]; "10%"
+		season: [ -0.05 -> 0.05 ].	"5%"
 	
