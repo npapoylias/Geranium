@@ -55,7 +55,7 @@ geraniumUpdated
 		surface: [50->115];
 		occupantClass: {SingleAdult . Couple . Family} % {12.5 . 50.0 . 37.5}; "1, 2, >2"
 		numberOfChildren: [1 -> 4]; "valid only for family / For >2"
-		income: [1150.0*12 -> 4000.0*12];
+		income: [(1150.0*12) -> (4000.0*12)];
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {31.25 . 68.75};
 		ownership: false % 100.
 		
@@ -65,7 +65,7 @@ geraniumUpdated
 		surface: [48->98];
 		occupantClass: {SingleAdult . Couple . Family} % {42.10 . 21.05 . 36.84};
 		numberOfChildren: [1 -> 3]; "valid only for family"
-		income: [1150.0*12 -> 3000.0*12];
+		income: [(1150.0*12) -> (3000.0*12)];
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {31.58 . 68.41};
 		ownership: false % 100.
 		
@@ -76,7 +76,7 @@ geraniumUpdated
 		exposure: (3 ~ 1) | [0 -> 5]; 
 		occupantClass: {SingleAdult . Couple . Family} % {18.18. 27.27 . 45.45}; 
 		numberOfChildren: [1 -> 4]; 
-		income: [1150.0*12 -> 3000.0*12];
+		income: [(1150.0*12) -> (3000.0*12)];
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {18.18 . 81.82};
 		ownership: true % 100.
 	
@@ -87,7 +87,7 @@ geraniumUpdated
 		exposure: (3 ~ 1) | [3 -> 5]; 
 		occupantClass: {SingleAdult . Couple . Family} % {44.44. 0.0 . 55.56}; 
 		numberOfChildren: [1 -> 2]; 
-		income: [1150.0*12 -> 3000.0*12];
+		income: [(1150.0*12) -> (3000.0*12)];
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {33.33 . 66.67};
 		ownership: true % 100.
 	
@@ -98,7 +98,7 @@ geraniumUpdated
 		exposure: (3 ~ 1) | [0 -> 5]; 
 		occupantClass: {SingleAdult . Couple . Family} % {18.75. 12.50 . 31.25}; 
 		numberOfChildren: [1 -> 2]; 
-		income: [1150.0*12 -> 4000.0*12];
+		income: [(1150.0*12) -> (4000.0*12)];
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {68.75 . 31.25};
 		ownership: true % 100.	
 	
