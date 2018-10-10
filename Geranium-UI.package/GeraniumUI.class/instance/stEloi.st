@@ -12,7 +12,7 @@ stEloi
 			#AppartmentBlockTypeA.
 			#AppartmentBlockTypeB.
 			#HouseTypeA
-		} % { 0.3 . 0.2 . 0.5 }; 
+		} % { 30.0 . 20.0 . 50.0 }; 
 		climateProfile: #UrbanClimateA;
 		trendsProfile: #FrenchConsumptionTrends;
 		weightsProfile: #UrbanHypothesisA;
@@ -25,7 +25,7 @@ stEloi
 		appartmentPercentages: {  
 			#AppartmentTypeA.
 			#AppartmentTypeB.
-		} % { 0.2 . 0.8 }.
+		} % { 20.0 . 80.0 }.
 		
 	UrbanProfileForAppartmentBlock new
 		named: #AppartmentBlockTypeB;
@@ -33,26 +33,26 @@ stEloi
 		appartmentPercentages: {  
 			#AppartmentTypeA.
 			#AppartmentTypeB.
-		} % { 0.5 . 0.5 }.
+		} % { 50.0 . 50.0 }.
 		
 	UrbanProfileForAppartment new 
 		named: #AppartmentTypeA;
 		category: DPEB;
 		surface: [50.0 -> 80.0];
-		occupantClass: {SingleAdult . Couple . Family} % {0.40 . 0.30. 0.30};
+		occupantClass: {SingleAdult . Couple . Family} % {40.0 . 30.0 . 30.0};
 		numberOfChildren: [1 -> 3]; "valid only for family"
 		income: (72000.0 ~ 10000) | [36000.0 -> 100000];
-		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.40 . 0.60};
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {40.0 . 60.0};
 		ownership: true % 20.
 	
 	UrbanProfileForAppartment new 
 		named: #AppartmentTypeB;
 		category: DPEC;
 		surface: [80.0 -> 110];
-		occupantClass: {SingleAdult . Couple . Family} % {0.40 . 0.30. 0.30};
+		occupantClass: {SingleAdult . Couple . Family} % {40.0 . 30.0. 30.0};
 		numberOfChildren: [0 -> 3]; "valid only for family"
 		income: (92000.0 ~ 15000) | [66000.0 -> 180000];
-		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.10 . 0.90};
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {10.0 . 90.0};
 		ownership: true % 10.
 		
 	UrbanProfileForHouse new 
@@ -60,10 +60,10 @@ stEloi
 		category: DPED;
 		surface: [90.0 -> 130.0];
 		exposure: (5 ~ 1) | [0 -> 5]; 
-		occupantClass: {SingleAdult . Couple . Family} % {0.70 . 0.20. 0.10};
+		occupantClass: {SingleAdult . Couple . Family} % {70.0 . 20.0. 10.0};
 		numberOfChildren: [1 -> 3]; "valid only for family"
 		income: (72000.0 ~ 10000) | [36000.0 -> 80000];
-		awareness: {ConsumptionAware . ConsumptionUnaware} % {0.15 . 0.85};
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {15.0 . 85.0};
 		ownership: true % 60.
 		
 		ClimateProfile new 

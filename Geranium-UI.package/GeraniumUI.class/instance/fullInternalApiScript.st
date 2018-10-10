@@ -9,7 +9,7 @@ fullInternalApiScript
 			#AppartmentBlockTypeA.
 			#AppartmentBlockTypeB.
 			#HouseTypeA
-		} % { 0.5 . 0.2 . 0.3 }; 
+		} % { 50.0 . 20.0 . 30.0 }; 
 		climateProfile: #UrbanClimateA;
 		trendsProfile: #FrenchConsumptionTrends;
 		weightsProfile: #UrbanHypothesisA;
@@ -22,7 +22,7 @@ fullInternalApiScript
 		appartmentPercentages: {  
 			#AppartmentTypeA.
 			#AppartmentTypeB.
-		} % { 0.2 . 0.8 }.
+		} % { 20.0 . 80.0 }.
 		
 	UrbanProfileForAppartmentBlock new
 		named: #AppartmentBlockTypeB;

@@ -15,7 +15,7 @@ geraniumUpdated
 			#HLMHousing."1x11"
 			#SocialHousing."1x9"
 			#PrivateHousing "1x16"
-		} % { 0.0652 . 0.08695 . 0.0434 . 0.0217 . 0.2391 . 0.1956 . 0.3478 }; "Percentages 0-100"
+		} % { 6.52 . 8.695 . 4.34 . 2.17 . 23.91 . 19.56 . 34.78 }; "Percentages 0-100"
 		climateProfile: #LaRochelleAverage;
 		trendsProfile: #FrenchConsumptionTrends;
 		weightsProfile: #StEloiHypothesis;

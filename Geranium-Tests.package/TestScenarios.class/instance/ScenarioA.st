@@ -10,7 +10,7 @@ ScenarioA
 			#AppartmentBlockTypeA.
 			#AppartmentBlockTypeB.
 			#HouseTypeA
-		} % { 0.1 . 0.1 . 0.8 }; 
+		} % { 10 . 10 . 80 }; 
 		climateProfile: #UrbanClimateA;
 		trendsProfile: #FrenchConsumptionTrends;
 		weightsProfile: #UrbanHypothesisA;

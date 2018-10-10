@@ -7,5 +7,5 @@ AppartmentBlockTypeB
 		appartmentPercentages: {  
 			#AppartmentTypeA.
 			#AppartmentTypeB.
-		} % { 0.5 . 0.5 }
+		} % { 50.0 . 50.0 }
 		 

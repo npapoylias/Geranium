@@ -8,7 +8,7 @@ testFullInternalApiScriptExtention
 			#AppartmentBlockTypeA. 
 			#AppartmentBlockTypeB. 
 			#HouseTypeA
-		} % { 0.2 . 0.2 . 0.6 };
+		} % { 20 . 20 . 60 };
 		weightsProfile: #UrbanHypothesisB;
 		years: [ 1 -> 3 ].
 		
