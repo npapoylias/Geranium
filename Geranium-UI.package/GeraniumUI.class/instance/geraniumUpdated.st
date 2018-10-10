@@ -70,7 +70,7 @@ geraniumUpdated
 		ownership: false % 100.
 		
 	UrbanProfileForHouse new 
-		named: #HLMlHousing;
+		named: #HLMHousing;
 		category: DPEA;
 		surface: [47.0 -> 92.0];
 		exposure: (3 ~ 1) | [0 -> 5]; 
