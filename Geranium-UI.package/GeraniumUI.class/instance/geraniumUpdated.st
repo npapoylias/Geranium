@@ -113,28 +113,30 @@ geraniumUpdated
 		medianHumidity: (81.16 ~ 4.05) | [0 -> 100];
 		seasonalHumidityVariation: 2. 
 		
-	TrendsProfile new
-		named: #FrenchConsumptionTrends;
+	TrendsProfile new "Q2: National/Regional or Localised ??"
+		named: #RegionalConsumptionTrends;"Comportement Attendue"
 		seasonal: { 
 			#Winter -> 0.1. 
 			#Spring -> 1. 
 			#Fall -> -1. 
 			#Summer -> 0.1.
-		};	daily: {  
-			#Monday -> 0.8.
-			#Tuesday -> 0.8.
-			#Wednesday -> 0.8.
-			#Thursday -> 0.8.
-			#Friday -> 0.9.
+		};	daily: {  "E.g for local behavior: Lunch-time @ home vs Paris (lunch-time outside)"
+			#Monday -> 0.7."if st-eloi: 0.8 from Mon-Fri"
+			#Tuesday -> 0.7."if st-eloi: 0.8 from Mon-Fri"
+			#Wednesday -> 0.8."enfants"
+			#Thursday -> 0.7.
+			#Friday -> 0.8."end office hours"
 			#Saturday -> 1.
 			#Sunday -> 1.
-		}; hourly: {  
-			#Midnight -> { -1 . -1 . -1 . -1 . -1 . -1 . -0.5 }.
-			#Morning -> { 1 . 1 . 1 . 0.5 . 0.5 . 1 }.
-			#Afternoon -> { 0.5 . 0.5 . 0.5 . 0.5 . 0.5 }.
-			#Night -> { 1 . 1 . 1 . 1 . 1 . 1 }
+		}; hourly: {  "Normalize this between -1 and 1"
+			#Midnight -> { 0.3 . 0.3 . 0.3 . 0.3 . 0.3 . 0.3 . 0.3 }."00:00 - 06:00" "Midnight=Night"
+			#Morning -> { 0.8 . 0.8 . 0.8 . 0.5 . 0.5 . 0.5 }."07:00 - 12:00"
+			#Afternoon -> { 0.5 . 0.5 . 0.5 . 0.5 . 0.5 }."13:00 - 17:00"
+			#Night -> { 1 . 1 . 1 . 1 . 1 . 0.5 }"18:00-23:00" "Night=Evening"
 		}.
-		
+	
+	"Q1: DPE overpass ??" "What-If indicators in the screen + dpeA (or awareness, 
+	or climate) // Figure, ReferenceBase Scenario/Default" "Kiviat inside GIS plot"
 	WeightsProfile new "Explorative Model: Education/Building Hypothesis"
 	
 		named: #EmpiricHypothesisA;
@@ -154,3 +156,21 @@ geraniumUpdated
 		hour: [ -0.10 -> 0.10 ]; "10%"
 		season: [ -0.05 -> 0.05 ].	"5%"
 	
+		WeightsProfile new "Explorative Model: Education/Building Hypothesis"
+	
+		named: #EmpiricHypothesisExceedingDPE;
+"50%"
+		temperature: [ -0.3 -> 0.3 ];  "30%"
+	   	humidity: [ -0.15 ->  0.15 ]; "15%"
+	   	exposure: [ -0.1 -> 0.1 ];  "5%"
+
+"25%"
+		occupants: [ 0 -> 0.10 ]; "10%"
+		income: [ -0.05 -> 0.05  ]; "5%"
+		awareness: [ -0.05 -> 0.05 ]; "5%"
+		ownership: [ -0.5 -> 0.5 ]; "5%"
+
+"25%"
+		day: [ -0.10 -> 0.10 ];  "10%"
+		hour: [ -0.10 -> 0.10 ]; "10%"
+		season: [ -0.05 -> 0.05 ].	"5%"
