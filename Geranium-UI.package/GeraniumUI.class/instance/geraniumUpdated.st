@@ -129,10 +129,10 @@ geraniumUpdated
 			#Saturday -> 1.
 			#Sunday -> 1.
 		}; hourly: {  "Normalize this between -1 and 1"
-			#Midnight -> { 0.3 . 0.3 . 0.3 . 0.3 . 0.3 . 0.3 . 0.3 }."00:00 - 06:00" "Midnight=Night"
-			#Morning -> { 0.8 . 0.8 . 0.8 . 0.5 . 0.5 . 0.5 }."07:00 - 12:00"
-			#Afternoon -> { 0.5 . 0.5 . 0.5 . 0.5 . 0.5 }."13:00 - 17:00"
-			#Night -> { 1 . 1 . 1 . 1 . 1 . 0.5 }"18:00-23:00" "Night=Evening"
+			#Midnight -> {-0.4 . -0.4 . -0.4 . -0.4 . -0.4 . -0.4 . -0.4}."00:00 - 06:00" "Midnight=Night"
+			#Morning -> { 0.6 . 0.6 . 0.6 . 0.0 . 0.0 . 0.0 }."07:00 - 12:00"
+			#Afternoon -> { 0.0 . 0.0 . 0.0 . 0.0 . 0.0 }."13:00 - 17:00"
+			#Night -> { 1 . 1 . 1 . 1 . 1 . 0.0 }"18:00-23:00" "Night=Evening"
 		}.
 	
 	"Q1: DPE overpass ??" "What-If indicators in the screen + dpeA (or awareness, 
