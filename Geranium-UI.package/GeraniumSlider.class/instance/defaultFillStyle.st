@@ -1,7 +1,8 @@
 accessing
 defaultFillStyle
 	"Answer the hue gradient."
-	^ ImageFillStyle form: (self appForm: #slider).
+
+	^ (BitmapFillStyle form: (self appForm: #slider)) tileFlag: true
 	"^(GradientFillStyle colors: (self gradientRange collect: [:a | Color h: a s: 1.0 v: 1.0]))
 		origin: self topLeft;
 		direction: (self bounds isWide
