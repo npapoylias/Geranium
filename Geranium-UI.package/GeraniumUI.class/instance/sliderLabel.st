@@ -1,4 +1,4 @@
-initialization
+helper
 sliderLabel
 
 	|hourlyTicks month label |

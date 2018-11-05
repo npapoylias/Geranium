@@ -25,7 +25,7 @@ createNavigationToolbar
 		vResizing: #spaceFill;
 		min: (step := stepMin := 0);
 		max: (stepMax := 365*24-1);"check limits on displaying ..."
-		label: stepMin asString , '/' , stepMax asString;
+		label: self sliderLabel;
 		setValueSelector: #stepChanged:;
 		getValueSelector: #step;
 		extent: 24 @ 24) asSpecAdapter.
