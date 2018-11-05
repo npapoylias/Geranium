@@ -7,7 +7,7 @@ createMap
 			catColorDistribution := (report inputVisitor residences collect: [ :r | r category ]) frequenciesAsColorDistribution.
 			mapView
 				renderInView: view;
-				mapWithBuildingsCenteredAroundBoundingBox: (self report input areaOfInterest coordinates) coordinatesAsOsmString
+				mapWithBuildingsCenteredAroundBoundingBox: (self report input areaOfInterest coordinates) 
 				colored: catColorDistribution
 				"geraniumAreaMapExample". 
 			self boundingBox: mapView boundingBox.

@@ -11,7 +11,8 @@
 		"mapElements",
 		"decorationElements",
 		"map",
-		"mapData"
+		"mapData",
+		"coordinatesBox"
 	],
 	"name" : "GeraniumUIOsmView",
 	"type" : "normal"
