@@ -5,7 +5,7 @@ sliderLabel
 	timeTable := #(0 744 1488 2160 2904 3624 4368 5088 5832 6576 7296 8040 8760). 
 	month := (timeTable detectIndex: [ :upperHour | (step + 1) <= upperHour ]) - 1.
 	day := (step + 1 - (timeTable at: month) / 24) ceiling. 
-	hour := (step + 1 - (timeTable at: month)) % 24.
+	hour := (step - (timeTable at: month)) % 24.
 	monthTable := #(December January February 
 	March April May 
 	June July August 
@@ -15,6 +15,6 @@ sliderLabel
 		nextPutAll: (monthTable at: month) asString;
 		nextPutAll: ', ';
 		nextPutAll: day asDay;
-		nextPutAll: ' @ ';
+		nextPutAll: ' , ';
 		nextPutAll: hour asHour.
 	^ label contents
