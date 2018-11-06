@@ -12,4 +12,5 @@ createMap
 				"geraniumAreaMapExample". 
 			self boundingBox: mapView boundingBox.
 			self renderTemperatureHumidityDecoration.
+			"self renderKiviatIn: view. ""should do it only once"
 			self renderClimateConsumptionIndicators ] 

@@ -17,7 +17,7 @@ mapWithBuildingsCenteredAroundBoundingBox: aBoundingBox colored: catColorDistrib
 		of: mapData for: view asPolygonIn: map 
 		withColor: [:item | catColorDistribution next"Color blue"] 
 		borderColor: [:item | Color black] andWidth: 5.
-	self renderKiviatIn: view.
+	"self renderKiviatIn: view."
 	view canvas addMenuAsSVG: self zoomInSVG scale: 0.1 callback: [ RTZoomInMove on: view ].
 	"view canvas addMenu: ' + Zoom In ' callback: [ RTZoomInMove on: view ]."
 	view canvas addMenuAsSVG: self zoomOutSVG scale: 0.1 callback: [ RTZoomOutMove on: view ].
