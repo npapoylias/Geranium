@@ -9,6 +9,7 @@ initializeWidgets
 	self createModelEditor.
 	self createInputDiagrams.
 	self createOutputDiagrams.
+	self createKiviat.
 	self createMapModelTabs.
 	self createInputDiagramTabs.
 	self createOutputDiagramTabs.

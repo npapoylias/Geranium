@@ -39,7 +39,8 @@
 		"microClimateInputDiagrams",
 		"outputDiagramsTotStructure",
 		"outputDiagramsSocialMicroClimate",
-		"modelEditor"
+		"modelEditor",
+		"kiviat"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"
