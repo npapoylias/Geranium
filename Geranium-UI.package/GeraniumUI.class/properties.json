@@ -40,7 +40,8 @@
 		"outputDiagramsTotStructure",
 		"outputDiagramsSocialMicroClimate",
 		"modelEditor",
-		"kiviat"
+		"kiviat",
+		"minMaxConsumptionLabels"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"
