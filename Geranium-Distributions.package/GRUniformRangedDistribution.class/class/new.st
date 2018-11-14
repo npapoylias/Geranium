@@ -3,5 +3,5 @@ new
 
 	|inst|
 	inst := super new.
-	inst seed: GRSeed seed.
+	inst seed: ((1 to: 4) collect: [:i | GRSeed seed]).
 	^ inst
