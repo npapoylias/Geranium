@@ -3,7 +3,7 @@ seasonalTemperatureSeriesWithDeviation: temperatureVariation
 
 	| g samples |
 	g := medianTemperature copy 
-		generator: PMLinearCongruentialRandomGenerator new;
+		"generator: PMLinearCongruentialRandomGenerator new;"
 		mean: medianTemperature mean + temperatureVariation.
 	"g generator seed: 42."
 	samples := OrderedCollection new. "make more realistic by stabilizing,

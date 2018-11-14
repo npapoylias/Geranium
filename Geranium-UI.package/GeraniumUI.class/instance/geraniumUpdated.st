@@ -23,6 +23,7 @@ geraniumUpdated
 		climateProfile: #LaRochelleAverage;
 		trendsProfile: #FrenchConsumptionTrends;
 		weightsProfile: #EmpiricHypothesisA;
+		seed: 23424080;
 		years: 1.		
 		
 	UrbanProfileForAppartmentBlock new

@@ -3,7 +3,7 @@ seasonalHumiditySeriesWithDeviation: humidityVariation
 
 	| g samples |
 	g := medianHumidity copy 
-		generator: PMLinearCongruentialRandomGenerator new;
+		"generator: PMLinearCongruentialRandomGenerator new;"
 		mean: medianHumidity mean + humidityVariation.
 	"g generator seed: 42."
 	samples := OrderedCollection new. "make more realistic by stabilizing,
