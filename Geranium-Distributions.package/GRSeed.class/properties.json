@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Geranium-Distributions",
+	"classinstvars" : [
+		"default",
+		"seedGenerator"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GRSeed",
+	"type" : "normal"
+}

@@ -5,5 +5,5 @@
 			ifTrue: [ GRNormalIntegerRangedDistribution new ]
 			ifFalse: [ GRNormalRangedDistribution new ])
 				mean: self;
-				standardDeviation: aNumber;
-				generator: PMLinearCongruentialRandomGenerator new.
+				standardDeviation: aNumber";
+				generator: PMLinearCongruentialRandomGenerator new."
