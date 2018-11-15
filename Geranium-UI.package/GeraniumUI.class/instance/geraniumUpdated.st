@@ -114,7 +114,7 @@ geraniumUpdated
 		medianHumidity: (81.16 ~ 4.05) | [0 -> 100];
 		seasonalHumidityVariation: 2. 
 		
-	TrendsProfile new "Q2: National/Regional or Localised ??"
+	TrendsProfile new 
 		named: #RegionalConsumptionTrends;"Comportement Attendue"
 		seasonal: { 
 			#Winter -> 0.1. 
@@ -130,48 +130,42 @@ geraniumUpdated
 			#Saturday -> 1.
 			#Sunday -> 1.
 		}; hourly: {  "Normalize this between -1 and 1"
-			#Midnight -> {-0.4 . -0.4 . -0.4 . -0.4 . -0.4 . -0.4 . -0.4}."00:00 - 06:00" "Midnight=Night"
+			#Night -> {-0.4 . -0.4 . -0.4 . -0.4 . -0.4 . -0.4 . -0.4}."00:00 - 06:00" "Midnight=Night"
 			#Morning -> { 0.6 . 0.6 . 0.6 . 0.0 . 0.0 . 0.0 }."07:00 - 12:00"
 			#Afternoon -> { 0.0 . 0.0 . 0.0 . 0.0 . 0.0 }."13:00 - 17:00"
-			#Night -> { 1 . 1 . 1 . 1 . 1 . 0.0 }"18:00-23:00" "Night=Evening"
+			#Evening -> { 1 . 1 . 1 . 1 . 1 . 0.0 }"18:00-23:00" "Night=Evening"
 		}.
 	
-	"Q1: DPE overpass ??" "What-If indicators in the screen + dpeA (or awareness, 
-	or climate) // Figure, ReferenceBase Scenario/Default" "Kiviat inside GIS plot"
+	
 	WeightsProfile new "Explorative Model: Education/Building Hypothesis"
-	
 		named: #EmpiricHypothesisA;
-"50%"
 		temperature: [ -0.3 -> 0.3 ];  "30%"
 	   	humidity: [ -0.15 ->  0.15 ]; "15%"
 	   	exposure: [ -0.1 -> 0.1 ];  "5%"
-
-"25%"
+		
 		occupants: [ 0 -> 0.10 ]; "10%"
 		income: [ -0.05 -> 0.05  ]; "5%"
 		awareness: [ -0.05 -> 0.05 ]; "5%"
 		ownership: [ -0.5 -> 0.5 ]; "5%"
 
-"25%"
 		day: [ -0.10 -> 0.10 ];  "10%"
 		hour: [ -0.10 -> 0.10 ]; "10%"
 		season: [ -0.05 -> 0.05 ].	"5%"
 	
-		WeightsProfile new "Explorative Model: Education/Building Hypothesis"
+		WeightsProfile new 
 	
-		named: #EmpiricHypothesisExceedingDPE;
-"50%"
-		temperature: [ -0.3 -> 0.3 ];  "30%"
-	   	humidity: [ -0.15 ->  0.15 ]; "15%"
-	   	exposure: [ -0.1 -> 0.1 ];  "5%"
+			named: #EmpiricHypothesisExceedingDPE;
 
-"25%"
-		occupants: [ 0 -> 0.10 ]; "10%"
-		income: [ -0.05 -> 0.05  ]; "5%"
-		awareness: [ -0.05 -> 0.05 ]; "5%"
-		ownership: [ -0.5 -> 0.5 ]; "5%"
+			temperature: [ -0.3 -> 0.3 ];  "30%"
+		   	humidity: [ -0.15 ->  0.15 ]; "15%"
+	 	  	exposure: [ -0.1 -> 0.1 ];  "5%"
 
-"25%"
-		day: [ -0.10 -> 0.10 ];  "10%"
-		hour: [ -0.10 -> 0.10 ]; "10%"
-		season: [ -0.05 -> 0.05 ].	"5%"
+
+			occupants: [ 0 -> 0.10 ]; "10%"
+			income: [ -0.05 -> 0.05  ]; "5%"
+			awareness: [ -0.05 -> 0.05 ]; "5%"
+			ownership: [ -0.5 -> 0.5 ]; "5%"
+
+			day: [ -0.10 -> 0.10 ];  "10%"
+			hour: [ -0.10 -> 0.10 ]; "10%"
+			season: [ -0.05 -> 0.05 ].	"5%"
