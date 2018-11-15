@@ -15,12 +15,13 @@ renderClimateConsumptionIndicators
 		translateTo: (self relativeToBoundingBox: 17@13).
 	humidityLabel := ((RTLabel new color: Color blue; height: 4) elementOn: humidity asString, '°H') 
 		translateTo: (self relativeToBoundingBox: 19@21).
-	minMaxConsumptionLabels ifNil: [ |a b edge|
+	minMaxConsumptionLabels ifNil: [ 
 		"should be se by the dsl normally" 
-		minMaxConsumptionLabels :=  { a := (("RTBox new + "(RTLabel new color: Color blue; height: 2)) elementOn: '30000', 'kWh') 
-			translateTo: (self relativeToBoundingBox: -47@15). 
-			b := (("RTBox new + "(RTLabel new color: Color red; height: 2)) elementOn: '45000', 'kWh') 
-				translateTo: (self relativeToBoundingBox: -47@40).
+		minMaxConsumptionLabels :=  { 
+			(self boxColored: #green) translateTo: (self relativeToBoundingBox: -48@15).
+			(self label: '45000', 'kWh' colored: #black) translateTo: (self relativeToBoundingBox: -47@15).
+			(self boxColored: #red) translateTo: (self relativeToBoundingBox: -48@40).
+			(self label: '90000', 'kWh' colored: #black) translateTo: (self relativeToBoundingBox: -47@40).
 			"edge := (RTLine new color: Color orange; width: 1) edgeFrom: a to: b" "width: 2; color: Color orange."
 		}	do: [ :i | mapView view add: i ]
 	].
