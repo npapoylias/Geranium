@@ -5,7 +5,7 @@ report
 
 	^ report ifNil: [ 
 
-			self geraniumUpdated.
+			self geraniumStakeholderMeeting.
 			"min/max for non-hoping categories"
 			report := GeraniumSimulation new
 				for: #Geranium;

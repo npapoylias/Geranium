@@ -2,4 +2,4 @@ initialization
 createModelEditor
 
 	modelEditor := GlamourPresentationModel new.
-	modelEditor presentationClass: GTPlayground startOn: (GTPlayPage new saveContent: (self class >> #geraniumUpdated) sourceWithoutSelector; title: 'GeraniumDSL').
+	modelEditor presentationClass: GTPlayground startOn: (GTPlayPage new saveContent: (self class >> #geraniumStakeholderMeeting) sourceWithoutSelector; title: 'GeraniumDSL').
