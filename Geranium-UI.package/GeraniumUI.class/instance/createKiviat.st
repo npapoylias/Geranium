@@ -1,10 +1,11 @@
 accessing
 createKiviat
 	"parametrize as before"
-	| b |
+	| b processed|
 	kiviat := RoassalModel new.
 	kiviat 
 		script: [  :view :canvas |
+			processed ifNil: [processed := true. self processCanvas: canvas and: view].
 			b := { #a -> (1 to: 3 ). #b -> (3 to: 6) . #c -> (6 to: 9 ). #d -> (9 to: 12) }
 							kiviatForParameters: { #Structure . #Climate . #Social .}
 							withCaption: nil 
