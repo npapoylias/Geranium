@@ -79,7 +79,7 @@ geraniumUpdated
 		category: DPEA;
 		surface: [47.0 -> 92.0];
 		exposure: (3 ~ 1) | [0 -> 5]; 
-		occupantClass: {SingleAdult . Couple . Family} % {18.18. 27.27 . 45.45}; 
+		occupantClass: {SingleAdult . Couple . Family} % {18.18. 27.27 . 54.55}; 
 		numberOfChildren: [1 -> 4]; 
 		income: [(1150.0*12) -> (3000.0*12)];
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {18.18 . 81.82};
@@ -101,7 +101,7 @@ geraniumUpdated
 		category: {DPED . DPEE} % {60.0 . 40.0};
 		surface: [80.0 -> 160.0];
 		exposure: (3 ~ 1) | [0 -> 5]; 
-		occupantClass: {SingleAdult . Couple . Family} % {18.75. 12.50 . 31.25}; 
+		occupantClass: {SingleAdult . Couple . Family} % {18.75. 12.50 . 68.75}; 
 		numberOfChildren: [1 -> 2]; 
 		income: [(1150.0*12) -> (4000.0*12)];
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {68.75 . 31.25};
