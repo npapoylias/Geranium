@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Family",
+	"category" : "Geranium",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SingleParent",
+	"type" : "normal"
+}
