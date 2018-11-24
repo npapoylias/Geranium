@@ -10,7 +10,12 @@ createKiviat
 							kiviatForParameters: { #Structure . #Climate . #Social .}
 							withCaption: nil 
 							inView: view.
-			b build
+			b build.
+			view canvas camera "focusOnCenterScaled."focusOnCenterScaled: view canvas extent * 0.8.
+			view @ RTDraggableView.
+			view @ (RTGridView new gridSize: 10).
+			view @ RTZoomableView.
+			view @ RTDoubleScrollBar.
 		"self halt."
 		"b build.
 		b view"
