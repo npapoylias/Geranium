@@ -5,7 +5,7 @@ adjustDPE: categories
 
 	otherCategories := categories select: [ :a | a key ~= DPEA ].
 	otherCategories ifEmpty: [ otherCategories := { DPEB -> 0.0 .DPEC -> 0.0 } ].
-	difference := (categories asDictionary at: DPEA) - dpeAPercentage.
+	difference := (categories asDictionary at: DPEA ifAbsentPut: [0.0]) - dpeAPercentage.
 	differencePerCategory := difference / otherCategories size. 
 	newCategories := (otherCategories sort: [:a :b | a value < b value]) collectWithIndex: [ :a :index |  
 		a value + differencePerCategory < 0
