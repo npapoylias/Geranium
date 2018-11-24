@@ -15,7 +15,7 @@ geraniumStakeholderMeeting
 			#PrivateHousing
 		} % { 15.24 . 6.51 . 23.91 . 19.56 . 34.78 }; 
 		climateProfile: #LaRochelleAverage;
-		trendsProfile: #FrenchConsumptionTrends;
+		trendsProfile: #RegionalConsumptionTrends;
 		weightsProfile: #EmpiricHypothesisA;
 		seed: 23424080;
 		years: 1.		

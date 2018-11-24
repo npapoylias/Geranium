@@ -19,9 +19,9 @@ renderClimateConsumptionIndicators
 		"should be se by the dsl normally" 
 		minMaxConsumptionLabels :=  { 
 			(self boxColored: #green) translateTo: (self relativeToBoundingBox: -48@15).
-			(self label: '291597', 'kWh' colored: #black) translateTo: (self relativeToBoundingBox: -46.6@15).
+			(self label: '270729', 'kWh' colored: #black) translateTo: (self relativeToBoundingBox: -46.6@15).
 			(self boxColored: #red) translateTo: (self relativeToBoundingBox: -48@40).
-			(self label: '3220642', 'kWh' colored: #black) translateTo: (self relativeToBoundingBox: -46.5@40).
+			(self label: '3168994', 'kWh' colored: #black) translateTo: (self relativeToBoundingBox: -46.5@40).
 			"edge := (RTLine new color: Color orange; width: 1) edgeFrom: a to: b" "width: 2; color: Color orange."
 		}	do: [ :i | mapView view add: i ]
 	].

@@ -1,4 +1,4 @@
-accessing
+examples
 scenario
 
 	^ #geraniumStakeholderMeeting

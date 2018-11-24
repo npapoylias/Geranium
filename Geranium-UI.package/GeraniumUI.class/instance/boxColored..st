@@ -3,7 +3,7 @@ boxColored: boxColor
 
 	^ (RTBox new 
 			height: 3;
-			width: 16;
+			width: 17;
 			color: (Color perform: boxColor); 
 			borderColor: Color black;
 			borderWidth: 5; 
