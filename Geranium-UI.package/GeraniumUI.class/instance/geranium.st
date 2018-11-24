@@ -1,4 +1,4 @@
-examples
+scripts
 geranium
 
 	StatisticalScenario new 

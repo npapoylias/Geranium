@@ -1,5 +1,5 @@
 scripts
-geraniumStakeholderMeeting
+geraniumStakeholderMeetingDPEA
 
 	StatisticalScenario new 
 		named: #Geranium;
@@ -36,7 +36,7 @@ geraniumStakeholderMeeting
 				
 	UrbanProfileForAppartment new 
 		named: #HLMRenovated;
-		category: DPEB;
+		category: DPEA;
 		surface: [50->115];
 		occupantClass: {SingleAdult . Couple . Family} % {12.5 . 50.0 . 37.5}; 
 		numberOfChildren: [1 -> 4]; 
@@ -67,7 +67,7 @@ geraniumStakeholderMeeting
 	
 	UrbanProfileForHouse new 
 		named: #SocialHousing;
-		category: {DPED . DPEE} % {60.0 . 40.0};
+		category: DPEA;
 		surface: [60.0 -> 87.0];
 		exposure: (3 ~ 1) | [3 -> 5]; 
 		occupantClass: {SingleAdult . Couple . Family} % {44.44. 0.0 . 55.56}; 
@@ -78,7 +78,7 @@ geraniumStakeholderMeeting
 	
 	UrbanProfileForHouse new 
 		named: #PrivateHousing;
-		category: {DPED . DPEE} % {60.0 . 40.0};
+		category: DPEA;
 		surface: [80.0 -> 160.0];
 		exposure: (3 ~ 1) | [0 -> 5]; 
 		occupantClass: {SingleAdult . Couple . Family} % {18.75. 12.50 . 68.75}; 

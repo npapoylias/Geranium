@@ -1,107 +1,134 @@
 initialization
 fullInternalApiScript
 
-		StatisticalScenario new 
-		named: #ScenarioA;
+	StatisticalScenario new 
+		named: #Geranium;
 		coordinates: (46.16352961038194 @ -1.1302614212036133) 
 		-> (46.166851083597415 @ -1.1267745494842527);
-		totalNumberOfBuildings: 20; "#determinedByMap;"
+		totalNumberOfBuildings: 56; 
+		totalNumberOfResidences: 186; 
 		residencePercentages:{  
-			#AppartmentBlockTypeA.
-			#AppartmentBlockTypeB.
-			#HouseTypeA
-		} % { 50.0 . 20.0 . 30.0 }; 
-		climateProfile: #UrbanClimateA;
+			#RenovatedHlmBlock.
+			#NewHlmBlock.
+			#HLMHousing.
+			#SocialHousing.
+			#PrivateHousing
+		} % { 15.24 . 6.51 . 23.91 . 19.56 . 34.78 }; 
+		climateProfile: #LaRochelleAverage;
 		trendsProfile: #FrenchConsumptionTrends;
-		weightsProfile: #UrbanHypothesisA;
-		years: 1.
-		
-		
-	UrbanProfileForAppartmentBlock new
-		named: #AppartmentBlockTypeA;
-		dimensions: (2 floors: 1 corridors: 2);
-		appartmentPercentages: {  
-			#AppartmentTypeA.
-			#AppartmentTypeB.
-		} % { 20.0 . 80.0 }.
+		weightsProfile: #EmpiricHypothesisA;
+		seed: 23424080;
+		years: 1.		
 		
 	UrbanProfileForAppartmentBlock new
-		named: #AppartmentBlockTypeB;
-		dimensions: (2 floors: 1 corridors: 3);
+		named: #RenovatedHlmBlock;
+		dimensions: (2 floors: 2 corridors: 3 appts);
 		appartmentPercentages: {  
-			#AppartmentTypeA.
-			#AppartmentTypeB.
-		} % { 50.0 . 50.0 }.
+			#HLMRenovated.
+		} % { 100.0 }.
 		
+	UrbanProfileForAppartmentBlock new
+		named: #NewHlmBlock;
+		dimensions: (2 floors: 2 corridors: 3 appts);
+		appartmentPercentages: {  
+			#HLMNew.
+		} % { 100.0 }.
+				
 	UrbanProfileForAppartment new 
-		named: #AppartmentTypeA;
-		category: DPEA;
-		surface: [50.0 -> 80.0];
-		occupantClass: {SingleAdult . Couple . Family} % {60.0 . 30.0. 10.0};
-		numberOfChildren: [1 -> 3]; "valid only for family"
-		income: (72000.0 ~ 10000) | [36000.0 -> 100000];
-		awareness: {ConsumptionAware . ConsumptionUnaware} % {40.0 . 60.0};
-		ownership: true % 20.
-	
-	UrbanProfileForAppartment new 
-		named: #AppartmentTypeB;
+		named: #HLMRenovated;
 		category: DPEB;
-		surface: [80.0 -> 110];
-		occupantClass: {Family . Couple} % {55.0 . 45.0};
-		numberOfChildren: [1 -> 3]; "valid only for family"
-		income: (92000.0 ~ 15000) | [66000.0 -> 180000];
-		awareness: {ConsumptionAware . ConsumptionUnaware} % {10.0 . 90.0};
-		ownership: true % 10.
+		surface: [50->115];
+		occupantClass: {SingleAdult . Couple . Family} % {12.5 . 50.0 . 37.5}; 
+		numberOfChildren: [1 -> 4]; 
+		income: [(1150.0*12) -> (4000.0*12)];
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {31.25 . 68.75};
+		ownership: false % 100.
+		
+	UrbanProfileForAppartment new 
+		named: #HLMNew;
+		category: DPEA;
+		surface: [48->98];
+		occupantClass: {SingleAdult . Couple . Family} % {42.10 . 21.06 . 36.84};
+		numberOfChildren: [1 -> 3]; 
+		income: [(1150.0*12) -> (3000.0*12)];
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {31.58 . 68.42};
+		ownership: false % 100.
 		
 	UrbanProfileForHouse new 
-		named: #HouseTypeA;
-		category: DPEC;
-		surface: [90.0 -> 130.0];
-		exposure: (5 ~ 1) | [0 -> 5]; 
-		occupantClass: Family; 
-		numberOfChildren: [1 -> 3]; "valid only for family"
-		income: (72000.0 ~ 10000) | [36000.0 -> 80000];
-		awareness: {ConsumptionAware . ConsumptionUnaware} % {15.0 . 85.0};
-		ownership: true % 60.
-		
-	ClimateProfile new 
-		named: #UrbanClimateA; 
+		named: #HLMHousing;
+		category: DPEA;
+		surface: [47.0 -> 92.0];
+		exposure: (3 ~ 1) | [0 -> 5]; 
+		occupantClass: {SingleAdult . Couple . Family} % {18.18. 27.27 . 54.55}; 
+		numberOfChildren: [1 -> 4]; 
+		income: [(1150.0*12) -> (3000.0*12)];
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {18.18 . 81.82};
+		ownership: true % 100.
+	
+	UrbanProfileForHouse new 
+		named: #SocialHousing;
+		category: {DPED . DPEE} % {60.0 . 40.0};
+		surface: [60.0 -> 87.0];
+		exposure: (3 ~ 1) | [3 -> 5]; 
+		occupantClass: {SingleAdult . Couple . Family} % {44.44. 0.0 . 55.56}; 
+		numberOfChildren: [1 -> 2]; 
+		income: [(1150.0*12) -> (3000.0*12)];
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {33.33 . 66.67};
+		ownership: true % 100.
+	
+	UrbanProfileForHouse new 
+		named: #PrivateHousing;
+		category: {DPED . DPEE} % {60.0 . 40.0};
+		surface: [80.0 -> 160.0];
+		exposure: (3 ~ 1) | [0 -> 5]; 
+		occupantClass: {SingleAdult . Couple . Family} % {18.75. 12.50 . 68.75}; 
+		numberOfChildren: [1 -> 2]; 
+		income: [(1150.0*12) -> (4000.0*12)];
+		awareness: {ConsumptionAware . ConsumptionUnaware} % {68.75 . 31.25};
+		ownership: true % 100.	
+	
+	ClimateProfile new "4 Season"
+		named: #LaRochelleAverage; 
 		medianTemperature: (13.25 ~ 1.5) | [0 -> 32]; 
 		seasonalTemperatureVariation: 2.0;
 		medianHumidity: (81.16 ~ 4.05) | [0 -> 100];
 		seasonalHumidityVariation: 2. 
 		
-	TrendsProfile new
-		named: #FrenchConsumptionTrends;
+	TrendsProfile new 
+		named: #RegionalConsumptionTrends;
 		seasonal: { 
-			#Winter -> 1. 
-			#Spring -> 0.5. 
-			#Fall -> 0.5. 
-			#Summer -> 1
+			#Winter -> 0.1. 
+			#Spring -> 1. 
+			#Fall -> -1. 
+			#Summer -> 0.1.
 		};	daily: {  
-			#Monday -> 0.8.
-			#Tuesday -> 0.8.
+			#Monday -> 0.7.
+			#Tuesday -> 0.7.
 			#Wednesday -> 0.8.
-			#Thursday -> 0.8.
-			#Friday -> 0.9.
+			#Thursday -> 0.7.
+			#Friday -> 0.8.
 			#Saturday -> 1.
 			#Sunday -> 1.
-		}; hourly: {  
-			#Midnight -> { 0.2 . 0.2 . 0.2 . 0.2 . 0.2 . 0.2 . 0.2 }.
-			#Morning -> { 1 . 1 . 1 . 0.5 . 0.5 . 1 }.
-			#Afternoon -> { 0.5 . 0.5 . 0.5 . 0.5 . 0.5 }.
-			#Night -> { 1 . 1 . 1 . 1 . 1 . 1 }
+		}; hourly: { 
+			#Night -> {-0.4 . -0.4 . -0.4 . -0.4 . -0.4 . -0.4 . -0.4}.
+			#Morning -> { 0.6 . 0.6 . 0.6 . 0.0 . 0.0 . 0.0 }.
+			#Afternoon -> { 0.0 . 0.0 . 0.0 . 0.0 . 0.0 }.
+			#Evening -> { 1 . 1 . 1 . 1 . 1 . 0.0 }
 		}.
+	
+	
+	WeightsProfile new "Explorative Model: Education/Building Hypothesis"
+		named: #EmpiricHypothesisA;
+		temperature: [ -0.3 -> 0.3 ];  "30%"
+	   	humidity: [ -0.15 ->  0.15 ]; "15%"
+	   	exposure: [ -0.1 -> 0.1 ];  "5%"
 		
-	WeightsProfile new
-		named: #UrbanHypothesisA;
-		season: [ -0.1 -> 0.1 ];
-		day: [ -0.01 -> 0.01 ];
-		hour: [ -0.1 -> 0.1 ];
-		exposure: [ -0.1 -> 0.1 ]; 
-		occupants: [ 0 -> 0.05 ]; 
-		income: [ -0.05 -> 0.05  ]; 
-		ownership: [ -0.05 -> 0.05 ]; 
-		awareness: [ -0.1 -> 0.1 ]; 
-		temperature: [ -0.4 -> 0.4 ]; 
-		humidity: [ -0.09 ->  0.04 ]. 
+		occupants: [ 0 -> 0.10 ]; "10%"
+		income: [ -0.05 -> 0.05  ]; "5%"
+		awareness: [ -0.05 -> 0.05 ]; "5%"
+		ownership: [ -0.5 -> 0.5 ]; "5%"
+
+		day: [ -0.10 -> 0.10 ];  "10%"
+		hour: [ -0.10 -> 0.10 ]; "10%"
+		season: [ -0.05 -> 0.05 ].	"5%"
+	

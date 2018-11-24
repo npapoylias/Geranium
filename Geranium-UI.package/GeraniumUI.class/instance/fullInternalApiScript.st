@@ -1,4 +1,4 @@
-examples
+scripts
 fullInternalApiScript
 	StatisticalScenario new 
 		named: #ScenarioA;

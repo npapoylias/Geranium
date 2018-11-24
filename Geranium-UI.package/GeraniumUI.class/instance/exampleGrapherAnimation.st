@@ -1,4 +1,4 @@
-examples
+scripts
 exampleGrapherAnimation
 
 	"after 100 it becomes slower, but maybe this is due to the computation cumsum

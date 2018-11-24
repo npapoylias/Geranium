@@ -1,4 +1,4 @@
-examples
+scripts
 stEloi
 
 		StatisticalScenario new 

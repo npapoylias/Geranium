@@ -1,5 +1,5 @@
 scripts
-geraniumUpdated
+geraniumUpdatedOld
 
 	"Updated Residence Proxy ++ Initial Analysis,
 	natural percentages, x:x: to floors etc, DPE
@@ -9,7 +9,7 @@ geraniumUpdated
 		named: #Geranium;
 		coordinates: (46.16352961038194 @ -1.1302614212036133) 
 		-> (46.166851083597415 @ -1.1267745494842527);
-		totalNumberOfBuildings: 56; "#determinedByMap;"
+		totalNumberOfBuildings: 46; "#determinedByMap;"
 		totalNumberOfResidences: 186; "87;" "proxy of 99 (87 on record) -> proxy 186 (final number)"
 		residencePercentages:{  "will affect exposure -- beware of proxy/structure"
 			#SmallRenovatedHlmBlock."(3-4)x3"
@@ -79,7 +79,7 @@ geraniumUpdated
 		category: DPEA;
 		surface: [47.0 -> 92.0];
 		exposure: (3 ~ 1) | [0 -> 5]; 
-		occupantClass: {SingleAdult . Couple . Family} % {18.18. 27.27 . 54.55}; 
+		occupantClass: {SingleAdult . Couple . Family} % {18.18. 27.27 . 45.45}; 
 		numberOfChildren: [1 -> 4]; 
 		income: [(1150.0*12) -> (3000.0*12)];
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {18.18 . 81.82};
@@ -101,7 +101,7 @@ geraniumUpdated
 		category: {DPED . DPEE} % {60.0 . 40.0};
 		surface: [80.0 -> 160.0];
 		exposure: (3 ~ 1) | [0 -> 5]; 
-		occupantClass: {SingleAdult . Couple . Family} % {18.75. 12.50 . 68.75}; 
+		occupantClass: {SingleAdult . Couple . Family} % {18.75. 12.50 . 31.25}; 
 		numberOfChildren: [1 -> 2]; 
 		income: [(1150.0*12) -> (4000.0*12)];
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {68.75 . 31.25};
@@ -114,7 +114,7 @@ geraniumUpdated
 		medianHumidity: (81.16 ~ 4.05) | [0 -> 100];
 		seasonalHumidityVariation: 2. 
 		
-	TrendsProfile new 
+	TrendsProfile new "Q2: National/Regional or Localised ??"
 		named: #RegionalConsumptionTrends;"Comportement Attendue"
 		seasonal: { 
 			#Winter -> 0.1. 
