@@ -9,13 +9,14 @@
 		"scatterplot",
 		"pie",
 		"barStack",
-		"dpeASlider",
 		"awarenessSlider",
 		"temperatureSlider",
 		"applyButton",
 		"awarenessPercentage",
-		"dpeAPercentage",
-		"temperature"
+		"temperature",
+		"dpeBSlider",
+		"dpeBPercentage",
+		"dpeAPercentage"
 	],
 	"name" : "GeraniumWhatIfDiagrams",
 	"type" : "normal"

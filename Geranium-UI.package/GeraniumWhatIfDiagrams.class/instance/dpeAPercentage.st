@@ -1,4 +1,0 @@
-initialization
-dpeAPercentage
-
-	^ dpeAPercentage

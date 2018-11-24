@@ -1,7 +1,7 @@
 initialization
 createDPESlider
 
-	dpeASlider := (GeraniumSlider basicNew
+	dpeBSlider := (GeraniumSlider basicNew
 			gradientRange: (359.9 to: 259.0 by: -0.1);
 			initialize;
 			model: self;
@@ -10,10 +10,10 @@ createDPESlider
 			hResizing: #spaceFill;
 			vResizing: #spaceFill;
 			min: 0;
-			max: 100;"check limits on displaying ..."
-			label: 'Set DPEA to: ' , (dpeAPercentage printShowingDecimalPlaces: 1) , '%'; 
-			setValueSelector: #dpeAChanged:;
-			getValueSelector: #dpeAPercentage;
+			max: 100 - dpeAPercentage;"check limits on displaying ..."
+			label: 'Set DPEB to: ' , (dpeBPercentage printShowingDecimalPlaces: 1) , '%'; 
+			setValueSelector: #dpeBChanged:;
+			getValueSelector: #dpeBPercentage;
 			extent: 24 @ 24) asSpecAdapter.
-		dpeASlider widget value: dpeAPercentage / 100.
-		^ dpeASlider
+		dpeBSlider widget value: dpeBPercentage / 100.
+		^ dpeBSlider
