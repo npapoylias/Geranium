@@ -121,14 +121,15 @@ geraniumStakeholderMeetingDPEA
 		named: #EmpiricHypothesisA;
 		temperature: [ -0.3 -> 0.3 ];  "30%"
 	   	humidity: [ -0.15 ->  0.15 ]; "15%"
-	   	exposure: [ -0.1 -> 0.1 ];  "5%"
+	   	exposure: [ -0.05 -> 0.05 ];  "5%"
 		
-		occupants: [ 0 -> 0.10 ]; "10%"
+		occupants: [ -0.10 -> 0.10 ]; "10%"
 		income: [ -0.05 -> 0.05  ]; "5%"
 		awareness: [ -0.05 -> 0.05 ]; "5%"
-		ownership: [ -0.5 -> 0.5 ]; "5%"
+		ownership: [ -0.05 -> 0.05 ]; "5%"
 
 		day: [ -0.10 -> 0.10 ];  "10%"
 		hour: [ -0.10 -> 0.10 ]; "10%"
 		season: [ -0.05 -> 0.05 ].	"5%"
+
 	
