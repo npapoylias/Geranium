@@ -1,6 +1,9 @@
 examples
 interactionFor: anElement
-
+	|vertices|
+	vertices := anElement shape vertices value: anElement.
+	(self class colorMap keys includes: vertices)
+		ifTrue: [ anElement color: (self class colorMap at: vertices) ]. 
 	anElement when: TRMouseClick do: [ :evt | |currentValue builder dialog o s|
 			builder := ExampleBuilderMorph new.
 			dialog := (builder newPluggableDialogWindow: 'Choose a color') useDefaultOKButton.
@@ -12,6 +15,8 @@ interactionFor: anElement
 			model: nil.
 			o := builder openModal: dialog.
 			[[o owner isNil] whileFalse: [ Processor yield ].
-			anElement color: s selectedColor] fork.
+				anElement color: s selectedColor.
+				self class colorMap at: vertices put: s selectedColor.
+			] fork.
 	].
 	^ anElement

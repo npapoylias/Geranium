@@ -1,0 +1,4 @@
+accessing
+clearColorMap
+
+	colorMap := nil
