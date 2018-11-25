@@ -10,7 +10,8 @@
 		"buildingTypePlot",
 		"step",
 		"consumptionHistory",
-		"consumptionHistoryCumSum"
+		"consumptionHistoryCumSum",
+		"buildingProfileNames"
 	],
 	"name" : "GeraniumTotalStructureOutputDiagrams",
 	"type" : "normal"
