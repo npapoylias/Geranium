@@ -5,8 +5,8 @@ createScatterPlot
 	buildings := (report inputVisitor buildings collect: [ :b | b residences ]) deepFlatten."{ n_residences . n_occupants . block_or_house . type }"
 
 	building_to_type := [: b | (report inputVisitor modelToScenarioDict at: b) first].
-	types := (buildings collect: [: b | building_to_type value: b]) asSet asOrderedCollection sort: [:a :b | a name > b name].
-	type_colors := (types asOrderedCollection collectWithIndex: [ :t :i | t -> (Color distinctTenLightColors at: i) ]) asDictionary.
+	types := (buildings collect: [: b | building_to_type value: b]) asSet asOrderedCollection sort: [:a :b | a name asString caseInsensitiveLessOrEqual: b name asString].
+	type_colors := (types asOrderedCollection collectWithIndex: [ :t :i | t -> (Color distinctTenLightColors at: i) ]) asOrderedDictionary.
 	
 	scatterplot := RoassalModel new.
 	scatterplot script: [ :v :c | | g ds |

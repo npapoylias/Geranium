@@ -1,8 +1,9 @@
 instance creation
 calculateConsumptionPerBuildingProfile
 	buildingProfiles := (areaOfInterest buildings
-		collect: [ :b | inputVisitor modelToScenarioDict at: b ]) asSet.
-	consumptionHistoryOfBuildingProfiles := Dictionary new.
+		collect: [ :b | inputVisitor modelToScenarioDict at: b ]) asSet asOrderedCollection.
+	consumptionHistoryOfBuildingProfiles := OrderedDictionary new.
+	buildingProfiles sort: [:a :b | a first name asString caseInsensitiveLessOrEqual: b first name asString].
 	buildingProfiles
 		do: [ :p | 
 			| historiesOfP buildingsOfP |
