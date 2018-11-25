@@ -5,4 +5,4 @@ consumptionHistory
 				consumptionHistoryOfBuildingProfiles values copy
 				asOrderedCollection
 				addFirst: self report output consumptionHistory;
-				yourself ]
+				yourself.  ]

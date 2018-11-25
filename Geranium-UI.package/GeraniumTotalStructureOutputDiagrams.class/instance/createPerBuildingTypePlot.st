@@ -9,8 +9,7 @@ createPerBuildingTypePlot
 						withCaption: nil
 						inView: v
 						describing:
-							((self report output buildingProfiles
-								collect: [ :p | p first name asString ]) asOrderedCollection
+							(((self report output consumptionHistoryOfBuildingProfiles keys) asOrderedCollection collect: [ :a | a first name asString ])
 								addFirst: 'Total';
 								yourself).	"scenarios per building is a collection -- fix !"
 		b axisY

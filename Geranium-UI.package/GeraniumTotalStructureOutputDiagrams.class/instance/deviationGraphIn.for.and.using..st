@@ -22,9 +22,8 @@ deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aC
 	"
 
 	| pts b lb|
-	
 	self assert: aColorPallete size >= averageDataPoints size.
-	self assert: deviationDataPoints size = averageDataPoints size.
+	"self assert: deviationDataPoints size = averageDataPoints size."
 
 	pts := Dictionary new.
 	
@@ -37,19 +36,24 @@ deviationGraphIn: view for: averageDataPoints and: deviationDataPoints using: aC
 	pts keysAndValuesDo: [ :color :seriesDevPair | |ds dec| 
 		ds := RTData new.
 		ds points: seriesDevPair key.
-		dec := FasterRTDevVarDecorator new.
+		"dec := FasterRTDevVarDecorator new.
 		dec
 			moveBehind;
-			deviation: 0.05; "should add the actual deviation here"
+			deviation: 0.05; 
 			color: (color alpha: 0.3);
-			points: seriesDevPair key.
+			points: seriesDevPair key."
 		ds
 			connectUsing:
 				(RTLine new
 					color: (color alpha: 0.01); 
 					width: 1).
 		b add: ds.
-		b addDecorator: dec ].
+		"b addDecorator: dec."
+		b
+			addDecorator:
+				(RTAreaDecorator new
+					points: seriesDevPair key;
+					color: (color alpha: 0.3)) ].
 	b
 		axisX;
 		axisY.

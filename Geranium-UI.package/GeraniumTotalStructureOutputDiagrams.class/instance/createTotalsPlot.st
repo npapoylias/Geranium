@@ -12,7 +12,7 @@ createTotalsPlot
 		ifFalse: [ step // 100 * 100 ].
 		showMax := step + 1.
 		historyUpTillNow := self consumptionHistoryFrom: showMin To: showMax.
-		deviationDataPoints := consumptionHistory.	"should compute it here -- not used by the viz yet"
+		deviationDataPoints := historyUpTillNow.	"should compute it here -- not used by the viz yet"
 		b := self
 			deviationGraphIn: v
 			for: historyUpTillNow
