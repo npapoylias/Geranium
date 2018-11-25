@@ -8,8 +8,8 @@ geraniumStakeholderMeeting
 		totalNumberOfBuildings: 56; 
 		totalNumberOfResidences: 186; 
 		residencePercentages:{  
-			#HlmRenovatedBlock.
-			#HlmNewBlock.
+			#HLMRenovatedBlock.
+			#HLMNewBlock.
 			#HLMHousing.
 			#SocialHousing.
 			#PrivateHousing
@@ -21,14 +21,14 @@ geraniumStakeholderMeeting
 		years: 1.		
 		
 	UrbanProfileForAppartmentBlock new
-		named: #HlmRenovatedBlock;
+		named: #HLMRenovatedBlock;
 		dimensions: (2 floors: 2 corridors: 3 appts);
 		appartmentPercentages: {  
 			#HLMRenovated.
 		} % { 100.0 }.
 		
 	UrbanProfileForAppartmentBlock new
-		named: #HlmNewBlock;
+		named: #HLMNewBlock;
 		dimensions: (2 floors: 2 corridors: 3 appts);
 		appartmentPercentages: {  
 			#HLMNew.
