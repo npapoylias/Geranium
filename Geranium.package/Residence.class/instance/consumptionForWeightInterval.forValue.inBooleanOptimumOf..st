@@ -5,6 +5,6 @@ consumptionForWeightInterval: weightInterval forValue: aValue inBooleanOptimumOf
 
 	fInterval := self category fluctuationInterval.
 	aBoolean ~= aValue
-		ifTrue: [ impactPercentage := weightInterval key  ]
-		ifFalse: [ impactPercentage := weightInterval value ].
+		ifTrue: [ impactPercentage := weightInterval value  ]
+		ifFalse: [ impactPercentage := weightInterval key ].
 	^ fInterval * impactPercentage
