@@ -33,13 +33,28 @@ createClimatePlot
 			ds points: humidityUpTillNow.
 			ds connectColor: Color blue.
 			b add: ds."
+		b
+			addDecorator:
+				(RTAreaDecorator new
+					points: temperatureUpTillNow;
+					color: (Color red alpha: 0.3)).
+		b
+			addDecorator:
+				(RTAreaDecorator new
+					points: historyUpTillNow;
+					color: (Color yellow alpha: 0.3)).
 		b axisX
 			noDecimal;
 			title: 'Time'.
 		b axisY
 			noDecimal;
 			title: 'C & kWh'.
+		
+		
 		b build.
+		
+		
+		
 		v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.
 		v @ (RTGridView new gridSize: 10).
 		v
