@@ -1,6 +1,9 @@
 documentation
 overview
 
-	self halt.
-
-	^ {2 . 0 . 45} "Structure 0-6, Climate 0-5, Social 0-100"
+	| unaware unawarePercentage temperature dpe|
+	unaware := (self report input residences select: [:r | r occupants awareness = ConsumptionUnaware]) size.
+	unawarePercentage := (unaware / self report input residences size) * 100 asFloat.
+	temperature := self report whatIf at: #temperature ifAbsent: [ 0 ].
+	dpe := DPEConsumptionCategory of: (self report input residences collect: [ :r | r category median ]) average.
+	^ {dpe . temperature . unawarePercentage} "Structure 0-6, Climate 0-5, Social 0-100"
