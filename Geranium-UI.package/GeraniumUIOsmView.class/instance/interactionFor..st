@@ -16,6 +16,7 @@ interactionFor: anElement
 			o := builder openModal: dialog.
 			[[o owner isNil] whileFalse: [ Processor yield ].
 				anElement color: s selectedColor.
+				anElement signalUpdate.
 				self class colorMap at: vertices put: s selectedColor.
 			] fork.
 	].
