@@ -6,7 +6,7 @@ createKiviat
 	kiviat 
 		script: [  :view :canvas |
 			processed ifNil: [processed := true. self processCanvas: canvas and: view].
-			b := { #max -> {6 . 5 . 100 } .  #actual -> self overview "#b -> (3 to: 6) . #c -> (6 to: 9 ). #d -> (9 to: 12)" }
+			b := { #max -> {(DPEG maximum * 1000) rounded . 5 . 100 } .  #actual -> self overview "#b -> (3 to: 6) . #c -> (6 to: 9 ). #d -> (9 to: 12)" }
 							kiviatForParameters: { #Structure . #Climate . #Social .} "Optimum is 0 0 0 -- ie measure non-aware"
 							withCaption: nil 
 							inView: view
