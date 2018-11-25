@@ -9,6 +9,13 @@ with: anAreaOfInterest andInput: visitor
 	consumptionHistory := areaOfInterest historyOf: #consumption.
 	consumptionHistoryOfBuildings := Dictionary new.
 	areaOfInterest buildings do: [ :b | consumptionHistoryOfBuildings at: b put: (b historyOf: #consumption) ].
+	"residencesTypesConsumption := Dictionary new.
+	areaOfInterest residences do: [ :r | |scEntity|
+		scEntity := (self scenarioEntityOf: r) name.
+		(residencesTypesConsumption keys includes: scEntity)
+			ifTrue: [ residencesTypesConsumption at: scEntity put: ((residencesTypesConsumption at: scEntity) + (r historyOf: #consumption)) ]
+			ifFalse: [ residencesTypesConsumption at: scEntity put: (r historyOf: #consumption) ] 
+	]." 
 	avgConsumptionPerYear := consumptionHistory sum.
 	self calculateConsumptionPerBuildingProfile.
 	Transcript
