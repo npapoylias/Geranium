@@ -20,11 +20,11 @@ visitStatisticalScenario: aStatisticalScenario
 	totalResidences := 0.
 	totalPopulation := 0.
 	
-	1 to: numberOfBuildings do: [ :i | |building|
+	"1 to: numberOfBuildings do: [ :i | |building|"
 		
-		((self check: numberOfDeclaredResidences versus: totalResidences) 
-			"and: [ self check: numberOfDeclaredPopulation versus: totalPopulation ]")
-			ifTrue: [ 
+		[self check: numberOfDeclaredResidences versus: totalResidences] 
+			"and: [ self check: numberOfDeclaredPopulation versus: totalPopulation ])"
+			whileTrue: [ |building|
 				buildings "double dispatch and traversal logic in the visitor makes sense here"
 					add: (building := (self visitNode: (resolvedResidenceProfiles at: (residenceDistribution next)))).
 				building area: areaOfInterest .
@@ -32,7 +32,7 @@ visitStatisticalScenario: aStatisticalScenario
 				totalPopulation := totalPopulation + building occupantSize.
 			]. 
 	
-	].
+	"]."
 	
 	areaOfInterest buildings: buildings.
 	self associate: climateProfile with: (climate := (self visitNode: climateProfile)).
