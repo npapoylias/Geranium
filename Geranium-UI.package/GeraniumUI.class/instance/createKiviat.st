@@ -6,10 +6,11 @@ createKiviat
 	kiviat 
 		script: [  :view :canvas |
 			processed ifNil: [processed := true. self processCanvas: canvas and: view].
-			b := { #a -> (1 to: 3 ). #b -> (3 to: 6) . #c -> (6 to: 9 ). #d -> (9 to: 12) }
-							kiviatForParameters: { #Structure . #Climate . #Social .}
+			b := { #max -> {6 . 5 . 100 } .  #actual -> self overview "#b -> (3 to: 6) . #c -> (6 to: 9 ). #d -> (9 to: 12)" }
+							kiviatForParameters: { #Structure . #Climate . #Social .} "Optimum is 0 0 0 -- ie measure non-aware"
 							withCaption: nil 
-							inView: view.
+							inView: view
+							colorPalet: Color distinctTenStrongColors.
 			b build.
 			view canvas camera "focusOnCenterScaled."focusOnCenterScaled: view canvas extent * 0.8.
 			view @ RTDraggableView.
