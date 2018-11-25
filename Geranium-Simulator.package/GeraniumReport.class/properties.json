@@ -8,7 +8,8 @@
 	"instvars" : [
 		"areaOfInterest",
 		"inputVisitor",
-		"outputReport"
+		"outputReport",
+		"whatIf"
 	],
 	"name" : "GeraniumReport",
 	"type" : "normal"
