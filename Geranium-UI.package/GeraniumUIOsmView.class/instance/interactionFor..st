@@ -11,7 +11,7 @@ interactionFor: anElement
 					minHeight: 184; minWidth: 184)});
 			model: nil.
 			o := builder openModal: dialog.
-			[o owner isNil] whileTrue: [ Processor yield ].
-			s selectedColor
+			[[o owner isNil] whileFalse: [ Processor yield ].
+			anElement color: s selectedColor] fork.
 	].
 	^ anElement
