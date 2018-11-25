@@ -17,4 +17,4 @@ renderTriple: aTriple of: mData for: aView asPolygonIn: aMap withColor: color bo
 						color: (color value: item).
 					shape
 						vertices: ((item at: 'nodes') collect: [ :n | nodes at: n ]).
-					aView add: (mapElements add: (self interactionFor: (shape elementOn: (item at: 'tags')))) "@ RTPopup" ] ]
+					aView add: (mapElements add: (self interactionFor: (shape elementOn: (item at: 'tags')))) @ RTPopup ] ]
