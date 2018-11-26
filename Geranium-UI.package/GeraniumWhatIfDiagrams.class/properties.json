@@ -18,7 +18,8 @@
 		"dpeBPercentage",
 		"dpeAPercentage",
 		"originalAwareness",
-		"originalDpeBPercentage"
+		"originalDpeBPercentage",
+		"oldTemperature"
 	],
 	"name" : "GeraniumWhatIfDiagrams",
 	"type" : "normal"

@@ -18,7 +18,7 @@ applyChanges
 		categories: {ConsumptionAware . ConsumptionUnaware};
 		probabilities: newAwareness.
 	newReport := report copy "areaOfInterest: report areaOfInterest copy". "you should deep copy here normally.."
-	newTemperature := newReport input climateProfile temperatureSeries collect: [: t | t + self temperature].
+	newTemperature := newReport input climateProfile temperatureSeries collect: [: t | t - oldTemperature + self temperature "restore and alter"].
 	awarenessDiff := (self awarenessDiff: residences) rounded.
 	dpeBDiff := (self dpeBDiff: residences) rounded.
 	newReport inputVisitor residences do: [ :r |
@@ -40,5 +40,5 @@ applyChanges
 		areaOfInterest: newReport areaOfInterest;
 		inputVisitor: newReport inputVisitor;
 		outputReport: (GeraniumOutputReport new with: newReport areaOfInterest andInput: newReport inputVisitor).
-	newReport whatIf at: #temperature put: (newReport whatIf at: #tempearture ifAbsent: [ 0 ]) + self temperature.
+	newReport whatIf at: #temperature put: self temperature.
 	(GeraniumUI basicNew report: newReport; initialize; openWithSpec; window) maximize.

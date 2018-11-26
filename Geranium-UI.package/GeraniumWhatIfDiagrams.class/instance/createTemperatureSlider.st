@@ -1,7 +1,7 @@
 initialization
 createTemperatureSlider
 
-	^ temperatureSlider := (GeraniumSlider basicNew
+	temperatureSlider := (GeraniumSlider basicNew
 			gradientRange: (159.9 to: 0.0 by: -0.1);
 			initialize;
 			model: self;
@@ -15,3 +15,5 @@ createTemperatureSlider
 			setValueSelector: #temperatureChanged:;
 			getValueSelector: #temperature;
 			extent: 24 @ 24) asSpecAdapter.
+	temperatureSlider widget value: (oldTemperature := (report whatIf at: #temperature)).
+	^ temperatureSlider
