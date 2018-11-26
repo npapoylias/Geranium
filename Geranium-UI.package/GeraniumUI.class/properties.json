@@ -41,7 +41,8 @@
 		"outputDiagramsSocialMicroClimate",
 		"modelEditor",
 		"kiviat",
-		"minMaxConsumptionLabels"
+		"minMaxConsumptionLabels",
+		"areaLegend"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"
