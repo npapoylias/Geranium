@@ -9,7 +9,7 @@ applyChanges
 	categories := residences collect: [ :r | r category ].
 	categories :=  (categories frequencies collect: [ :value | (value asFloat / residences size) * 100 ]) associations.
 	newCategories := (self adjustDPE: categories) asDictionary.
-	otherCategories := categories asDictionary keys asOrderedCollection remove: DPEA; remove: DPEB.
+	otherCategories := categories asDictionary keys asOrderedCollection remove: DPEA; remove: DPEB; yourself.
 	newCategories := GRCategoricalDistribution new 
 		categories: newCategories keys;
 		probabilities: newCategories values.
@@ -28,7 +28,7 @@ applyChanges
 			ifFalse: [ awarenessDiff = 0 ifFalse: [ r occupants awareness = ConsumptionUnaware ifTrue: [ r occupants awareness: ConsumptionAware. awarenessDiff := awarenessDiff - 1 ] ] ].
 		r category ~= DPEA ifTrue: [
 			dpeBDiff < 0
-				ifTrue: [ r category = DPEB ifTrue: [ r occupants category: otherCategories any. dpeBDiff := dpeBDiff + 1 ] ]
+				ifTrue: [ r category = DPEB ifTrue: [ r occupants category: otherCategories atRandom. dpeBDiff := dpeBDiff + 1 ] ]
 				ifFalse: [ awarenessDiff = 0 ifFalse: [ r category ~= DPEB ifTrue: [ r occupants category: DPEB. dpeBDiff := dpeBDiff - 1 ] ] ]. 	
 		].
 		"r category: newCategories next. r occupants awareness: newAwareness next "
