@@ -16,7 +16,7 @@ geraniumStakeholderMeeting
 		} % { 15.24 . 6.51 . 23.91 . 19.56 . 34.78 }; 
 		climateProfile: #LaRochelleAverage;
 		trendsProfile: #RegionalConsumptionTrends;
-		weightsProfile: #EmpiricHypothesisA;
+		weightsProfile: #ExceedingDPEHypothesis;
 		seed: 23424080;
 		years: 1.		
 		
@@ -118,14 +118,14 @@ geraniumStakeholderMeeting
 	
 	
 	WeightsProfile new "Explorative Model: Education/Building Hypothesis"
-		named: #EmpiricHypothesisA;
-		temperature: [ -0.3 -> 0.3 ];  "30%"
+		named: #ExceedingDPEHypothesis;
+		temperature: [ -0.5 -> 0.5 ];  "30%"
 	   	humidity: [ -0.15 ->  0.15 ]; "15%"
 	   	exposure: [ -0.05 -> 0.05 ];  "5%"
 		
 		occupants: [ -0.10 -> 0.10 ]; "10%"
 		income: [ -0.05 -> 0.05  ]; "5%"
-		awareness: [ -0.05 -> 0.05 ]; "5%"
+		awareness: [ -0.3 -> 0.3 ]; "5%"
 		ownership: [ -0.05 -> 0.05 ]; "5%"
 
 		day: [ -0.10 -> 0.10 ];  "10%"
