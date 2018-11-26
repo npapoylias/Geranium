@@ -6,6 +6,7 @@ createPie
 	categories := residences collect: [ :r | r category ].
 	categories :=  (categories frequencies collect: [ :value | (value asFloat / residences size) * 100 ]) associations.
 	dpeBPercentage := categories asDictionary at: DPEB.
+	originalDpeBPercentage := dpeBPercentage.
 	dpeAPercentage := categories asDictionary at: DPEA.
 	pie := RoassalModel new.
 	pie

@@ -16,7 +16,9 @@
 		"temperature",
 		"dpeBSlider",
 		"dpeBPercentage",
-		"dpeAPercentage"
+		"dpeAPercentage",
+		"originalAwareness",
+		"originalDpeBPercentage"
 	],
 	"name" : "GeraniumWhatIfDiagrams",
 	"type" : "normal"

@@ -10,6 +10,7 @@ createBarStack
 		(awareness at: ConsumptionUnaware ifAbsent: [0]) asFloat / residences size * 100 } asArray.
 
 	awarenessPercentage := awareness at: 1.
+	originalAwareness := awarenessPercentage.
 
 	barStack := RoassalModel new.
 	barStack script: [ :v :c | |es lb|
