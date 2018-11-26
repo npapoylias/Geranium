@@ -3,7 +3,7 @@ createPerBuildingTypePlot
 	| b processed |
 	buildingTypePlot := RoassalModel new.
 	buildingTypePlot script: [ :v :c | 
-		processed ifNil: [processed := true. self processCanvas: c and: v].
+		[processed ifNil: [processed := true. self processCanvas: c and: v].
 		b := (self consumptionHistoryCumSumAt: step + 1)
 						asHistogram: Color green
 						withCaption: nil
@@ -17,5 +17,5 @@ createPerBuildingTypePlot
 		b build.
 		v canvas camera "focusOnCenterScaled."focusOnCenterScaled: v canvas extent * self cameraScale.
 		v @ (RTGridView new gridSize: 10).
-		v
+		v] on: Error do: [ v ]
 	]

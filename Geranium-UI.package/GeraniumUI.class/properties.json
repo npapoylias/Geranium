@@ -42,7 +42,8 @@
 		"modelEditor",
 		"kiviat",
 		"minMaxConsumptionLabels",
-		"areaLegend"
+		"areaLegend",
+		"stepMutex"
 	],
 	"name" : "GeraniumUI",
 	"type" : "normal"
