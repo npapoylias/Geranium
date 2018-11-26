@@ -33,7 +33,7 @@ applyChanges
 		"r category: newCategories next. r occupants awareness: newAwareness next "
 	].
 	newReport input climateProfile resetTemperatureTo: newTemperature. 
-	newReport areaOfInterest climateData: (newReport areaOfInterest climateData copy temperatureSeries: newTemperature).
+	newReport areaOfInterest climateData: (newReport areaOfInterest climateData copy temperature: newTemperature).
 	1 to: 365*24 do: [ :t | newReport areaOfInterest step: t ].
 	
 	newReport := GeraniumReport new
