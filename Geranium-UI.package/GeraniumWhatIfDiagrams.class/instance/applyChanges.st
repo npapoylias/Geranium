@@ -22,14 +22,13 @@ applyChanges
 	awarenessDiff := (self awarenessDiff: residences) rounded.
 	dpeBDiff := (self dpeBDiff: residences) rounded.
 	newReport inputVisitor residences do: [ :r |
-		self halt.
 		awarenessDiff < 0
 			ifTrue: [ r occupants awareness = ConsumptionAware ifTrue: [ r occupants awareness: ConsumptionUnaware. awarenessDiff := awarenessDiff + 1 ] ]
 			ifFalse: [ awarenessDiff = 0 ifFalse: [ r occupants awareness = ConsumptionUnaware ifTrue: [ r occupants awareness: ConsumptionAware. awarenessDiff := awarenessDiff - 1 ] ] ].
 		r category ~= DPEA ifTrue: [
 			dpeBDiff < 0
 				ifTrue: [ r category = DPEB ifTrue: [ r occupants category: otherCategories atRandom. dpeBDiff := dpeBDiff + 1 ] ]
-				ifFalse: [ awarenessDiff = 0 ifFalse: [ r category ~= DPEB ifTrue: [ r occupants category: DPEB. dpeBDiff := dpeBDiff - 1 ] ] ]. 	
+				ifFalse: [ dpeBDiff = 0 ifFalse: [ r category ~= DPEB ifTrue: [ r category: DPEB. dpeBDiff := dpeBDiff - 1 ] ] ]. 	
 		].
 		"r category: newCategories next. r occupants awareness: newAwareness next "
 	].
