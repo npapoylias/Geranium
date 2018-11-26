@@ -50,10 +50,10 @@ step: time
 		(self consumptionForWeightInterval: weightsProfile ownership 
 			forValue: self occupants ownership
 			inBooleanOptimumOf: true).
-	
+
 	consumption := consumption + 
 		(self consumptionForWeightInterval: weightsProfile awareness 
-			forValue: self occupants awareness
+			forValue: (self occupants awareness = ConsumptionAware)
 			inBooleanOptimumOf: true).
 			
 	^ consumption * surface "self 
