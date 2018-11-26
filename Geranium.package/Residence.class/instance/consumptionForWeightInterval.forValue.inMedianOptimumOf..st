@@ -2,7 +2,7 @@ accessing
 consumptionForWeightInterval: weightInterval forValue: aValue inMedianOptimumOf: aRange
 
 	|fInterval impactPercentage impact|
-	self halt.
+	
 	fInterval := self category fluctuationInterval.
 	(aValue - (self medianOf: aRange)) abs <= ((self halfRadiusOf: aRange) * 0.05)
 		ifTrue: [ impactPercentage := weightInterval key  ]

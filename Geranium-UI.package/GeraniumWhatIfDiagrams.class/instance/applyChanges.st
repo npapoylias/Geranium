@@ -17,7 +17,7 @@ applyChanges
 	newAwareness := GRCategoricalDistribution new 
 		categories: {ConsumptionAware . ConsumptionUnaware};
 		probabilities: newAwareness.
-	newReport := report copy areaOfInterest: report areaOfInterest copy.
+	newReport := report copy "areaOfInterest: report areaOfInterest copy". "you should deep copy here normally.."
 	newTemperature := newReport input climateProfile temperatureSeries collect: [: t | t + self temperature].
 	awarenessDiff := (self awarenessDiff: residences) rounded.
 	dpeBDiff := (self dpeBDiff: residences) rounded.
