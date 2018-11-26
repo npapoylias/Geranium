@@ -15,5 +15,5 @@ createTemperatureSlider
 			setValueSelector: #temperatureChanged:;
 			getValueSelector: #temperature;
 			extent: 24 @ 24) asSpecAdapter.
-	temperatureSlider widget value: (oldTemperature := (report whatIf at: #temperature)).
+	temperatureSlider widget value: temperature.
 	^ temperatureSlider
