@@ -1,4 +1,4 @@
 initialization
 awarenessDiff: residences
 
-	^ (awarenessPercentage  - originalAwareness) * residences size 
+	^ ((awarenessPercentage  - originalAwareness) / 100.0) * residences size 

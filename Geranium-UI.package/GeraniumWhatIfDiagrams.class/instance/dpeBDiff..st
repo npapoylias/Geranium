@@ -1,4 +1,4 @@
 initialization
 dpeBDiff: residences
 
-	^ (dpeBPercentage  - originalDpeBPercentage) * residences size 
+	^ ((dpeBPercentage  - originalDpeBPercentage) / 100.0) * residences size 
