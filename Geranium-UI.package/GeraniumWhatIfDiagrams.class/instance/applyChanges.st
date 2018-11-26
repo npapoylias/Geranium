@@ -37,6 +37,6 @@ applyChanges
 	newReport := GeraniumReport new
 		areaOfInterest: report areaOfInterest;
 		inputVisitor: report inputVisitor;
-		whatIfAt: #temperature put: self temperature;
 		outputReport: (GeraniumOutputReport new with: report areaOfInterest andInput: report inputVisitor).
+	newReport whatIf at: #temperature put: (newReport whatIf at: #tempearture ifAbsent: [ 0 ]) + self temperature.
 	(GeraniumUI basicNew report: newReport; initialize; openWithSpec; window) maximize.
