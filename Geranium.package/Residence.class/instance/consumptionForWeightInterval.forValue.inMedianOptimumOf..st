@@ -7,6 +7,6 @@ consumptionForWeightInterval: weightInterval forValue: aValue inMedianOptimumOf:
 	(aValue - (self medianOf: aRange)) abs <= ((self halfRadiusOf: aRange) * 0.1)
 		ifTrue: [ impactPercentage := weightInterval key  ]
 		ifFalse: [ impactPercentage := weightInterval value ].
-	impact := impactPercentage * ((aValue - (self medianOf: aRange)) abs / (self halfRadiusOf: aRange)).
+	impact := impactPercentage * ((aValue - (self medianOf: aRange)) abs / ((self halfRadiusOf: aRange)/2)).
 	^ fInterval * impact
 	
