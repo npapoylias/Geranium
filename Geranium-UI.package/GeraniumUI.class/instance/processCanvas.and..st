@@ -3,4 +3,4 @@ processCanvas: aCanvas and: aView
 
 	aCanvas 
 		when: TRMouseLeftClick 
-		do: [ :event | GeraniumWhatIfDiagrams new: report open ].
+		do: [ :event | (GeraniumWhatIfDiagrams new: report) open  ].
