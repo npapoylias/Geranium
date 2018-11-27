@@ -63,7 +63,7 @@ geraniumStakeholderMeetingDPED
 		numberOfChildren: [1 -> 4]; 
 		income: [(1150.0*12) -> (3000.0*12)];
 		awareness: {ConsumptionAware . ConsumptionUnaware} % {18.18 . 81.82};
-		ownership: true % 100.
+		ownership: false % 100.
 	
 	UrbanProfileForHouse new 
 		named: #SocialHousing;
