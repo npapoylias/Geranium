@@ -2,7 +2,9 @@
 	"commentStamp" : "",
 	"super" : "GeraniumOsmService",
 	"category" : "Geranium-UI",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"colorMap"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
