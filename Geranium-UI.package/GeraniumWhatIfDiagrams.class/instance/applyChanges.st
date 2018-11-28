@@ -27,7 +27,7 @@ applyChanges
 			ifFalse: [ awarenessDiff = 0 ifFalse: [ r occupants awareness = ConsumptionUnaware ifTrue: [ r occupants awareness: ConsumptionAware. awarenessDiff := awarenessDiff - 1 ] ] ].
 		r category ~= DPEA ifTrue: [
 			dpeBDiff < 0
-				ifTrue: [ r category = DPEB ifTrue: [ r occupants category: otherCategories atRandom. dpeBDiff := dpeBDiff + 1 ] ]
+				ifTrue: [ r category = DPEB ifTrue: [ r category: otherCategories atRandom. dpeBDiff := dpeBDiff + 1 ] ]
 				ifFalse: [ dpeBDiff = 0 ifFalse: [ r category ~= DPEB ifTrue: [ r category: DPEB. dpeBDiff := dpeBDiff - 1 ] ] ]. 	
 		].
 		"r category: newCategories next. r occupants awareness: newAwareness next "
