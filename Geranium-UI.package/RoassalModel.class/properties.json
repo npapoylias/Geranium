@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "johanfabry 7/24/2015 08:27",
+	"super" : "AbstractWidgetModel",
+	"category" : "Geranium-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"script",
+		"lastEvent"
+	],
+	"name" : "RoassalModel",
+	"type" : "normal"
+}

@@ -1,0 +1,1 @@
+I am a Spec model to embed Roassal2 visualizations. See the SpecEasel class for an example use.
