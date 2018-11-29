@@ -16,20 +16,12 @@ baseline: spec
 			configuration: 'PolyMath' with: [ 
 				spec version: #stable; 
 				repository: 'http://smalltalkhub.com/mc/PolyMath/PolyMath/main'];
-			configuration: 'GeneticAlgo' with: [ 
-				spec versionString: #development;
-				repository: 'http://smalltalkhub.com/mc/abergel/GeneticAlgo/main'
-			]; 
-			configuration: 'NeuralNetworks' with: [ 
-				spec versionString: #development;
-				repository: 'http://smalltalkhub.com/mc/abergel/NeuralNetworks/main'
-			]; 
 			"Use NeoCSV directly instead" "baseline: 'DataFrame' with: [
       			spec repository: 'github://PolyMathOrg/DataFrame' ];"
-			package: 'Geranium';
 			package: 'Geranium-Distributions';
-			package: 'Geranium-Scenarios';
 			package: 'Geranium-UI';
 			package: 'Geranium-Tests';
-			package: 'Geranium-Simulator'
+			package: 'Geranium-Simulator';
+			package: 'Geranium-Scenarios';
+			package: 'Geranium'
 	]
