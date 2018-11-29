@@ -19,9 +19,9 @@ baseline: spec
 			"Use NeoCSV directly instead" "baseline: 'DataFrame' with: [
       			spec repository: 'github://PolyMathOrg/DataFrame' ];"
 			package: 'Geranium-Distributions';
-			package: 'Geranium-UI';
 			package: 'Geranium-Tests';
-			package: 'Geranium-Simulator';
 			package: 'Geranium-Scenarios';
-			package: 'Geranium'
+			package: 'Geranium';
+			package: 'Geranium-Simulator';
+			package: 'Geranium-UI'
 	]
